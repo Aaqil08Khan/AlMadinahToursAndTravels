@@ -312,12 +312,11 @@
    margin-bottom: 3.125rem;
  }
 
- .package-container {
-   display: flex;
-   justify-content: center;
-   flex-direction: row;
-   gap: 2rem;
- }
+.package-container {
+  display: flex;
+  gap: 2rem;
+}
+
  @media (max-width: 48em) {
   .package-container{
     flex-direction: column;
@@ -328,16 +327,27 @@
  .package-list {
    display: flex;
    flex-direction: column;
-   gap: 1.875rem;
+   gap: 1.875rem; 
+   flex: 1;
  }
 
  .package-card {
-   display: flex;
-   background: #fff;
-   border-radius: 1.25rem;
-   overflow: hidden;
-   box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.08);
+  display: flex;
+    background: #fff;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.08);
  }
+ .package-card {
+    background: var(--card-bg);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.2s ease;
+}
+
 
  /* image */
  .package-image {
@@ -434,6 +444,11 @@
 
 
  /* CARD */
+ .enquiry-container {
+  flex: 0 0 22rem; /* or 24rem */
+}
+
+
  .enquiry-card {
    max-width: 42rem;
    margin: auto;
