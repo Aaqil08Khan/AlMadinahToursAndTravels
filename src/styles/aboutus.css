@@ -251,7 +251,7 @@
 @media (min-width: 1200px) {
   .who-container {
     gap: 5rem; 
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .who-content h2 {
