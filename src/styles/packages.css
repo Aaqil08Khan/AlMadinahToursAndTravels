@@ -237,7 +237,7 @@
 @media (max-width: 767px) {
 
     .packages-hero {
-        min-height: 80vh;
+        min-height: 75vh;
     }
 
     .packages-hero h1 {
