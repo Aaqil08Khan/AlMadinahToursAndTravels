@@ -5,6 +5,36 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 const Contact = () => {
+
+
+  const handleMailTo = (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+
+    const name = form.full_name.value;
+    const phone = form.phone.value;
+    const email = form.email.value;
+    const subject = form.subject.value || "Contact Request";
+    const message = form.message.value;
+
+    const mailBody = `
+Name: ${name}
+Phone: ${phone}
+Email: ${email}
+
+Message:
+${message}
+  `;
+
+    const mailtoLink = `mailto:info@almadinatraveltour.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(mailBody)}`;
+
+
+    window.location.href = mailtoLink;
+  };
+
   return (
     <>
       <Header />
@@ -89,34 +119,55 @@ const Contact = () => {
           <h3>Send Us a Message</h3>
           <p>Fill out the form below and we'll get back to you within 24 hours.</p>
 
-          <form>
+          <form onSubmit={handleMailTo}>
             <div className="form-row">
               <div className="form-group">
                 <label>Full Name <span>*</span></label>
-                <input type="text" placeholder="Your full name" />
+                <input
+                  type="text"
+                  name="full_name"
+                  placeholder="Your full name"
+                  required
+                />
               </div>
 
               <div className="form-group">
                 <label>Phone Number <span>*</span></label>
-                <input type="text" placeholder="+1 234 567 890" />
+                <input
+                  type="text"
+                  name="phone"
+                  placeholder="+1 234 567 890"
+                  required
+                />
               </div>
             </div>
 
             <div className="form-group">
               <label>Email Address <span>*</span></label>
-              <input type="email" placeholder="your@email.com" />
+              <input
+                type="email"
+                name="email"
+                placeholder="your@email.com"
+                required
+              />
             </div>
 
             <div className="form-group">
               <label>Subject</label>
-              <input type="text" placeholder="How can we help you?" />
+              <input
+                type="text"
+                name="subject"
+                placeholder="How can we help you?"
+              />
             </div>
 
             <div className="form-group">
               <label>Message <span>*</span></label>
               <textarea
+                name="message"
                 rows="5"
                 placeholder="Tell us about your travel plans, preferred dates, number of travelers, etc."
+                required
               ></textarea>
             </div>
 
@@ -127,6 +178,7 @@ const Contact = () => {
               Send Message
             </button>
           </form>
+
         </div>
 
       </main>
