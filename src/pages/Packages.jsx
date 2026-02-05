@@ -48,7 +48,7 @@ const Packages = () => {
       </section>
 
       {/* PACKAGES */}
-      <section className="packages-section">
+      <section className="packages-section-area">
         <div className="packages-header">
           <span className="packages-eyebrow">Choose Your Journey</span>
           <h2 className="packages-title">Packages for Every Pilgrim</h2>
@@ -61,7 +61,7 @@ const Packages = () => {
         <div className="packages-grid">
 
           {/* CARD 1 */}
-          <article className="package-card">
+          <article className="package-article">
             <img src="/assets/images/article1.jpg" alt="Budget Umrah" />
             <div className="package-body">
               <div className="package-meta">
@@ -85,7 +85,7 @@ const Packages = () => {
           </article>
 
           {/* CARD 2 */}
-          <article className="package-card">
+          <article className="package-article">
             <img src="/assets/images/article2.jpg" alt="Semi-Deluxe" />
             <div className="package-body">
               <div className="package-meta">
@@ -109,7 +109,7 @@ const Packages = () => {
           </article>
 
           {/* CARD 3 */}
-          <article className="package-card">
+          <article className="package-article">
             <img src="/assets/images/article3.jpg" alt="Luxury Umrah" />
             <div className="package-body">
               <div className="package-meta">
@@ -133,7 +133,7 @@ const Packages = () => {
           </article>
 
           {/* CARD 4 */}
-          <article className="package-card">
+          <article className="package-article">
             <img src="/assets/images/article4.jpg" alt="Family Package" />
             <div className="package-body">
               <div className="package-meta">
@@ -157,7 +157,7 @@ const Packages = () => {
           </article>
 
           {/* CARD 5 */}
-          <article className="package-card">
+          <article className="package-article">
             <img src="/assets/images/article5.jpg" alt="Ramadan Umrah" />
             <div className="package-body">
               <div className="package-meta">
@@ -181,7 +181,7 @@ const Packages = () => {
           </article>
 
           {/* CARD 6 */}
-          <article className="package-card">
+          <article className="package-article">
             <img src="/assets/images/article6.jpg" alt="Quick Umrah" />
             <div className="package-body">
               <div className="package-meta">
@@ -205,7 +205,7 @@ const Packages = () => {
           </article>
 
           {/* CARD 7 */}
-          <article className="package-card">
+          <article className="package-article">
             <img src="/assets/images/article7.jpg" alt="Senior Citizens Umrah" />
             <div className="package-body">
               <div className="package-meta">
