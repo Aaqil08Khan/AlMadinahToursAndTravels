@@ -1,9 +1,17 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../styles/home.css";
 
 function Home() {
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); // prevent actual form submission
+    setSubmitted(true); // show the confirmation message
+    e.target.reset(); // optional: clear the form
+  };
   return (
     <>
       <Header />
@@ -133,7 +141,7 @@ function Home() {
                 <span className="line"></span>
               </div>
 
-              <form className="enquiry-form">
+              <form className="enquiry-form" onSubmit={handleSubmit}>
                 <input type="text" placeholder="Full Name" required />
 
                 <div className="two-col">
@@ -156,10 +164,14 @@ function Home() {
                 <textarea placeholder="Message (Optional)"></textarea>
                 <button type="submit">Submit Enquiry</button>
 
-                <p className="trust-text">
-                  📞 Our team will contact you within 24 hours
-                </p>
+                <p className="trust-text">📞 Our team will contact you within 24 hours</p>
               </form>
+              {/* Confirmation message */}
+              {submitted && (
+                <div className="confirmation-message">
+                  ✅ Thank you! Your enquiry has been submitted.
+                </div>
+              )}
             </div>
           </div>
         </div>

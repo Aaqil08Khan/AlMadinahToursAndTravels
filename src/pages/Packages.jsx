@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 import "../styles/home.css";
 import "../styles/packages.css";
@@ -80,7 +81,9 @@ const Packages = () => {
                 <li>Shared room (4 persons)</li>
                 <li>Full Umrah Visa support</li>
               </ul>
-              <a href="#" className="btn-book">Book Now →</a>
+              <Link to="/book" className="btn-book">
+                Book Now
+              </Link>
             </div>
           </article>
 
@@ -104,7 +107,9 @@ const Packages = () => {
                 <li>Twin sharing rooms</li>
                 <li>Ziyarat tours included</li>
               </ul>
-              <a href="#" className="btn-book">Book Now →</a>
+              <Link to="/book" className="btn-book">
+                Book Now
+              </Link>
             </div>
           </article>
 
@@ -128,7 +133,9 @@ const Packages = () => {
                 <li>Private suite options</li>
                 <li>VIP Private Transport</li>
               </ul>
-              <a href="#" className="btn-book">Book Now →</a>
+              <Link to="/book" className="btn-book">
+                Book Now
+              </Link>
             </div>
           </article>
 
@@ -152,7 +159,9 @@ const Packages = () => {
                 <li>Kids meal options</li>
                 <li>Group bus transport</li>
               </ul>
-              <a href="#" className="btn-book">Book Now →</a>
+              <Link to="/book" className="btn-book">
+                Book Now
+              </Link>
             </div>
           </article>
 
@@ -176,7 +185,9 @@ const Packages = () => {
                 <li>Walking distance hotels</li>
                 <li>Special Taraweeh guidance</li>
               </ul>
-              <a href="#" className="btn-book">Book Now →</a>
+              <Link to="/book" className="btn-book">
+                Book Now
+              </Link>
             </div>
           </article>
 
@@ -200,7 +211,9 @@ const Packages = () => {
                 <li>3-star accommodation</li>
                 <li>Flexible flight dates</li>
               </ul>
-              <a href="#" className="btn-book">Book Now →</a>
+              <Link to="/book" className="btn-book">
+                Book Now
+              </Link>
             </div>
           </article>
 
@@ -224,7 +237,9 @@ const Packages = () => {
                 <li>Direct flights</li>
                 <li>Guided ritual assistance</li>
               </ul>
-              <a href="#" className="btn-book">Book Now →</a>
+              <Link to="/book" className="btn-book">
+                Book Now
+              </Link>
             </div>
           </article>
 

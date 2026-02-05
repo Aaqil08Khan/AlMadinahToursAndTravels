@@ -1,0 +1,93 @@
+.book-hero {
+    background: #132b52;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    top: 2rem;
+}
+
+.book-hero h1 {
+    font-size: 2.5rem;
+}
+
+.book-wrapper {
+    padding: 60px 20px;
+    background: #f7f7f7;
+}
+
+.book-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex; 
+    gap: 40px;
+    flex-direction: row;
+}
+
+@media (max-width: 60em) {
+    .book-container{
+        flex-direction: column;
+    }
+}
+
+.book-info {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    color: black;
+}
+
+.book-info ul {
+    margin-top: 20px;
+    line-height: 2;
+}
+
+.note-box {
+    margin-top: 30px;
+    background: #eef4ff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.book-form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.book-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.book-form input,
+.book-form select,
+.book-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.two {
+    display: flex;
+    gap: 10px;
+}
+
+.book-form button {
+    background: #132b52;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.success {
+    margin-top: 15px;
+    padding: 12px;
+    background: #d4edda;
+    color: #155724;
+    border-radius: 6px;
+}

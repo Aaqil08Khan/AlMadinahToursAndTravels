@@ -1,18 +1,31 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 import "../styles/footer.css";
+import { useState } from "react";
 
 function Footer() {
+
+
+  const [callbackSubmitted, setCallbackSubmitted] = useState(false);
+
+  const handleCallback = (e) => {
+    e.preventDefault(); // prevent page reload
+    setCallbackSubmitted(true); // show confirmation
+    e.target.reset(); // optional: clear input
+
+    // Optional: hide message after 3 seconds
+    setTimeout(() => setCallbackSubmitted(false), 3000);
+  }
   return (
     <footer className="footer">
       <div className="footer-main">
         {/* BRAND */}
         <div className="footer-brand">
           <NavLink to="/" className="logo">
-          <span className="logo-wrap">
-            <img src="/assets/logos/logo-en.png" alt="Al-Madinah Travels" />
-          </span>
-        </NavLink>
+            <span className="logo-wrap">
+              <img src="/assets/logos/logo-en.png" alt="Al-Madinah Travels" />
+            </span>
+          </NavLink>
           <span>TRAVELS & TOURS</span>
 
           <p className="tagline">"Make Your Next Trip Your Best Trip"</p>
@@ -23,10 +36,18 @@ function Footer() {
           </p>
 
           <div className="footer-socials">
-            <a href="#"><img src="/assets/icons/facebook-02-stroke-rounded.svg" alt="Facebook" /></a>
-            <a href="#"><img src="/assets/icons/instagram-stroke-rounded.svg" alt="Instagram" /></a>
-            <a href="#"><img src="/assets/icons/whatsapp-stroke-rounded.svg" alt="Whatsapp" /></a>
-            <a href="#"><img src="/assets/icons/youtube-stroke-rounded.svg" alt="Youtube" /></a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/icons/facebook-02-stroke-rounded.svg" alt="Facebook" />
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/icons/instagram-stroke-rounded.svg" alt="Instagram" />
+            </a>
+            <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/icons/whatsapp-stroke-rounded.svg" alt="Whatsapp" />
+            </a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+              <img src="/assets/icons/youtube-stroke-rounded.svg" alt="Youtube" />
+            </a>
           </div>
         </div>
 
@@ -38,7 +59,7 @@ function Footer() {
             <li><a href="/about">About Us</a></li>
             <li><a href="/services">Our Services</a></li>
             <li><a href="/packages">Umrah Packages</a></li>
-            <li><a href="/contact">Contact Us</a></li> 
+            <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
 
@@ -59,8 +80,17 @@ function Footer() {
           <p className="callback-text">
             Leave your number and we'll call you back within 24 hours.
           </p>
-          <input type="text" placeholder="Your phone number" />
-          <button>Request Callback</button>
+
+          <form onSubmit={handleCallback}>
+            <input type="tel" placeholder="Your phone number" required />
+            <button type="submit">Request Callback</button>
+          </form>
+
+          {callbackSubmitted && (
+            <div className="confirmation-message">
+              ✅ Thank you! We will call you back soon.
+            </div>
+          )}
         </div>
       </div>
 

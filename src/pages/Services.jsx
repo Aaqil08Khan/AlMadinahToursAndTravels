@@ -223,10 +223,10 @@ const Services = () => {
           </div>
 
           <div className="cta-actions">
-            <a href="#" className="btn-primary">
+            <a href="contact" className="btn-primary">
               Get Free Consultation <span aria-hidden="true">→</span>
             </a>
-            <a href="#" className="btn-outline">
+            <a href="packages" className="btn-outline">
               Explore Packages
             </a>
           </div>

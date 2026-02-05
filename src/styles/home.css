@@ -518,6 +518,16 @@
    color: #ddd;
    text-align: center;
  }
+ .confirmation-message {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
 
  /* RESPONSIVE */
  @media(max-width:48rem) {
