@@ -73,7 +73,7 @@ const Packages = () => {
                 A cost-effective Umrah package covering all essential services for the mindful traveler.
               </p>
               <p className="package-price">
-                ₹1,15,000 <span>per person</span>
+                SAR 1,15,000 <span>per person</span>
               </p>
               <ul className="package-features">
                 <li>Economy class flights</li>
@@ -99,7 +99,7 @@ const Packages = () => {
                 Enhanced comfort with closer hotel proximity and better transport options.
               </p>
               <p className="package-price">
-                ₹1,85,000 <span>per person</span>
+                SAR 1,85,000 <span>per person</span>
               </p>
               <ul className="package-features">
                 <li>Standard Airline flights</li>
@@ -125,7 +125,7 @@ const Packages = () => {
                 The ultimate spiritual experience with high-end luxury at every step.
               </p>
               <p className="package-price">
-                ₹3,45,000 <span>per person</span>
+                SAR 45,000 <span>per person</span>
               </p>
               <ul className="package-features">
                 <li>Business class flights</li>
@@ -151,7 +151,7 @@ const Packages = () => {
                 Group discounts and child-friendly amenities for a stress-free family journey.
               </p>
               <p className="package-price">
-                ₹5,90,000 <span>Family of 4</span>
+                SAR 1,90,000 <span>Family of 4</span>
               </p>
               <ul className="package-features">
                 <li>Family Economy flights</li>
@@ -177,7 +177,7 @@ const Packages = () => {
                 Spend the last 10 days of the holy month in the vicinity of the Kaaba.
               </p>
               <p className="package-price">
-                ₹4,20,000 <span>per person</span>
+                SAR 80,000 <span>per person</span>
               </p>
               <ul className="package-features">
                 <li>Full month stay</li>
@@ -203,7 +203,7 @@ const Packages = () => {
                 A short, focused journey for professionals with limited time off.
               </p>
               <p className="package-price">
-                ₹95,000 <span>per person</span>
+                SAR 95,000 <span>per person</span>
               </p>
               <ul className="package-features">
                 <li>Fast-track Visa service</li>
@@ -229,7 +229,7 @@ const Packages = () => {
                 Designed for senior citizens with medical assistance and wheelchair support.
               </p>
               <p className="package-price">
-                ₹2,10,000 <span>per person</span>
+                SAR 2,10,000 <span>per person</span>
               </p>
               <ul className="package-features">
                 <li>24/7 medical support</li>
