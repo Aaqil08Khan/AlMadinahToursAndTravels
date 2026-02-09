@@ -23,7 +23,7 @@ function Footer() {
         <div className="footer-brand">
           <NavLink to="/" className="logo">
             <span className="logo-wrap">
-              <img src="/assets/logos/logo-en.png" alt="Al-Madinah Travels" />
+              <img src="/assets/logos/logo-en.png" alt="Al-Madina Travels" />
             </span>
           </NavLink>
           <span>TRAVELS & TOURS</span>
@@ -71,7 +71,7 @@ function Footer() {
             City, Country 12345
           </p>
           <p>📞 +1 234 567 890</p>
-          <p>✉ info@almadinahtravels.com</p>
+          <p>✉ info@almadinatravels.com</p>
         </div>
 
         {/* CALLBACK */}
@@ -96,7 +96,7 @@ function Footer() {
 
       {/* BOTTOM */}
       <div className="footer-bottom">
-        <p>© 2026 Al-Madinah Travels & Tours. All rights reserved.</p>
+        <p>© 2026 Al-Madina Travels & Tours. All rights reserved.</p>
         <div className="bottom-links">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms & Conditions</a>

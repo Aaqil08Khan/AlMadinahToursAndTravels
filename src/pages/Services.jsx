@@ -1,10 +1,41 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { useState } from "react";
+import TransportRatesSection from '../components/TransportRateSection';
 
 import "../styles/home.css";
 import "../styles/services.css";
 
 const Services = () => {
+
+   const [hoveredCard, setHoveredCard] = useState(null);
+  
+    const hotels = [
+      {
+        id: 1,
+        name: "Le Meridien Towers Makkah",
+        image: "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=80",
+        rating: 5,
+        location: "Makkah",
+        amenities: ["Free WiFi", "Spa", "Restaurant", "Pool"]
+      },
+      {
+        id: 2,
+        name: "Hiba Hijra Hotel Makkah",
+        image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+        rating: 4,
+        location: "Makkah",
+        amenities: ["Free WiFi", "Restaurant", "24/7 Service", "City View"]
+      },
+      {
+        id: 3,
+        name: "Kinan Al Madinah",
+        image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80",
+        rating: 4,
+        location: "Madinah",
+        amenities: ["Free WiFi", "Breakfast", "Near Haram", "Parking"]
+      }
+    ];
   return (
     <>
       <Header />
@@ -41,132 +72,222 @@ const Services = () => {
         </div>
       </section>
 
-      {/* SOLUTIONS */}
-      <section className="solutions" id="services">
+      {/* HOTEL PRICING TABLE */}
+      <section className="hotel-table-section" id="services">
         <div className="solutions-header">
-          <span className="solutions-tag">COMPLETE SOLUTIONS</span>
-          <h2>Everything You Need for Your Journey</h2>
+          <span className="solutions-tag">MAKKAH HOTELS</span>
+          <h2>Makkah Hotel Rates (Dummy Pricing)</h2>
           <p>
-            From the moment you decide to embark on your pilgrimage until you
-            return home, we're with you every step of the way.
+            Sample pricing structure for Umrah hotels near Haram. Final prices depend
+            on season, availability, and room category.
           </p>
         </div>
 
-        <div className="solutions-cards">
-          {/* CARD 1 */}
-          <div className="solution-card">
-            <div className="icon-box">
-              <img src="/assets/icons/flight-round-icon (3).svg" alt="" srcset="" />
-            </div>
-            <h3>Umrah Packages</h3>
-            <p>
-              Comprehensive Umrah packages designed to meet every pilgrim's
-              needs and budget. From budget-friendly options to premium luxury
-              experiences, we have the perfect package for you.
+        <div className="table-wrapper">
+          <table className="hotel-table">
+            <thead>
+              <tr>
+                <th>Hotel</th>
+                <th>Period</th>
+                <th>Distance from Haram</th>
+                <th>Sharing</th>
+                <th>Double</th>
+                <th>Triple</th>
+                <th>Quad</th>
+                <th>Quint</th>
+                <th>Meals</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Swissotel Makkah</td>
+                <td>20 Mar – 17 Apr</td>
+                <td>150m</td>
+                <td>450 SAR</td>
+                <td>520 SAR</td>
+                <td>480 SAR</td>
+                <td>430 SAR</td>
+                <td>400 SAR</td>
+                <td>Breakfast Included</td>
+              </tr>
+
+              <tr>
+                <td>Pullman ZamZam Makkah</td>
+                <td>20 Mar – 17 Apr</td>
+                <td>200m</td>
+                <td>420 SAR</td>
+                <td>500 SAR</td>
+                <td>460 SAR</td>
+                <td>410 SAR</td>
+                <td>380 SAR</td>
+                <td>Half Board</td>
+              </tr>
+
+              <tr>
+                <td>Hilton Suites Makkah</td>
+                <td>20 Mar – 17 Apr</td>
+                <td>300m</td>
+                <td>390 SAR</td>
+                <td>470 SAR</td>
+                <td>430 SAR</td>
+                <td>390 SAR</td>
+                <td>350 SAR</td>
+                <td>Room Only</td>
+              </tr>
+
+              <tr>
+                <td>Elaf Kinda Hotel</td>
+                <td>20 Mar – 17 Apr</td>
+                <td>350m</td>
+                <td>320 SAR</td>
+                <td>390 SAR</td>
+                <td>350 SAR</td>
+                <td>310 SAR</td>
+                <td>280 SAR</td>
+                <td>Breakfast Included</td>
+              </tr>
+
+              <tr>
+                <td>Al Kiswah Towers</td>
+                <td>20 Mar – 17 Apr</td>
+                <td>900m</td>
+                <td>220 SAR</td>
+                <td>290 SAR</td>
+                <td>260 SAR</td>
+                <td>230 SAR</td>
+                <td>200 SAR</td>
+                <td>Room Only</td>
+              </tr>
+
+              <tr>
+                <td>Voco Makkah</td>
+                <td>20 Mar – 17 Apr</td>
+                <td>1200m</td>
+                <td>250 SAR</td>
+                <td>320 SAR</td>
+                <td>290 SAR</td>
+                <td>260 SAR</td>
+                <td>230 SAR</td>
+                <td>Half Board</td>
+              </tr>
+
+              <tr>
+                <td>Jabal Omar Marriott</td>
+                <td>20 Mar – 17 Apr</td>
+                <td>400m</td>
+                <td>410 SAR</td>
+                <td>480 SAR</td>
+                <td>440 SAR</td>
+                <td>400 SAR</td>
+                <td>360 SAR</td>
+                <td>Full Board</td>
+              </tr>
+
+              <tr>
+                <td>Anjum Hotel Makkah</td>
+                <td>20 Mar – 17 Apr</td>
+                <td>350m</td>
+                <td>370 SAR</td>
+                <td>440 SAR</td>
+                <td>400 SAR</td>
+                <td>360 SAR</td>
+                <td>320 SAR</td>
+                <td>Breakfast Included</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {/* HOTEL RATES */}
+      <section className="hotel-rates-section">
+        <div className="hotel-rates-container">
+          {/* Header */}
+          <div className="hotel-rates-header">
+            <span className="hotel-rates-tag">PREMIUM ACCOMMODATIONS</span>
+            <h2 className="hotel-rates-title">Hotels Rates</h2>
+            <p className="hotel-rates-subtitle">3-star, 4-star, 5-star Hotels Available</p>
+            <p className="hotel-rates-description">
+              Choose budget to premium stays with instant booking and hotel vouchers.
             </p>
-            <ul>
-              <li>Multiple package tiers (Budget, Economy, Deluxe, VIP)</li>
-              <li>Flexible duration (7, 14, 21, 28 days)</li>
-              <li>Group and private options available</li>
-              <li>All-inclusive packages with no hidden costs</li>
-            </ul>
           </div>
 
-          {/* CARD 2 */}
-          <div className="solution-card">
-            <div className="icon-box">
-              <img src="/assets/icons/visa-assistance-icon.svg" alt="" srcset="" />
-            </div>
-            <h3>Visa Assistance</h3>
-            <p>
-              Expert visa processing services to ensure your application is
-              handled smoothly and efficiently. We guide you through every
-              step of the documentation process.
-            </p>
-            <ul>
-              <li>Complete documentation guidance</li>
-              <li>Fast-track visa processing</li>
-              <li>Application tracking and updates</li>
-              <li>Visa extension assistance if needed</li>
-            </ul>
+          {/* Hotels Grid */}
+          <div className="hotels-grid">
+            {hotels.map((hotel) => (
+              <div
+                key={hotel.id}
+                className="hotel-card"
+                onMouseEnter={() => setHoveredCard(hotel.id)}
+                onMouseLeave={() => setHoveredCard(null)}
+              >
+                <div className="hotel-image-wrapper">
+                  <img
+                    src={hotel.image}
+                    alt={hotel.name}
+                    className="hotel-image"
+                  />
+                  <div className="hotel-overlay"></div>
+                  <div className="hotel-rating">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg>
+                    {hotel.rating} Star
+                  </div>
+                </div>
+
+                <div className="hotel-content">
+                  <h3 className="hotel-name">{hotel.name}</h3>
+                  
+                  <div className="hotel-location">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    {hotel.location}
+                  </div>
+
+                  <div className="hotel-amenities">
+                    {hotel.amenities.map((amenity, index) => (
+                      <span key={index} className="amenity-tag">{amenity}</span>
+                    ))}
+                  </div>
+
+                  <div className="hotel-divider"></div>
+
+                  <div className="hotel-cta">
+                    <button className="view-details-btn">View Details</button>
+                    <button className="quick-book-btn" title="Quick Book">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
 
-          {/* CARD 3 */}
-          <div className="solution-card">
-            <div className="icon-box">
-              <img src="/assets/icons/hotel-icon.svg" alt="" srcset="" />
-            </div>
-            <h3>Hotel Booking</h3>
-            <p>
-              Premium hotel accommodations near Haram in both Makkah and
-              Madinah. We partner with the finest hotels to ensure your comfort
-              during your sacred journey.
-            </p>
-            <ul>
-              <li>Hotels within walking distance of Haram</li>
-              <li>3-star to 5-star hotel options</li>
-              <li>Room upgrades upon availability</li>
-              <li>Special request accommodation</li>
-            </ul>
-          </div>
-
-          {/* CARD 4 */}
-          <div className="solution-card">
-            <div className="icon-box">
-
-              <img src="/assets/icons/bus-icon.svg" alt="" srcset="" />
-            </div>
-            <h3>Transport Services</h3>
-            <p>
-              Comfortable and reliable transportation throughout your journey.
-              From airport transfers to inter-city travel, we ensure smooth
-              mobility.
-            </p>
-            <ul>
-              <li>Airport pickup and drop-off</li>
-              <li>Air-conditioned vehicles</li>
-              <li>Private and group transport options</li>
-              <li>24/7 transport availability</li>
-            </ul>
-          </div>
-
-          {/* CARD 5 */}
-          <div className="solution-card">
-            <div className="icon-box">
-              <img src="/assets/icons/map-icon-contact.svg" alt="" srcset="" />
-            </div>
-            <h3>Ziyarat Tours</h3>
-            <p>
-              Guided visits to the most sacred historical sites in Makkah and
-              Madinah. Our knowledgeable guides provide spiritual insights at
-              every location.
-            </p>
-            <ul>
-              <li>All major Ziyarat sites covered</li>
-              <li>Experienced religious guides</li>
-              <li>Comfortable transport included</li>
-              <li>Flexible scheduling options</li>
-            </ul>
-          </div>
-
-          {/* CARD 6 */}
-          <div className="solution-card">
-            <div className="icon-box">
-              <img src="/assets/icons/customer-support-icon.svg" alt="" srcset="" />
-            </div>
-            <h3>24/7 Support</h3>
-            <p>
-              Round-the-clock customer support to assist you throughout your
-              pilgrimage. Our dedicated team is always available to help.
-            </p>
-            <ul>
-              <li>Multilingual support team</li>
-              <li>Emergency assistance</li>
-              <li>WhatsApp support available</li>
-              <li>On-ground representatives</li>
-            </ul>
+          {/* Book Now Button */}
+          <div className="book-now-section">
+            <a href="#booking" className="book-now-btn">
+              Book Now
+              <svg className="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
           </div>
         </div>
+      </section>
+
+
+
+      {/* TRANSPORT RATES TABLE */}
+      <section>
+        <TransportRatesSection />
+
+
       </section>
 
       {/* PROCESS */}

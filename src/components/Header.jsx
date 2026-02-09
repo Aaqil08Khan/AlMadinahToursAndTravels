@@ -10,7 +10,7 @@ function Header() {
         {/* Logo */}
         <NavLink to="/" className="logo">
           <span className="logo-wrap">
-            <img src="/assets/logos/logo-en.png" alt="Al-Madinah Travels" />
+            <img src="/assets/logos/logo-en.png" alt="Al-Madina Travels" />
           </span>
         </NavLink>
 
@@ -61,7 +61,11 @@ function Header() {
 
         {/* Actions */}
         <div className="nav-actions">
-          <a href="tel:+1234567890" className="phone">📞 +1 234 567 890</a>
+          <a href="tel:+1234567890" className="phone">
+            <img src="../../public/assets/icons/call-icon (2).svg" alt="" />
+            
+            
+             +1 234 567 890</a>
           <a href="#" className="btn primary">Book Now</a>
         </div>
 
