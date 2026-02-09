@@ -13,6 +13,7 @@ const TransportRatesSection = () => {
       flexDirection: 'row',
       minHeight: '100vh',
       width: '100%',
+      justifyContent: 'center',
     },
   };
 

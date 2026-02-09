@@ -9,8 +9,10 @@ const TransportRatesText = () => {
       alignItems: 'flex-start',
       padding: '60px 80px',
       background: 'linear-gradient(135deg, #0a4d7a 0%, #0d3b66 100%)',
-      minHeight: '100vh',
+      // minHeight: '100vh',
       color: 'white',
+      height: '47rem',
+      width: '33rem',
     },
     title: {
       fontSize: '72px',
@@ -129,16 +131,16 @@ const TransportRatesText = () => {
       </style>
 
       <h1 style={styles.title}>Transport Rates</h1>
-      
+
       <p style={styles.subtitle} className="subtitle">
         Private or shared airport transfers available.
       </p>
-      
+
       <p style={styles.description} className="description">
         Book Nusuk-compliant transport for smooth and safe travel to your hotel.
       </p>
-      
-      <button 
+
+      <button
         className="book-now-btn"
         style={{
           ...styles.button,

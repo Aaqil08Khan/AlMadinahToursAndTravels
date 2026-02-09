@@ -28,12 +28,12 @@
   text-decoration: none;
 }
 
-.logo-wrap { 
-    padding: 0.5rem 0.75rem; 
-    display: flex;
-    align-items: center; 
+.logo-wrap {
+  padding: 0.5rem 0.75rem;
+  display: flex;
+  align-items: center;
 }
- 
+
 
 
 .logo img {
@@ -74,6 +74,139 @@
 .nav-links a.active {
   color: #f4c430;
 }
+
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 14rem;
+  border-radius: .5rem;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.08);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(.6rem);
+  transition: .25s ease;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: .8rem 1rem;
+  text-decoration: none;
+  color: #222;
+  font-size: .95rem;
+}
+
+.dropdown-menu a:hover {
+  background: #f5f5f5;
+}
+
+/* SHOW ON HOVER */
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ================= ACTIONS ================= */
 

@@ -14,59 +14,69 @@ function Header() {
           </span>
         </NavLink>
 
-
-        {/* Toggle */}
+        {/* Mobile toggle */}
         <input type="checkbox" id="nav-toggle" className="nav-toggle" />
-
         <label htmlFor="nav-toggle" className="nav-toggle-label">
           <span></span>
           <span></span>
           <span></span>
         </label>
 
-        {/* Navigation */}
+        {/* NAV */}
         <nav className="main-nav">
           <ul className="nav-links">
+
             <li>
-              <NavLink to="/" end className={({ isActive }) => isActive ? "active" : ""}>
-                Home
-              </NavLink>
+              <NavLink to="/" end>Home</NavLink>
             </li>
 
             <li>
-              <NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""}>
-                About Us
-              </NavLink>
+              <NavLink to="/about">About Us</NavLink>
             </li>
 
             <li>
-              <NavLink to="/services" className={({ isActive }) => isActive ? "active" : ""}>
-                Services
-              </NavLink>
+              <NavLink to="/services">Services</NavLink>
             </li>
 
             <li>
-              <NavLink to="/packages" className={({ isActive }) => isActive ? "active" : ""}>
-                Packages
+              <NavLink to="/packages">Packages</NavLink>
+            </li>
+
+            {/* TOURS DROPDOWN */}
+            <li className="dropdown">
+              <NavLink to="/tours" className="drop-trigger">
+                Tours ▾
               </NavLink>
+
+              <ul className="dropdown-menu">
+                <li>
+                  <NavLink to="/tours/baku">Baku Tour</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/tours/4-countries">4 Countries Tour</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/tours/ind-vs-pak">
+                    IND Vs PAK Sri Lanka Tour
+                  </NavLink>
+                </li>
+              </ul>
             </li>
 
             <li>
-              <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""}>
-                Contact
-              </NavLink>
+              <NavLink to="/contact">Contact</NavLink>
             </li>
+
           </ul>
         </nav>
 
         {/* Actions */}
         <div className="nav-actions">
           <a href="tel:+1234567890" className="phone">
-            <img src="../../public/assets/icons/call-icon (2).svg" alt="" />
-            
-            
-             +1 234 567 890</a>
-          <a href="#" className="btn primary">Book Now</a>
+            <img src="/assets/icons/call-icon (2).svg" alt="" />
+            +1 234 567 890
+          </a>
+          <NavLink to="/book" className="btn primary">Book Now</NavLink>
         </div>
 
       </div>
