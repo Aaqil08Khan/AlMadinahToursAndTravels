@@ -102,16 +102,15 @@ export default function FourCountries() {
               <li>Limited seats available</li>
             </ul>
 
-            <button
-              className="pdU-btn"
-              onClick={() =>
-                document
-                  .getElementById("contact")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              Book Now
-            </button>
+
+            <Link to="/book" className="pdU-btn">
+              <button
+                className="pdU-btn"
+                 
+              >
+                Book Now
+              </button>
+            </Link>
           </div>
 
           <div className="pdU-right">

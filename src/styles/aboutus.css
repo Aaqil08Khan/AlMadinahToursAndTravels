@@ -116,7 +116,7 @@
 /* Large screens (desktops & above) */
 @media (min-width: 1200px) {
   .about-hero {
-    min-height: 75vh;
+    min-height: 90vh;
   }
 
   .about-hero-content {
@@ -135,7 +135,7 @@
 /* --- WHO WE ARE SECTION --- */
 .who-section {
   background-color: #f8f7f4;
-  padding: 6rem 0;
+  padding: 3rem 0;
 }
 
 .who-container {

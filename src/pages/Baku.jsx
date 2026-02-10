@@ -30,7 +30,7 @@ export default function BakuTour() {
             designed for travelers who value comfort, culture, and clarity
           </p>
 
-          <div className="price">Only In SAR 90,000</div>
+          <div className="price">Only In SAR 5,000</div>
 
           <p className="cta">Ready to Travel -Book Now!</p>
 
@@ -72,7 +72,12 @@ export default function BakuTour() {
               <li>Gabala – Full-day scenic excursion</li>
             </ul>
 
-            <button className="book-btn">Book Now</button>
+             
+
+            <Link to="/book" className="book-btn">
+                Book Now
+                 
+              </Link>
           </div>
 
           {/* RIGHT */}

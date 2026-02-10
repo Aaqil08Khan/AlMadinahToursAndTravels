@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 const TransportRatesText = () => {
   const styles = {
@@ -139,18 +140,22 @@ const TransportRatesText = () => {
       <p style={styles.description} className="description">
         Book Nusuk-compliant transport for smooth and safe travel to your hotel.
       </p>
+      <Link to="/book" >
+        <button
+          className="book-now-btn"
+          style={{
+            ...styles.button,
+            ...(isHovered ? styles.buttonHover : {})
+          }}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          Book Now
+        </button>
+      </Link>
 
-      <button
-        className="book-now-btn"
-        style={{
-          ...styles.button,
-          ...(isHovered ? styles.buttonHover : {})
-        }}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      >
-        Book Now
-      </button>
+
+
     </div>
   );
 };

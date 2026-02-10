@@ -13,9 +13,13 @@ import FourCountries from "./pages/FourCountries";
 import IndPak from "./pages/IndPak";
 
 
+import ScrollToTop from "./components/ScrollToTop";
+
+
 function App() {
   return (
     <BrowserRouter>
+     <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />

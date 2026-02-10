@@ -32,7 +32,7 @@ const AboutUs = () => {
       <section className="who-section">
         <div className="who-container">
           <div className="who-content">
-            <span className="who-label">Who We Are</span>
+            {/* <span className="who-label">Who We Are</span> */}
             <h2>Your Trusted Companion for Sacred Journeys</h2>
 
             <p>

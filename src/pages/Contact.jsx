@@ -172,9 +172,7 @@ ${message}
             </div>
 
             <button type="submit" className="submit-btn">
-              <span>
-                <img src="/assets/icons/sent-icon.svg" alt="" />
-              </span>
+               
               Send Message
             </button>
           </form>

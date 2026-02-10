@@ -59,6 +59,7 @@ function Footer() {
             <li><a href="/about">About Us</a></li>
             <li><a href="/services">Our Services</a></li>
             <li><a href="/packages">Umrah Packages</a></li>
+            <li><a href="/tours">Tours</a></li>
             <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
@@ -70,7 +71,7 @@ function Footer() {
             📍 123 Travel Street, Business District<br />
             City, Country 12345
           </p>
-          <p>📞 +1 234 567 890</p>
+          <p>📞 +966 51 013 9093</p>
           <p>✉ info@almadinatravels.com</p>
         </div>
 

@@ -72,9 +72,9 @@ function Header() {
 
         {/* Actions */}
         <div className="nav-actions">
-          <a href="tel:+1234567890" className="phone">
+          <a href="tel:+966 51 013 9093" className="phone">
             <img src="/assets/icons/call-icon (2).svg" alt="" />
-            +1 234 567 890
+            +966 51 013 9093
           </a>
           <NavLink to="/book" className="btn primary">Book Now</NavLink>
         </div>

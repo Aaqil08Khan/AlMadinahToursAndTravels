@@ -86,16 +86,17 @@ export default function IndVsPak() {
             <li>Zero logistics stress — we handle everything</li>
           </ul>
 
-          <button
-              className="pdU-btn"
-              onClick={() =>
-                document
-                  .getElementById("contact")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              Book Now
-            </button>
+           
+
+
+            <Link to="/book" className="pdU-btn">
+              <button
+                className="pdU-btn"
+                 
+              >
+                Book Now
+              </button>
+            </Link>
         </div>
 
         {/* Right Image */}

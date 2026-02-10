@@ -19,13 +19,13 @@
 .book-container {
     max-width: 1100px;
     margin: auto;
-    display: flex; 
+    display: flex;
     gap: 40px;
     flex-direction: row;
 }
 
 @media (max-width: 60em) {
-    .book-container{
+    .book-container {
         flex-direction: column;
     }
 }
@@ -49,45 +49,165 @@
     border-radius: 10px;
 }
 
-.book-form {
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
+/* Right Side: Form Card */
+.form-card-bookingpage {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.05);
+    border: 0.06rem solid #eee;
+    color: black;
 }
 
-.book-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
+.form-card-bookingpage h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Georgia', serif;
 }
 
-.book-form input,
-.book-form select,
-.book-form textarea {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+.form-card-bookingpage p {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    margin-bottom: 2rem;
 }
 
-.two {
-    display: flex;
-    gap: 10px;
+.form-card-bookingpage .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 }
 
-.book-form button {
+.form-card-bookingpage .form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-card-bookingpage label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.form-card-bookingpage label span {
+    color: red;
+}
+
+.form-card-bookingpage input,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 0.06rem solid #ddd;
+    border-radius: 0.4rem;
+    font-size: 0.9rem;
+    background: #fafafa;
+}
+
+.form-card-bookingpage .submit-btn {
+    width: 100%;
     background: #132b52;
-    color: white;
-    padding: 14px;
+    color: var(--white) #ffffff;
     border: none;
-    border-radius: 8px;
+    padding: 1rem;
+    border-radius: 0.4rem;
     font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    color: #ffffff;
+}
+/* Hover effect */
+.submit-btn:hover {
+  background-color: #094bb5; /* Darker blue */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(11, 92, 255, 0.4);
+}
+
+/* Image inside button */
+.submit-btn span img {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+/* Image hover animation */
+.submit-btn:hover span img {
+  transform: translateX(4px);
+}
+
+
+/* form wrapper */
+.form-group {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+/* container */
+.two {
+    position: relative;
+    width: 100%;
+}
+
+/* select */
+.two select {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    background: #fff;
+    color: #333;
+    outline: none;
+    transition: all .25s ease;
+    appearance: none;
     cursor: pointer;
 }
 
-.success {
-    margin-top: 15px;
-    padding: 12px;
-    background: #d4edda;
-    color: #155724;
-    border-radius: 6px;
+/* hover */
+.two select:hover {
+    border-color: #0b5cff;
+}
+
+/* focus */
+.two select:focus {
+    border-color: #0b5cff;
+    box-shadow: 0 0 0 3px rgba(11, 92, 255, 0.15);
+}
+
+/* dropdown arrow */
+.two::after {
+    content: "▼";
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #777;
+    pointer-events: none;
+}
+
+/* responsive */
+@media(max-width:768px) {
+    .two select {
+        padding: 13px;
+        font-size: 14px;
+    }
+}
+
+/* Responsive */
+@media (max-width: 48rem) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .form-card-bookingpage .form-row {
+        grid-template-columns: 1fr;
+    }
 }

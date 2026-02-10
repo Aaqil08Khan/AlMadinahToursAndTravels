@@ -94,7 +94,7 @@ function Home() {
 
               <div className="package-action">
                 <p className="price">
-                  Starts from <span>SAR 89,999/-</span>
+                  Starts from <span>SAR 2,800/-</span>
                 </p>
                 <Link to="/contact" className="btn-book">
                   Book Now
@@ -124,7 +124,7 @@ function Home() {
 
               <div className="package-action">
                 <p className="price">
-                  Starts from <span>SAR 94,999/-</span>
+                  Starts from <span>SAR 3,800/-</span>
                 </p>
                 <Link to="/contact" className="btn-book">
                   Book Now
