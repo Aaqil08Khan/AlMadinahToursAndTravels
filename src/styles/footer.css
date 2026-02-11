@@ -22,10 +22,26 @@
   margin-bottom: 0.2rem;
 }
 
-.footer-brand span {
-  font-size: 0.7rem;
-  letter-spacing: 0.15em;
-  color: #f4c430;
+.logo-footer {
+  padding: 0.5rem 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo-footer-wrap {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-footer-wrap img {
+  width: auto;
+  max-height: 4rem;
+  object-fit: contain;
+  display: block;
+  filter: saturate(0.92) brightness(1.05);
+  margin-bottom: 2.2rem;
+  margin-left: -1rem;
 }
 
 .footer-brand .tagline {
@@ -50,7 +66,7 @@
 .footer-socials a {
   width: 2.4rem;
   height: 2.4rem;
-  background: rgba(255,255,255,0.12);
+  background: rgba(255, 255, 255, 0.12);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -91,6 +107,7 @@
   margin-bottom: 1rem;
 }
 
+
 /* CALLBACK */
 .footer-callback .callback-text {
   font-size: 0.9rem;
@@ -121,7 +138,7 @@
 .footer-bottom {
   margin-top: 3rem;
   padding: 1.5rem 5%;
-  border-top: 0.0625rem solid rgba(255,255,255,0.15);
+  border-top: 0.0625rem solid rgba(255, 255, 255, 0.15);
   display: flex;
   justify-content: space-between;
   align-items: center;

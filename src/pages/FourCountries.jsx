@@ -4,7 +4,18 @@ import "../styles/fourcountries.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+
+
+
 export default function FourCountries() {
+  const handleWhatsAppClick = () => {
+    const message = "Hello, I am interested in your Umrah packages";
+    const url = `https://wa.me/966510139093?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+  };
+
+
+
   // FORM STATE
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -76,13 +87,12 @@ export default function FourCountries() {
             </Link>
 
             <a
-              href="https://wa.me/923257359610"
-              target="_blank"
-              rel="noopener noreferrer"
+
+              alt="WhatsApp"
               className="btn whatsapp"
-            >
-              Whatsapp
-            </a>
+              rel="noopener noreferrer"
+              onClick={handleWhatsAppClick}
+            > Whatsapp </a>
           </div>
         </div>
       </section>

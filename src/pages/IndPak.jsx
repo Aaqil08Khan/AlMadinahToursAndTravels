@@ -9,6 +9,13 @@ import { useState } from "react";
 export default function IndVsPak() {
 
 
+  const handleWhatsAppClick = () => {
+    const message = "Hello, I am interested in your Umrah packages";
+    const url = `https://wa.me/966510139093?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+  };
+
+
     // FORM STATE
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
@@ -56,13 +63,12 @@ export default function IndVsPak() {
             </Link>
 
             <a
-              href="https://wa.me/923257359610"
-              target="_blank"
-              rel="noreferrer"
-              className="cricket-btn cricket-btn--whatsapp"
-            >
-              Whatsapp
-            </a>
+
+              alt="WhatsApp"
+              className="btn whatsapp"
+              rel="noopener noreferrer"
+              onClick={handleWhatsAppClick}
+            > Whatsapp </a>
           </div>
         </div>
       </section>
@@ -182,7 +188,7 @@ export default function IndVsPak() {
           {/* Left Content */}
           <div className="mavens-contact__info">
             <h1 className="mavens-contact__title">
-              Contact Al Madina<br /> Travel Today
+              Contact The Al-Madina<br /> Travel Today
             </h1>
 
             <p className="mavens-contact__description">
@@ -193,13 +199,13 @@ export default function IndVsPak() {
             <div className="mavens-contact__details">
               <div className="mavens-contact__detail">
                 <span className="mavens-contact__label">Connect: </span>
-                <span className="mavens-contact__value">0325 7359610</span>
+                <span className="mavens-contact__value">+966 51 013 9093   <br />  +92 334 713 9093</span>
               </div>
 
               <div className="mavens-contact__detail">
                 <span className="mavens-contact__label">Email: </span>
                 <span className="mavens-contact__value">
-                  almadinatravels@gmail.com
+                  info@almadinatraveltour.com
                 </span>
               </div>
             </div>

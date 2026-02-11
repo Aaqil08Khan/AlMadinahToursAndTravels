@@ -1,5 +1,5 @@
 .services-hero {
-  min-height: 80vh;
+  min-height: 100vh;
   background:
     linear-gradient(rgba(2, 11, 28, 0.7), rgba(2, 11, 28, 0.8)),
     url("/assets/images/servicessection-bg2.jpg");

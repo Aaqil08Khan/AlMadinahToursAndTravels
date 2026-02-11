@@ -427,7 +427,7 @@ const TransportRatesTable = () => {
 
         <div style={styles.footer}>
           <div style={styles.contactItem}><FaPhone /> +966 51 013 9093</div>
-          <div style={styles.contactItem}><FaEnvelope /> info@almadinatravels.com</div>
+          <div style={styles.contactItem}><FaEnvelope /> info@almadinatraveltour.com</div>
         </div>
       </div>
     </div>

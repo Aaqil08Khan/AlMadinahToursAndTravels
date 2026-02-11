@@ -116,7 +116,7 @@
 /* Large screens (desktops & above) */
 @media (min-width: 1200px) {
   .about-hero {
-    min-height: 90vh;
+    min-height: 100vh;
   }
 
   .about-hero-content {

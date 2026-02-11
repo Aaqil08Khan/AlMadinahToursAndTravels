@@ -3,10 +3,12 @@ import { NavLink } from "react-router-dom";
 import "../styles/header.css";
 
 function Header() {
+
+  const message = "Hello, I am interested in the Premium Umrah package";
+  const url = `https://wa.me/966510139093?text=${encodeURIComponent(message)}`;
   return (
     <header className="site-header">
       <div className="nav-container">
-
         {/* Logo */}
         <NavLink to="/" className="logo">
           <span className="logo-wrap">
@@ -25,9 +27,10 @@ function Header() {
         {/* NAV */}
         <nav className="main-nav">
           <ul className="nav-links">
-
             <li>
-              <NavLink to="/" end>Home</NavLink>
+              <NavLink to="/" end>
+                Home
+              </NavLink>
             </li>
 
             <li>
@@ -66,19 +69,24 @@ function Header() {
             <li>
               <NavLink to="/contact">Contact</NavLink>
             </li>
-
           </ul>
         </nav>
 
         {/* Actions */}
         <div className="nav-actions">
-          <a href="tel:+966 51 013 9093" className="phone">
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="phone"
+          >
             <img src="/assets/icons/call-icon (2).svg" alt="" />
-            +966 51 013 9093
+            WhatsApp Us
           </a>
-          <NavLink to="/book" className="btn primary">Book Now</NavLink>
+          <NavLink to="/book" className="btn primary">
+            Book Now
+          </NavLink>
         </div>
-
       </div>
     </header>
   );

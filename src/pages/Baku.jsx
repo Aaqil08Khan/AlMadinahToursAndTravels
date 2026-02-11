@@ -5,6 +5,12 @@ import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 export default function BakuTour() {
+
+  const handleWhatsAppClick = () => {
+    const message = "Hello, I am interested in your Umrah packages";
+    const url = `https://wa.me/966510139093?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+  };
   return (
     <>
       <Header />
@@ -38,14 +44,15 @@ export default function BakuTour() {
             <Link to="/contact" className="btn call">
               Call
             </Link>
+
+
             <a
-              href="https://wa.me/923257359610"
-              target="_blank"
-              rel="noopener noreferrer"
+
+              alt="WhatsApp"
               className="btn whatsapp"
-            >
-              Whatsapp
-            </a>
+              rel="noopener noreferrer"
+              onClick={handleWhatsAppClick}
+            > Whatsapp </a>
 
           </div>
 
@@ -72,12 +79,12 @@ export default function BakuTour() {
               <li>Gabala – Full-day scenic excursion</li>
             </ul>
 
-             
+
 
             <Link to="/book" className="book-btn">
-                Book Now
-                 
-              </Link>
+              Book Now
+
+            </Link>
           </div>
 
           {/* RIGHT */}
@@ -196,13 +203,12 @@ export default function BakuTour() {
               Call
             </Link>
             <a
-              href="https://wa.me/923257359610"
-              target="_blank"
-              rel="noopener noreferrer"
+
+              alt="WhatsApp"
               className="btn whatsapp"
-            >
-              Whatsapp
-            </a>
+              rel="noopener noreferrer"
+              onClick={handleWhatsAppClick}
+            > Whatsapp </a>
           </div>
         </div>
       </section>

@@ -1,10 +1,11 @@
-import React from 'react';
+import React from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/footer.css";
 import { useState } from "react";
 
 function Footer() {
-
+  const message = "Hello, I am interested in your travel packages";
+  const whatsappUrl = `https://wa.me/966510139093?text=${encodeURIComponent(message)}`;
 
   const [callbackSubmitted, setCallbackSubmitted] = useState(false);
 
@@ -15,14 +16,14 @@ function Footer() {
 
     // Optional: hide message after 3 seconds
     setTimeout(() => setCallbackSubmitted(false), 3000);
-  }
+  };
   return (
     <footer className="footer">
       <div className="footer-main">
         {/* BRAND */}
         <div className="footer-brand">
-          <NavLink to="/" className="logo">
-            <span className="logo-wrap">
+          <NavLink to="/" className="logo-footer">
+            <span className="logo-footer-wrap">
               <img src="/assets/logos/logo-en.png" alt="Al-Madina Travels" />
             </span>
           </NavLink>
@@ -36,17 +37,41 @@ function Footer() {
           </p>
 
           <div className="footer-socials">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/icons/facebook-02-stroke-rounded.svg" alt="Facebook" />
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/assets/icons/facebook-02-stroke-rounded.svg"
+                alt="Facebook"
+              />
             </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/icons/instagram-stroke-rounded.svg" alt="Instagram" />
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/assets/icons/instagram-stroke-rounded.svg"
+                alt="Instagram"
+              />
             </a>
-            <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/icons/whatsapp-stroke-rounded.svg" alt="Whatsapp" />
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+              <img
+                src="/assets/icons/whatsapp-stroke-rounded.svg"
+                alt="WhatsApp"
+              />
             </a>
-            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/icons/youtube-stroke-rounded.svg" alt="Youtube" />
+            <a
+              href="https://www.youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/assets/icons/youtube-stroke-rounded.svg"
+                alt="Youtube"
+              />
             </a>
           </div>
         </div>
@@ -55,12 +80,24 @@ function Footer() {
         <div className="footer-links">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/services">Our Services</a></li>
-            <li><a href="/packages">Umrah Packages</a></li>
-            <li><a href="/tours">Tours</a></li>
-            <li><a href="/contact">Contact Us</a></li>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/about">About Us</a>
+            </li>
+            <li>
+              <a href="/services">Our Services</a>
+            </li>
+            <li>
+              <a href="/packages">Umrah Packages</a>
+            </li>
+            <li>
+              <a href="/tours">Tours</a>
+            </li>
+            <li>
+              <a href="/contact">Contact Us</a>
+            </li>
           </ul>
         </div>
 
@@ -68,11 +105,13 @@ function Footer() {
         <div className="footer-contact">
           <h4>Contact Us</h4>
           <p>
-            📍 123 Travel Street, Business District<br />
-            City, Country 12345
+            📍 Awais Street Architect Society Main Jan Muhammad Road Railwind
+            Road
+            <br />
+            Lahore, Pakistan, 53720
           </p>
           <p>📞 +966 51 013 9093</p>
-          <p>✉ info@almadinatravels.com</p>
+          <p>✉ info@almadinatraveltour.com</p>
         </div>
 
         {/* CALLBACK */}
@@ -97,7 +136,7 @@ function Footer() {
 
       {/* BOTTOM */}
       <div className="footer-bottom">
-        <p>© 2026 Al-Madina Travels & Tours. All rights reserved.</p>
+        <p>© 2026 The Al-Madina Travels & Tours. All rights reserved.</p>
         <div className="bottom-links">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms & Conditions</a>

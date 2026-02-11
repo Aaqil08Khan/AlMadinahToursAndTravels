@@ -5,48 +5,52 @@
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 10;
-  padding: 1.25rem 0;
+  /* padding: 1.25rem 0; */
   background-color: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* container */
 .nav-container {
   width: 90%;
   max-width: 75rem;
   margin: auto;
   display: flex;
-  align-items: center;
+  align-items: center;   /* IMPORTANT */
   justify-content: space-between;
   position: relative;
 }
 
 /* ================= LOGO ================= */
 
+/* logo link */
 .logo {
   display: flex;
   align-items: center;
+  height: 100%;
   text-decoration: none;
 }
 
+/* wrapper */
 .logo-wrap {
-  padding: 0.5rem 0.75rem;
+  height: 100%;
   display: flex;
   align-items: center;
 }
 
-
-
+/* image */
 .logo img {
+  height: 100%;          /* take full navbar height */
   width: auto;
-  max-height: 3rem;
+  max-width: 190px;      /* preferred width */
   object-fit: contain;
   display: block;
-  filter: saturate(0.92) brightness(1.05);
 }
 
-@media (max-width: 40em) {
+/* slightly smaller on mobile */
+@media (max-width: 640px) {
   .logo img {
-    max-height: 2.5rem;
+    max-width: 150px;
   }
 }
 
@@ -54,6 +58,7 @@
 
 .main-nav {
   display: flex;
+  align-items: center;
 }
 
 .nav-links {
@@ -62,6 +67,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  align-items: center;
 }
 
 .nav-links a {
@@ -74,7 +80,6 @@
 .nav-links a.active {
   color: #f4c430;
 }
-
 
 /* DROPDOWN */
 .dropdown {
@@ -89,7 +94,6 @@
   min-width: 14rem;
   border-radius: .5rem;
   box-shadow: 0 1rem 2rem rgba(0,0,0,.08);
-
   opacity: 0;
   visibility: hidden;
   transform: translateY(.6rem);
@@ -112,101 +116,11 @@
   background: #f5f5f5;
 }
 
-/* SHOW ON HOVER */
 .dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ================= ACTIONS ================= */
 
@@ -292,7 +206,7 @@
 
   .main-nav {
     position: fixed;
-    top: var(--nav-height, 4rem);
+    top: 100%;
     left: 0;
     width: 100vw;
     background-color: #132b52;
@@ -312,7 +226,7 @@
     display: none;
   }
 
-  .nav-toggle:checked~.main-nav {
+  .nav-toggle:checked ~ .main-nav {
     display: block;
   }
 }

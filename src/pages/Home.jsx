@@ -19,7 +19,7 @@ function Home() {
       {/* HERO */}
       <section className="hero">
         <div className="hero-content">
-          <p className="hero-tagline">WELCOME TO AL-MADINA TRAVELS & TOURS</p>
+          <p className="hero-tagline">WELCOME TO THE AL-MADINA TRAVELS & TOURS</p>
           <h1>
             Make Your Next Trip<br />
             <span>Your Best Trip</span>
@@ -221,7 +221,7 @@ function Home() {
             <span className="why-label">WHY CHOOSE US</span>
             <h2>Your Trusted Partner for Sacred Journeys</h2>
             <p className="why-desc">
-              At Al-Madina Travels & Tours, Umrah is more than travel — it is a
+              At The Al-Madina Travels & Tours, Umrah is more than travel — it is a
               deeply spiritual experience. With over 15 years of expertise, we
               ensure comfort, care, and devotion at every step.
             </p>

@@ -14,7 +14,7 @@ const AboutUs = () => {
         <div className="about-hero-overlay"></div>
 
         <div className="about-hero-content">
-          <span className="about-eyebrow">About Al-Madina</span>
+          <span className="about-eyebrow">About The Al-Madina</span>
 
           <h1>
             A Journey Built on <span>Faith</span> &amp; Trust
@@ -36,7 +36,7 @@ const AboutUs = () => {
             <h2>Your Trusted Companion for Sacred Journeys</h2>
 
             <p>
-              Established in 2009, Al-Madina Travels & Tours has been dedicated
+              Established in 2009, The Al-Madina Travels & Tours has been dedicated
               to helping pilgrims experience Umrah with peace, dignity, and care.
               What began as a humble initiative has grown into a trusted name
               among thousands of pilgrims.
@@ -71,7 +71,7 @@ const AboutUs = () => {
             <span className="leadership-label">Leadership</span>
             <h2>Guided by Responsibility &amp; Faith</h2>
             <p className="leadership-subtitle">
-              A message from the leadership behind Al-Madina Travels & Tours
+              A message from the leadership behind The Al-Madina Travels & Tours
             </p>
           </div>
 

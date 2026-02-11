@@ -1,39 +1,37 @@
 import "../styles/home.css";
 import "../styles/contact.css";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 const Contact = () => {
 
+  const formRef = useRef();
 
-  const handleMailTo = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
 
-    const form = e.target;
-
-    const name = form.full_name.value;
-    const phone = form.phone.value;
-    const email = form.email.value;
-    const subject = form.subject.value || "Contact Request";
-    const message = form.message.value;
-
-    const mailBody = `
-Name: ${name}
-Phone: ${phone}
-Email: ${email}
-
-Message:
-${message}
-  `;
-
-    const mailtoLink = `mailto:info@almadinatraveltour.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(mailBody)}`;
-
-
-    window.location.href = mailtoLink;
+    emailjs
+      .sendForm(
+        service_49m26q2,
+        template_dwk65gh,
+        formRef.current,
+        "v_wWylx5f9s9ZB-eWYoT-"
+      )
+      .then(
+        () => {
+          alert("Message sent successfully!");
+        },
+        (error) => {
+          alert("Failed to send message");
+          console.log(error);
+        }
+      );
   };
+
+
 
   return (
     <>
@@ -73,8 +71,8 @@ ${message}
             <div className="info-text">
               <h4>Office Address</h4>
               <p>
-                123 Travel Street, Business District<br />
-                City, Country 12345
+                Awais Street Architect Society Main Jan Muhammad Road Railwind Road <br />
+                Lahore, Pakistan 53720
               </p>
             </div>
           </div>
@@ -85,7 +83,7 @@ ${message}
             </div>
             <div className="info-text">
               <h4>Phone Number</h4>
-              <p>+1 234 567 890<br />+1 234 567 891</p>
+              <p>+966 51 013 9093<br />+92 334 713 9093</p>
             </div>
           </div>
 
@@ -95,7 +93,7 @@ ${message}
             </div>
             <div className="info-text">
               <h4>Email Address</h4>
-              <p>info@almadinahtravels.com<br />bookings@almadinahtravels.com</p>
+              <p>info@almadinatraveltour.com<br />reservation@almadinatraveltour.com</p>
             </div>
           </div>
 
@@ -119,13 +117,13 @@ ${message}
           <h3>Send Us a Message</h3>
           <p>Fill out the form below and we'll get back to you within 24 hours.</p>
 
-          <form onSubmit={handleMailTo}>
+          <form ref={formRef} onSubmit={sendEmail} >
             <div className="form-row">
               <div className="form-group">
                 <label>Full Name <span>*</span></label>
                 <input
                   type="text"
-                  name="full_name"
+                  name="name"
                   placeholder="Your full name"
                   required
                 />
