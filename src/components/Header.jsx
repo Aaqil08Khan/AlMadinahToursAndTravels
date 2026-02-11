@@ -69,10 +69,28 @@ function Header() {
             <li>
               <NavLink to="/contact">Contact</NavLink>
             </li>
+
+            {/* Mobile Actions - Only visible in hamburger menu */}
+            <li className="mobile-action-item">
+              <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="phone mobile-phone"
+              >
+                <img src="/assets/icons/call-icon (2).svg" alt="" />
+                WhatsApp Us
+              </a>
+            </li>
+            <li className="mobile-action-item">
+              <NavLink to="/book" className="btn primary">
+                Book Now
+              </NavLink>
+            </li>
           </ul>
         </nav>
 
-        {/* Actions */}
+        {/* Actions - Desktop only */}
         <div className="nav-actions">
           <a
             href={url}
