@@ -68,16 +68,17 @@ export default function BakuTour() {
 
           {/* LEFT */}
           <div className="attractions-left">
-            <h2>Major Attractions Covered</h2>
-
-            <ul>
-              <li>Baku Full-Day City Tour</li>
-              <li>Ateshgah (Fire Temple)</li>
-              <li>Yanar Dag (Burning Mountain)</li>
-              <li>Gobustan National Park</li>
-              <li>Mud Volcanoes</li>
-              <li>Gabala – Full-day scenic excursion</li>
-            </ul>
+            <div>
+              <h2>Major Attractions Covered</h2>
+              <ul>
+                <li>Baku Full-Day City Tour</li>
+                <li>Ateshgah (Fire Temple)</li>
+                <li>Yanar Dag (Burning Mountain)</li>
+                <li>Gobustan National Park</li>
+                <li>Mud Volcanoes</li>
+                <li>Gabala – Full-day scenic excursion</li>
+              </ul>
+            </div>
 
 
 

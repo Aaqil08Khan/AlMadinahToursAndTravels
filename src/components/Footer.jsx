@@ -122,15 +122,27 @@ function Footer() {
         {/* CONTACT */}
         <div className="footer-contact">
           <h4>Contact Us</h4>
-          <p>
-            📍 Awais Street Architect Society Main Jan Muhammad Road Railwind
-            Road
-            <br />
-            Lahore, Pakistan, 53720
-          </p>
-          <p>📞 +966 51 013 9093</p>
-          <p>✉ info@almadinatraveltour.com</p>
+          <div className="contact">
+            <img src="../../public/assets/icons/map-icon-contact.svg" alt="" />
+            <p>
+
+              Awais Street Architect Society Main Jan Muhammad Road Railwind
+              Road
+              <br />
+              Lahore, Pakistan, 53720
+            </p>
+          </div>
+          <div className="contact">
+            <img src="../../public/assets/icons/call-icon.svg" alt="" />
+            <p>+966 51 013 9093</p>
+          </div>
+          <div className="contact">
+            <img src="../../public/assets/icons/mail-icon.svg" alt="" />
+            <p> info@almadinatraveltour.com</p>
+          </div>
         </div>
+
+
 
         {/* CALLBACK */}
         <div className="footer-callback">
@@ -151,17 +163,18 @@ function Footer() {
             </div>
           )}
         </div>
-      </div>
-
-      {/* BOTTOM */}
-      <div className="footer-bottom">
-        <p>© 2026 The Al-Madina Travels & Tours. All rights reserved.</p>
-        <div className="bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms & Conditions</a>
         </div>
-      </div>
-    </footer>
+
+        {/* BOTTOM */}
+        <div className="footer-bottom">
+          <p>© 2026 The Al-Madina Travels & Tours. All rights reserved.</p>
+          <div className="bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+          </div>
+        </div>
+      
+    </footer >
   );
 }
 

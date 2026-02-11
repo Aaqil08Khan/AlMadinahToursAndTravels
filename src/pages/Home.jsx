@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../styles/home.css";
-import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import { sendEmailForm } from "../utils/sendEmail";
 
@@ -211,7 +210,15 @@ function Home() {
                   placeholder="Message (Optional)"
                 ></textarea>
 
-                <button type="submit">Submit Enquiry</button>
+                <button type="submit" disabled={isSubmitting}>
+                  {isSubmitting ? "Submitting Query..." : "Submit Query"}
+                </button>
+
+                {isSubmitted && (
+                  <p className="form-success">
+                    ✅ Thank you! Your message has been sent.
+                  </p>
+                )}
 
                 <p className="trust-text">
                   📞 Our team will contact you within 24 hours

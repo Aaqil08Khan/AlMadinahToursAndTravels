@@ -1,37 +1,37 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../styles/bookpackage.css";
 import "../styles/home.css";
+import { sendEmailForm } from "../utils/sendEmail";
 
 function BookPackage() {
-  const handleMailTo = (e) => {
+
+
+  const formRef = useRef();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
-    const form = e.target;
+    const response = await sendEmailForm(formRef);
 
-    const name = form.full_name.value;
-    const phone = form.phone.value;
-    const email = form.email.value;
-    const subject = form.subject.value || "Contact Request";
-    const message = form.message.value;
+    if (response.success) {
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+      formRef.current.reset();
 
-    const mailBody = `
-Name: ${name}
-Phone: ${phone}
-Email: ${email}
-
-Message:
-${message}
-  `;
-
-    const mailtoLink = `mailto:info@almadinatraveltour.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(mailBody)}`;
-
-
-    window.location.href = mailtoLink;
+      setTimeout(() => setIsSubmitted(false), 4000);
+    } else {
+      setIsSubmitting(false);
+      alert("Failed to send message");
+    }
   };
+
+
+
 
   return (
     <>
@@ -79,7 +79,8 @@ ${message}
               Fill out the form below and we'll get back to you within 24 hours.
             </p>
 
-            <form onSubmit={handleMailTo}>
+            <form ref={formRef} 
+                onSubmit={handleSubmit}>
               <div className="form-row">
                 <div className="form-group">
                   <label>
@@ -87,7 +88,7 @@ ${message}
                   </label>
                   <input
                     type="text"
-                    name="full_name"
+                    name="name"
                     placeholder="Your full name"
                     required
                   />
@@ -120,7 +121,7 @@ ${message}
 
               <div className="form-group">
                 <div className="two">
-                  <select required defaultValue="">
+                  <select name="package" required defaultValue="">
                     <option value="" disabled>
                       Select Package
                     </option>
@@ -143,12 +144,19 @@ ${message}
                 ></textarea>
               </div>
 
-              <button type="submit" className="submit-btn">
+              <button type="submit" className="submit-btn" disabled={isSubmitting}>
                 <span>
                   <img src="/assets/icons/sent-icon.svg" alt="" />
                 </span>
-                Submit Request
+                {isSubmitting ? "Request Submitting..." : "Submit Request"}
+                 
               </button>
+
+              {isSubmitted && (
+              <p className="form-success">
+                ✅ Thank you! Your message has been sent.
+              </p>
+            )}
             </form>
           </div>
         </div>

@@ -1,6 +1,5 @@
 import "../styles/home.css";
 import "../styles/contact.css";
-import emailjs from "@emailjs/browser";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useRef, useState } from "react";
