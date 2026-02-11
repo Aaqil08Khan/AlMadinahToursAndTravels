@@ -1,17 +1,38 @@
-import { useState } from "react";
+
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../styles/home.css";
+import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
+import { sendEmailForm } from "../utils/sendEmail";
 
 function Home() {
-  const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault(); // prevent actual form submission
-    setSubmitted(true); // show the confirmation message
-    e.target.reset(); // optional: clear the form
+  const formRef = useRef();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    const response = await sendEmailForm(formRef);
+
+    if (response.success) {
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+      formRef.current.reset();
+
+      setTimeout(() => setIsSubmitted(false), 4000);
+    } else {
+      setIsSubmitting(false);
+      alert("Failed to send message");
+    }
   };
+
+
+
   return (
     <>
       <Header />
@@ -141,17 +162,41 @@ function Home() {
                 <span className="line"></span>
               </div>
 
-              <form className="enquiry-form" onSubmit={handleSubmit}>
-                <input type="text" placeholder="Full Name" required />
+              <form
+                ref={formRef}
+                className="enquiry-form"
+                onSubmit={handleSubmit}
+              >
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Full Name"
+                  required
+                />
 
                 <div className="two-col">
-                  <input type="email" placeholder="Email Address" />
-                  <input type="tel" placeholder="Phone Number" required />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                  />
+
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone Number"
+                    required
+                  />
                 </div>
 
                 <div className="two-col">
-                  <input type="text" placeholder="City" />
-                  <select defaultValue="">
+                  <input
+                    type="text"
+                    name="city"
+                    placeholder="City"
+                  />
+
+                  <select name="package" defaultValue="">
                     <option value="" disabled>
                       Package Name
                     </option>
@@ -161,17 +206,17 @@ function Home() {
                   </select>
                 </div>
 
-                <textarea placeholder="Message (Optional)"></textarea>
+                <textarea
+                  name="message"
+                  placeholder="Message (Optional)"
+                ></textarea>
+
                 <button type="submit">Submit Enquiry</button>
 
-                <p className="trust-text">📞 Our team will contact you within 24 hours</p>
+                <p className="trust-text">
+                  📞 Our team will contact you within 24 hours
+                </p>
               </form>
-              {/* Confirmation message */}
-              {submitted && (
-                <div className="confirmation-message">
-                  ✅ Thank you! Your enquiry has been submitted.
-                </div>
-              )}
             </div>
           </div>
         </div>

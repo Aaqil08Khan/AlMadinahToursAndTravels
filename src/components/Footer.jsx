@@ -1,7 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/footer.css";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { sendEmailForm } from "../utils/sendEmail";
 
 function Footer() {
   const message = "Hello, I am interested in your travel packages";
@@ -9,14 +10,31 @@ function Footer() {
 
   const [callbackSubmitted, setCallbackSubmitted] = useState(false);
 
-  const handleCallback = (e) => {
-    e.preventDefault(); // prevent page reload
-    setCallbackSubmitted(true); // show confirmation
-    e.target.reset(); // optional: clear input
 
-    // Optional: hide message after 3 seconds
-    setTimeout(() => setCallbackSubmitted(false), 3000);
+
+
+  const formRef = useRef();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    const response = await sendEmailForm(formRef);
+
+    if (response.success) {
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+      formRef.current.reset();
+
+      setTimeout(() => setIsSubmitted(false), 4000);
+    } else {
+      setIsSubmitting(false);
+      alert("Failed to send message");
+    }
   };
+
   return (
     <footer className="footer">
       <div className="footer-main">
@@ -121,12 +139,13 @@ function Footer() {
             Leave your number and we'll call you back within 24 hours.
           </p>
 
-          <form onSubmit={handleCallback}>
-            <input type="tel" placeholder="Your phone number" required />
-            <button type="submit">Request Callback</button>
+          <form ref={formRef} onSubmit={handleSubmit}>
+            <input name="phone" type="tel" placeholder="Your phone number" required />
+            <button type="submit" disabled={isSubmitting}>
+              Request Callback</button>
           </form>
 
-          {callbackSubmitted && (
+          {isSubmitted && (
             <div className="confirmation-message">
               ✅ Thank you! We will call you back soon.
             </div>

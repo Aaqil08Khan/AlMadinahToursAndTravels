@@ -211,6 +211,12 @@ textarea {
   margin-top: 1rem;
   color: black;
 } 
+
+.form-success{
+  color: #16a34a;
+  margin-top: 10px;
+  font-weight: 600;
+}
 /* Responsive */
 @media (max-width: 48rem) {
   .contact-container {

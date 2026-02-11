@@ -1,35 +1,41 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../styles/fourcountries.css";
-import { useState } from "react";
 import { Link } from "react-router-dom";
-
-
-
+import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
+import { sendEmailForm } from "../utils/sendEmail";
 
 export default function FourCountries() {
-  const handleWhatsAppClick = () => {
-    const message = "Hello, I am interested in your Umrah packages";
-    const url = `https://wa.me/966510139093?text=${encodeURIComponent(message)}`;
-    window.open(url, "_blank");
-  };
 
 
-
-  // FORM STATE
+  const formRef = useRef();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
     setIsSubmitting(true);
 
-    // simulate API call
-    setTimeout(() => {
+    const response = await sendEmailForm(formRef);
+
+    if (response.success) {
       setIsSubmitting(false);
       setIsSubmitted(true);
-    }, 2000);
+      formRef.current.reset();
+
+      setTimeout(() => setIsSubmitted(false), 4000);
+    } else {
+      setIsSubmitting(false);
+      alert("Failed to send message");
+    }
+  };
+
+
+    const handleWhatsAppClick = () => {
+    const message = "Hello, I am interested in your Umrah packages";
+    const url = `https://wa.me/966510139093?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
   };
 
   const experiences = [
@@ -77,7 +83,7 @@ export default function FourCountries() {
             experience covering Southeast Asia’s most iconic highlights.
           </p>
 
-          <div className="fc-pricePill">Only In SAR 80,000</div>
+          <div className="fc-pricePill">Only In SAR 10,000</div>
 
           <p className="fc-ctaText">Ready to Travel - Book Now!</p>
 
@@ -116,7 +122,7 @@ export default function FourCountries() {
             <Link to="/book" className="pdU-btn">
               <button
                 className="pdU-btn"
-                 
+
               >
                 Book Now
               </button>
@@ -168,9 +174,14 @@ export default function FourCountries() {
             </div>
           </div>
 
-          <form className="mavens-contact__form" onSubmit={handleSubmit}>
+          <form
+            ref={formRef}
+            className="mavens-contact__form"
+            onSubmit={handleSubmit}
+          >
             <input
               type="text"
+              name="name"
               className="mavens-form__input"
               placeholder="Your Name"
               required
@@ -178,12 +189,14 @@ export default function FourCountries() {
 
             <input
               type="email"
+              name="email"
               className="mavens-form__input"
               placeholder="Your Email"
               required
             />
 
             <textarea
+              name="message"
               className="mavens-form__textarea"
               placeholder="Your Message"
               rows="5"

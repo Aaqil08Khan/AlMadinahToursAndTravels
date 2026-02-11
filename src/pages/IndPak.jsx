@@ -1,12 +1,35 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../styles/indvspak.css";
-
 import { Link } from "react-router-dom";
+import { sendEmailForm } from "../utils/sendEmail";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 export default function IndVsPak() {
+
+
+  const formRef = useRef();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    const response = await sendEmailForm(formRef);
+
+    if (response.success) {
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+      formRef.current.reset();
+
+      setTimeout(() => setIsSubmitted(false), 4000);
+    } else {
+      setIsSubmitting(false);
+      alert("Failed to send message");
+    }
+  };
 
 
   const handleWhatsAppClick = () => {
@@ -16,21 +39,7 @@ export default function IndVsPak() {
   };
 
 
-    // FORM STATE
-    const [isSubmitting, setIsSubmitting] = useState(false);
-    const [isSubmitted, setIsSubmitted] = useState(false);
-  
-    const handleSubmit = (e) => {
-      e.preventDefault();
-  
-      setIsSubmitting(true);
-  
-      // simulate API call
-      setTimeout(() => {
-        setIsSubmitting(false);
-        setIsSubmitted(true);
-      }, 2000);
-    };
+
   return (
     < >
       <Header />
@@ -75,114 +84,114 @@ export default function IndVsPak() {
 
 
       <section className="pkg-overview">
-      <div className="pkg-overview__container">
+        <div className="pkg-overview__container">
 
-        {/* Left Content */}
-        <div className="pkg-overview__content">
-          <h2 className="pkg-overview__title">Package Overview</h2>
+          {/* Left Content */}
+          <div className="pkg-overview__content">
+            <h2 className="pkg-overview__title">Package Overview</h2>
 
-          <ul className="pkg-overview__list">
-            <li>Pakistan PK vs India in World Cup Match</li>
-            <li>12 – 16 February</li>
-            <li>Sri Lanka + Dubai Stopover</li>
-            <li>Ramada by Wyndham Colombo Hotel</li>
-            <li>Official Match Tickets Included</li>
-            <li>Carefully curated Sri Lanka travel experience</li>
-            <li>Dubai stopover with dinner & city tour</li>
-            <li>Zero logistics stress — we handle everything</li>
-          </ul>
+            <ul className="pkg-overview__list">
+              <li>Pakistan PK vs India in World Cup Match</li>
+              <li>12 – 16 February</li>
+              <li>Sri Lanka + Dubai Stopover</li>
+              <li>Ramada by Wyndham Colombo Hotel</li>
+              <li>Official Match Tickets Included</li>
+              <li>Carefully curated Sri Lanka travel experience</li>
+              <li>Dubai stopover with dinner & city tour</li>
+              <li>Zero logistics stress — we handle everything</li>
+            </ul>
 
-           
+
 
 
             <Link to="/book" className="pdU-btn">
               <button
                 className="pdU-btn"
-                 
+
               >
                 Book Now
               </button>
             </Link>
-        </div>
-
-        {/* Right Image */}
-        <div className="pkg-overview__image-wrapper">
-          <img
-            src="../../public/assets/images/cricket.webp"
-            alt="Cricket Stadium"
-            className="pkg-overview__image"
-          />
-        </div>
-
-      </div>
-    </section>
-
-
-
-    <section className="itinerary">
-      <div className="itinerary__container">
-
-        <h2 className="itinerary__title">
-          Detailed Day-Wise Itinerary
-        </h2>
-
-        <div className="itinerary__grid">
-
-          <div className="itinerary__card">
-            <h3 className="itinerary__day">
-              13 FEB | ARRIVAL – KANDY
-            </h3>
-            <ul className="itinerary__list">
-              <li>Arrival in Sri Lanka</li>
-              <li>Transfer to Kandy</li>
-              <li>En-route Kandy City Tour</li>
-              <li>Overnight stay in Kandy</li>
-            </ul>
           </div>
 
-          <div className="itinerary__card">
-            <h3 className="itinerary__day">
-              14 FEB | KANDY → COLOMBO
-            </h3>
-            <ul className="itinerary__list">
-              <li>Transfer to Colombo</li>
-              <li>En-route Colombo City Tour</li>
-              <li>Overnight stay in Colombo</li>
-            </ul>
-          </div>
-
-          <div className="itinerary__card">
-            <h3 className="itinerary__day">
-              15 FEB | MATCH DAY
-            </h3>
-            <ul className="itinerary__list">
-              <li>Transfer from hotel to stadium</li>
-              <li><strong>PAKISTAN vs INDIA Cricket Match</strong></li>
-              <li>Return transfer</li>
-              <li>Overnight stay in Colombo</li>
-            </ul>
-          </div>
-
-          <div className="itinerary__card">
-            <h3 className="itinerary__day">
-              16 FEB | DEPARTURE – DUBAI STOPOVER
-            </h3>
-            <ul className="itinerary__list">
-              <li>Airport transfer</li>
-              <li>Flight to Dubai</li>
-              <li>Dubai city tour & dinner</li>
-            </ul>
+          {/* Right Image */}
+          <div className="pkg-overview__image-wrapper">
+            <img
+              src="../../public/assets/images/cricket.webp"
+              alt="Cricket Stadium"
+              className="pkg-overview__image"
+            />
           </div>
 
         </div>
-
-        
-
-      </div>
-    </section>
+      </section>
 
 
-    <section className="mavens-contact" id="contact">
+
+      <section className="itinerary">
+        <div className="itinerary__container">
+
+          <h2 className="itinerary__title">
+            Detailed Day-Wise Itinerary
+          </h2>
+
+          <div className="itinerary__grid">
+
+            <div className="itinerary__card">
+              <h3 className="itinerary__day">
+                13 FEB | ARRIVAL – KANDY
+              </h3>
+              <ul className="itinerary__list">
+                <li>Arrival in Sri Lanka</li>
+                <li>Transfer to Kandy</li>
+                <li>En-route Kandy City Tour</li>
+                <li>Overnight stay in Kandy</li>
+              </ul>
+            </div>
+
+            <div className="itinerary__card">
+              <h3 className="itinerary__day">
+                14 FEB | KANDY → COLOMBO
+              </h3>
+              <ul className="itinerary__list">
+                <li>Transfer to Colombo</li>
+                <li>En-route Colombo City Tour</li>
+                <li>Overnight stay in Colombo</li>
+              </ul>
+            </div>
+
+            <div className="itinerary__card">
+              <h3 className="itinerary__day">
+                15 FEB | MATCH DAY
+              </h3>
+              <ul className="itinerary__list">
+                <li>Transfer from hotel to stadium</li>
+                <li><strong>PAKISTAN vs INDIA Cricket Match</strong></li>
+                <li>Return transfer</li>
+                <li>Overnight stay in Colombo</li>
+              </ul>
+            </div>
+
+            <div className="itinerary__card">
+              <h3 className="itinerary__day">
+                16 FEB | DEPARTURE – DUBAI STOPOVER
+              </h3>
+              <ul className="itinerary__list">
+                <li>Airport transfer</li>
+                <li>Flight to Dubai</li>
+                <li>Dubai city tour & dinner</li>
+              </ul>
+            </div>
+
+          </div>
+
+
+
+        </div>
+      </section>
+
+
+      <section className="mavens-contact" id="contact">
         <div className="mavens-contact__container">
 
           {/* Left Content */}
@@ -212,9 +221,14 @@ export default function IndVsPak() {
           </div>
 
           {/* Right Form */}
-          <form className="mavens-contact__form" onSubmit={handleSubmit}>
+          <form
+            ref={formRef}
+            className="mavens-contact__form"
+            onSubmit={handleSubmit}
+          >
             <input
               type="text"
+              name="name"
               className="mavens-form__input"
               placeholder="Your Name"
               required
@@ -222,17 +236,19 @@ export default function IndVsPak() {
 
             <input
               type="email"
+              name="email"
               className="mavens-form__input"
               placeholder="Your Email"
               required
             />
 
             <textarea
+              name="message"
               className="mavens-form__textarea"
               placeholder="Your Message"
               rows="5"
               required
-            />
+            ></textarea>
 
             <button
               type="submit"
