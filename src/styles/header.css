@@ -206,7 +206,7 @@
 
   .main-nav {
     position: fixed;
-    top: 100%;
+    top: 70px;
     left: 0;
     width: 100vw;
     background-color: #132b52;

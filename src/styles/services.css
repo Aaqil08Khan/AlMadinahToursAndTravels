@@ -699,6 +699,10 @@ section {
     padding: 4rem 6%;
   }
 
+  .solutions-header{
+    color: black;
+  }
+
   .solutions-header h2 {
     font-size: 2rem;
   }
