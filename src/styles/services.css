@@ -74,17 +74,18 @@ section {
 }
 
 .table-wrapper {
-  overflow-x: auto;
-  margin-top: 3rem;
-  border-radius: 14px;
-  border: 1px solid #e5e7eb;
+  width: 100%;
+  overflow-x: auto; /* This allows horizontal swiping on mobile */
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 2rem;
+  border-radius: 8px;
 }
 
 .hotel-table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 900px;
-  font-family: "Poppins", sans-serif;
+  min-width: 600px; /* Ensures the table doesn't get squished too thin to read */
+  background: #fff;
 }
 
 .hotel-table thead {
@@ -125,10 +126,16 @@ section {
   color: #b91c1c;
 }
 
-/* mobile scroll hint */
 @media (max-width: 768px) {
-  .table-wrapper {
-    overflow-x: auto;
+  .hotel-table th, 
+  .hotel-table td {
+    padding: 8px 4px;
+    font-size: 12px; /* Smaller text for mobile */
+  }
+  
+  .table-wrapper h3 {
+    font-size: 1.1rem;
+    padding-left: 10px;
   }
 }
 
@@ -400,6 +407,8 @@ section {
   transition: all 0.3s ease;
   font-family: "Poppins", sans-serif;
   box-shadow: 0 4px 12px rgba(244, 196, 48, 0.3);
+  text-decoration: none;
+  text-align: center;
 }
 
 .view-details-btn:hover {
@@ -523,6 +532,51 @@ section {
   .amenity-tag {
     font-size: 0.75rem;
     padding: 0.35rem 0.75rem;
+  }
+}
+
+/* =================================
+   TRANSPORT SECTION FIX
+================================= */
+
+.transport-fix-wrapper {
+  padding: clamp(3rem, 6vw, 6rem) 5%;
+  overflow: hidden;
+}
+
+/* prevent page horizontal scroll */
+.transport-fix-wrapper * {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* if transport uses table */
+.transport-fix-wrapper table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+}
+
+.transport-fix-wrapper {
+  overflow-x: auto;
+}
+
+/* if transport uses grid/cards */
+.transport-fix-wrapper .grid,
+.transport-fix-wrapper .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .transport-fix-wrapper {
+    padding: 3rem 5%;
+  }
+
+  .transport-fix-wrapper table {
+    font-size: 0.85rem;
   }
 }
 

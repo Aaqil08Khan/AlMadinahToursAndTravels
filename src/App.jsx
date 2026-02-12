@@ -11,6 +11,7 @@ import BookPackage from './pages/BookPackage';
 import Baku from "./pages/Baku";
 import FourCountries from "./pages/FourCountries";
 import IndPak from "./pages/IndPak";
+import HotelDetails from './pages/HotelDetails';
 
 
 import ScrollToTop from "./components/ScrollToTop";
@@ -24,6 +25,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/hotel/:slug" element={<HotelDetails />} />
         <Route path="/packages" element={<Packages />} />
         <Route path="/tours" element={<Tours />} />
         <Route path="/tour" element={<Navigate to="/tours" replace />} />

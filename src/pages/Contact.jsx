@@ -62,7 +62,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="info-item">
+          <div className="contact-info-item">
             <div className="icon-box">
               <img src="/assets/icons/map-icon-contact.svg" alt="" />
             </div>
@@ -75,7 +75,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="info-item">
+          <div className="contact-info-item">
             <div className="icon-box">
               <img src="/assets/icons/call-icon.svg" alt="" />
             </div>
@@ -85,7 +85,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="info-item">
+          <div className="contact-info-item">
             <div className="icon-box">
               <img src="/assets/icons/mail-icon.svg" alt="" />
             </div>
@@ -95,7 +95,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="info-item">
+          <div className="contact-info-item">
             <div className="icon-box">
               <img src="/assets/icons/clock-icon.svg" alt="" />
             </div>

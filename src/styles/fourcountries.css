@@ -12,7 +12,7 @@
   text-align: center;
   padding: 4rem 2rem;
 
-  background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2070&auto=format&fit=crop");
+  background-image: url(/assets/images/4countriesbackground.avif);
   background-size: cover;
   background-position: center;
 }

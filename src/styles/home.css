@@ -320,10 +320,13 @@
 
  /* TRUST TEXT */
  .trust-text {
-   margin-top: 0.8rem;
-   font-size: 0.85rem;
-   color: #ddd;
-   text-align: center;
+    margin-top: 0.8rem;
+    font-size: 0.85rem;
+    color: #ddd;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
  }
  .confirmation-message {
   margin-top: 1rem;

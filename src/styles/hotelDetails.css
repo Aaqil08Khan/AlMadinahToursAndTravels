@@ -1,0 +1,1009 @@
+/* ============================================
+   HOTEL DETAILS PAGE STYLES
+   Responsive, elegant design for Umrah hotels
+   ============================================ */
+
+/* Loading State */
+.loading-container {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.loading-spinner {
+  width: 3rem;
+  height: 3rem;
+  border: 0.25rem solid rgba(244, 196, 48, 0.2);
+  border-top-color: #f4c430;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ============================================
+   HERO SECTION WITH GALLERY
+   ============================================ */
+
+.hotel-detail-hero {
+  position: relative;
+  background: #0a1628;
+  padding-top: 5rem;
+}
+
+.hero-back-button {
+  position: absolute;
+  top: 6rem;
+  left: 5%;
+  z-index: 10;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.back-link:hover {
+  background: rgba(244, 196, 48, 0.9);
+  color: #0a1628;
+  transform: translateX(-0.25rem);
+  border-color: #f4c430;
+}
+
+.hero-gallery {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.main-image {
+  position: relative;
+  height: clamp(25rem, 50vh, 35rem);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+}
+
+.hotel-hero-content {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.hotel-badge {
+  display: inline-block;
+  background: rgba(244, 196, 48, 0.95);
+  color: #0a1628;
+  padding: 0.5rem 1.25rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.hero-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+  text-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.hero-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+/* Gallery Thumbnails */
+.gallery-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 1rem;
+  padding-bottom: 3rem;
+}
+
+.thumbnail {
+  position: relative;
+  height: 6rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 0.125rem solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: none;
+  padding: 0;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.thumbnail:hover img {
+  transform: scale(1.1);
+}
+
+.thumbnail.active {
+  border-color: #f4c430;
+  box-shadow: 0 0 0 0.25rem rgba(244, 196, 48, 0.3);
+}
+
+.thumbnail::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(244, 196, 48, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.thumbnail.active::after {
+  opacity: 1;
+}
+
+/* ============================================
+   QUICK INFO BAR
+   ============================================ */
+
+.quick-info-bar {
+  background: linear-gradient(135deg, #132b52 0%, #1a2942 100%);
+  padding: 2rem 5%;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.quick-info-container {
+  max-width: 90rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 2rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #ffffff;
+}
+
+.info-item img {
+  flex-shrink: 0;
+  color: #f4c430;
+  height: 1.8rem;
+}
+
+.info-item div {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-label {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.info-value {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.price-item .info-value {
+  color: #f4c430;
+  font-weight: 700;
+}
+
+/* ============================================
+   MAIN CONTENT SECTIONS
+   ============================================ */
+
+.hotel-content-section {
+  background: #ffffff;
+  padding: clamp(3rem, 6vw, 6rem) 5%;
+}
+
+.content-container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.content-block {
+  margin-bottom: clamp(4rem, 6vw, 6rem);
+}
+
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 800;
+  color: #0a1628;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 4rem;
+  height: 0.25rem;
+  background: linear-gradient(90deg, #f4c430 0%, #d4a017 100%);
+  border-radius: 0.125rem;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #334155;
+  max-width: 55rem;
+}
+
+/* ============================================
+   AMENITIES GRID
+   ============================================ */
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.amenity-card {
+  background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+  border: 0.0625rem solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 1.75rem;
+  transition: all 0.3s ease;
+}
+
+.amenity-card:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.08);
+  border-color: #f4c430;
+}
+
+.amenity-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.amenity-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0a1628;
+  margin-bottom: 0.5rem;
+}
+
+.amenity-detail {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* ============================================
+   ROOM TYPES
+   ============================================ */
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.room-card {
+  background: #ffffff;
+  border: 0.125rem solid #e5e7eb;
+  border-radius: 1.25rem;
+  padding: 2rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.room-card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 1.25rem 3rem rgba(0, 0, 0, 0.12);
+  border-color: #f4c430;
+}
+
+.room-card.selected {
+  border-color: #f4c430;
+  background: linear-gradient(135deg, #fffbf0 0%, #ffffff 100%);
+  box-shadow: 0 1rem 2.5rem rgba(244, 196, 48, 0.2);
+}
+
+.room-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.room-type {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0a1628;
+  flex: 1;
+}
+
+.room-size {
+  background: #f4c430;
+  color: #0a1628;
+  padding: 0.35rem 0.9rem;
+  border-radius: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.room-description {
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.room-info {
+  margin-bottom: 1.25rem;
+}
+
+.room-occupancy {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(19, 43, 82, 0.05);
+  color: #132b52;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.room-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.feature-tag {
+  font-size: 0.8rem;
+  color: #475569;
+  background: #f1f5f9;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #e2e8f0;
+}
+
+/* ============================================
+   UMRAH FACILITIES
+   ============================================ */
+
+.umrah-section {
+  background: linear-gradient(135deg, #132b52 0%, #0a1628 100%);
+  color: #ffffff;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+}
+
+.umrah-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.umrah-icon {
+  color: #f4c430;
+  flex-shrink: 0;
+}
+
+.umrah-section .section-title {
+  color: #ffffff;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.umrah-section .section-title::after {
+  background: #f4c430;
+}
+
+.umrah-features-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1rem;
+}
+
+.umrah-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.75rem;
+  border: 0.0625rem solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.umrah-feature-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(244, 196, 48, 0.3);
+}
+
+.umrah-feature-item svg {
+  flex-shrink: 0;
+  color: #f4c430;
+  margin-top: 0.125rem;
+}
+
+.umrah-feature-item span {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+/* ============================================
+   DINING OPTIONS
+   ============================================ */
+
+.dining-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.dining-card {
+  background: #ffffff;
+  border: 0.125rem solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.dining-card:hover {
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.1);
+  border-color: #f4c430;
+}
+
+.dining-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0a1628;
+  margin-bottom: 1rem;
+}
+
+.dining-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.0625rem solid #e5e7eb;
+}
+
+.dining-cuisine {
+  color: #64748b;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.dining-timing {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.dining-specialty {
+  font-size: 0.9rem;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.dining-specialty strong {
+  color: #0a1628;
+}
+
+/* ============================================
+   NEARBY ATTRACTIONS
+   ============================================ */
+
+.attractions-list {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.attraction-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: #ffffff;
+  border: 0.125rem solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.attraction-item:hover {
+  border-color: #f4c430;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+  transform: translateX(0.5rem);
+}
+
+.attraction-icon {
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(135deg, #f4c430 0%, #d4a017 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0a1628;
+}
+
+.attraction-info {
+  flex: 1;
+}
+
+.attraction-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0a1628;
+  margin-bottom: 0.5rem;
+}
+
+.attraction-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.separator {
+  opacity: 0.5;
+}
+
+/* ============================================
+   POLICIES
+   ============================================ */
+
+.policies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.policy-item {
+  background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+  border-left: 0.25rem solid #f4c430;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.policy-item h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0a1628;
+  margin-bottom: 0.75rem;
+}
+
+.policy-item p {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+/* ============================================
+   CTA SECTION
+   ============================================ */
+
+.hotel-cta-section {
+  background: linear-gradient(
+    135deg,
+    #0a1628 0%,
+    #132b52 50%,
+    #1a2942 100%
+  );
+  padding: clamp(4rem, 8vw, 6rem) 5%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hotel-cta-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 30% 50%,
+    rgba(244, 196, 48, 0.1) 0%,
+    transparent 60%
+  );
+}
+
+.cta-container {
+  max-width: 50rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.cta-description {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+.btn-book-now {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: linear-gradient(135deg, #f4c430 0%, #d4a017 100%);
+  color: #0a1628;
+  padding: 1.1rem 2.5rem;
+  border-radius: 3rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 0.5rem 2rem rgba(244, 196, 48, 0.4);
+  border: 0.125rem solid transparent;
+}
+
+.btn-book-now:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0.75rem 2.5rem rgba(244, 196, 48, 0.5);
+  background: #f4c430;
+}
+
+.btn-book-now svg {
+  transition: transform 0.3s ease;
+}
+
+.btn-book-now:hover svg {
+  transform: translateX(0.25rem);
+}
+
+.btn-contact {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  color: #ffffff;
+  padding: 1.1rem 2.5rem;
+  border-radius: 3rem;
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 0.125rem solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-contact:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Tablet Styles */
+@media (max-width: 64em) {
+  .hero-back-button {
+    top: 5.5rem;
+  }
+
+  .gallery-thumbnails {
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  }
+
+  .thumbnail {
+    height: 5rem;
+  }
+
+  .quick-info-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .amenities-grid {
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  }
+
+  .rooms-grid {
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
+
+  .umrah-features-list {
+    grid-template-columns: 1fr;
+  }
+
+  .dining-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .policies-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 48em) {
+  .hotel-detail-hero {
+    padding-top: 4rem;
+  }
+
+  .hero-back-button {
+    top: 5rem;
+    left: 1rem;
+  }
+
+  .back-link {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .hero-gallery {
+    padding: 0 1rem;
+  }
+
+  .main-image {
+    height: 20rem;
+    border-radius: 1rem;
+  }
+
+  .hotel-hero-content {
+    bottom: 1.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .hotel-badge {
+    padding: 0.4rem 1rem;
+    font-size: 0.75rem;
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-location {
+    font-size: 0.95rem;
+  }
+
+  .gallery-thumbnails {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    padding-bottom: 2rem;
+  }
+
+  .thumbnail {
+    height: 4.5rem;
+  }
+
+  .quick-info-bar {
+    padding: 1.5rem 1rem;
+  }
+
+  .quick-info-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .info-item {
+    gap: 0.75rem;
+  }
+
+  .hotel-content-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .content-block {
+    margin-bottom: 3rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+  .amenities-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .amenity-card {
+    padding: 1.5rem;
+  }
+
+  .rooms-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .room-card {
+    padding: 1.5rem;
+  }
+
+  .room-header {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .room-size {
+    align-self: flex-start;
+  }
+
+  .umrah-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .umrah-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .umrah-features-list {
+    gap: 0.75rem;
+  }
+
+  .umrah-feature-item {
+    padding: 0.75rem;
+  }
+
+  .dining-grid {
+    gap: 1.5rem;
+  }
+
+  .dining-card {
+    padding: 1.5rem;
+  }
+
+  .attraction-item {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+
+  .attraction-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .policies-grid {
+    gap: 1.5rem;
+  }
+
+  .policy-item {
+    padding: 1.25rem;
+  }
+
+  .hotel-cta-section {
+    padding: 3rem 1rem;
+  }
+
+  .cta-title {
+    font-size: 1.75rem;
+  }
+
+  .cta-description {
+    font-size: 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .btn-book-now,
+  .btn-contact {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 2rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 30em) {
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .gallery-thumbnails {
+    grid-template-columns: 1fr;
+  }
+
+  .thumbnail {
+    height: 10rem;
+  }
+
+  .section-title {
+    font-size: 1.35rem;
+  }
+
+  .amenity-icon {
+    font-size: 2rem;
+  }
+
+  .room-type {
+    font-size: 1.1rem;
+  }
+
+  .cta-title {
+    font-size: 1.5rem;
+  }
+}

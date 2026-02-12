@@ -78,7 +78,7 @@ function Header() {
                 rel="noopener noreferrer"
                 className="phone mobile-phone"
               >
-                <img src="/assets/icons/call-icon (2).svg" alt="" />
+                
                 WhatsApp Us
               </a>
             </li>
