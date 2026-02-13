@@ -183,9 +183,9 @@ export const hotelsData = [
     
     gallery: [
       "/assets/images/conrad-hotel.webp", 
-      "/assets/images/conrad-hotel.webp1", 
-      "/assets/images/conrad-hotel.webp2", 
-      "/assets/images/conrad-hotel.webp3"
+      "/assets/images/conrad-hotel1.webp", 
+      "/assets/images/conrad-hotel2.webp", 
+      "/assets/images/conrad-hotel3.webp"
     ],
     
     priceRange: "500 - 580 SAR per night",

@@ -108,7 +108,7 @@
    background: #f8f9fb;
  }
 
- .section-title {
+ .home-section-title {
    text-align: center;
    font-size: 2.25rem;
    color: #0c3b5e;
@@ -358,7 +358,7 @@
   text-align: center;
 }
 
-.services-section .section-title {
+.services-section .home-section-title {
   font-size: 2rem;
   font-weight: 700;
   color: #0d285f;

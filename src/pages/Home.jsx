@@ -84,7 +84,7 @@ function Home() {
 
       {/* PACKAGES */}
       <section className="packages-section">
-        <h2 className="section-title">Our Umrah Packages</h2>
+        <h2 className="home-section-title">Our Umrah Packages</h2>
         <p className="section-subtitle">
           Carefully designed packages for a comfortable and spiritual journey
         </p>
@@ -232,7 +232,7 @@ function Home() {
 
       {/* SERVICES */}
       <section className="services-section">
-        <h2 className="section-title">Our Services</h2>
+        <h2 className="home-section-title">Our Services</h2>
         <p className="section-subtitle">
           Dedicated services to make your Umrah journey peaceful and memorable
         </p>

@@ -59,7 +59,7 @@ export default function IndVsPak() {
           </p>
 
           <div className="cricket-hero__price">
-            Only In SAR 350,000
+            Only In SAR 15,000
           </div>
 
           <p className="cricket-hero__cta-text">

@@ -4,8 +4,8 @@
 .site-header {
   position: fixed;
   inset: 0 0 auto 0;
-  z-index: 10;
-  /* padding: 1.25rem 0; */
+  z-index: 1000;
+  /* High z-index to stay above content */
   background-color: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
@@ -17,9 +17,9 @@
   margin: auto;
   display: flex;
   align-items: center;
-  /* IMPORTANT */
   justify-content: space-between;
-  position: relative;
+  height: 80px;
+  /* Consistent height */
 }
 
 /* ================= LOGO ================= */
@@ -41,13 +41,9 @@
 
 /* image */
 .logo img {
-  height: 100%;
-  /* take full navbar height */
+  height: 50px;
   width: auto;
-  max-width: 190px;
-  /* preferred width */
   object-fit: contain;
-  display: block;
 }
 
 /* slightly smaller on mobile */
@@ -68,19 +64,18 @@
   display: flex;
   gap: 1.875rem;
   list-style: none;
-  padding: 0;
-  margin: 0;
   align-items: center;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #000000;
+  color: #000;
   font-weight: 500;
+  transition: color 0.3s;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-links a.active,
+.nav-links a:hover {
   color: #f4c430;
 }
 
@@ -89,23 +84,48 @@
   display: none;
 }
 
-/* DROPDOWN */
+/* ================= DROPDOWN ================= */
+
 .dropdown {
   position: relative;
 }
 
+/* Tours trigger button - styled like nav links */
+.drop-trigger {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
+
+.drop-trigger:hover {
+  color: #f4c430;
+}
+
+/* Active state for Tours when on a tours subpage */
+.dropdown:has(a.active) .drop-trigger {
+  color: #f4c430;
+}
+
+/* Dropdown menu */
 .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
   background: #fff;
-  min-width: 14rem;
-  border-radius: .5rem;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .08);
+  min-width: 220px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+
+  /* The Fix for Ghost Hovers */
   opacity: 0;
   visibility: hidden;
-  transform: translateY(.6rem);
-  transition: .25s ease;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
 }
 
 .dropdown-menu li {
@@ -114,19 +134,26 @@
 
 .dropdown-menu a {
   display: block;
-  padding: .8rem 1rem;
-  text-decoration: none;
-  color: #222;
-  font-size: .95rem;
+  padding: 10px 20px;
+  font-size: 14px;
 }
 
 .dropdown-menu a:hover {
   background: #f5f5f5;
+  color: #f4c430;
 }
 
+/* Active state for dropdown links */
+.dropdown-menu a.active {
+  color: #f4c430;
+  background: ;
+}
+
+/* Show dropdown on hover (desktop only) */
 .dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
   transform: translateY(0);
 }
 
@@ -154,6 +181,7 @@
   text-decoration: none;
   display: inline-block;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .btn.primary {
@@ -264,7 +292,7 @@
   .mobile-phone {
     color: #f4c430 !important;
     font-size: 0.875rem;
-    gap: 0.5rem; 
+    gap: 0.5rem;
   }
 
   /* Hide desktop nav actions */
@@ -276,11 +304,30 @@
     display: block;
   }
 
-  /* Disable dropdown hover on mobile */
+  /* ================= MOBILE DROPDOWN STYLES ================= */
+
+  /* Disable desktop hover on mobile */
   .dropdown:hover .dropdown-menu {
     opacity: 0;
     visibility: hidden;
     transform: translateY(.6rem);
+  }
+
+  /* Tours trigger on mobile */
+  .drop-trigger {
+    display: block;
+    width: 100%;
+    padding: 0;
+    color: #000000;
+  }
+
+  .drop-trigger:hover {
+    color: #f4c430;
+  }
+
+  /* Active state for Tours button when on tours subpage */
+  .dropdown:has(a.active) .drop-trigger {
+    color: #f4c430;
   }
 
   /* Hide dropdown menu by default on mobile */
@@ -295,6 +342,7 @@
     background: transparent;
     min-width: auto;
     transition: max-height 0.3s ease, opacity 0.3s ease;
+    margin: 0;
   }
 
   /* Show dropdown when mobile-open class is added */
@@ -303,10 +351,102 @@
     visibility: visible;
     max-height: 500px;
     margin-top: 0.5rem;
+    color: black;
   }
 
+  /* Dropdown links on mobile */
   .dropdown-menu a {
     padding: 0.6rem 1rem;
     font-size: 0.9rem;
+    color: #000000;
+    cursor: pointer;
+  }
+
+  .dropdown-menu a:hover {
+    background: #f5f5f5;
+    color: #f4c430;
+  }
+
+  /* Active dropdown link on mobile */
+  .dropdown-menu a.active {
+    color: #f4c430;
+    background: #c6d1dd;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .nav-toggle-label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .nav-toggle-label span {
+    width: 25px;
+    height: 3px;
+    background: #f4c430;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: white;
+    display: none;
+    overflow-y: auto;
+  }
+
+  .nav-toggle:checked~.main-nav {
+    display: block;
+    height: 385px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    padding: 40px 0;
+  }
+
+  /* Disable Desktop Hover on Mobile */
+  .dropdown:hover .dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    background: #083a6c3b;
+    width: 100%;
+    max-height: 0;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+
+  .dropdown-menu.mobile-open {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    max-height: 500px !important;
+    padding: 10px 0 !important;
+  }
+
+  .nav-actions {
+    display: none;
+  }
+
+  .mobile-action-item {
+    display: block;
   }
 }
