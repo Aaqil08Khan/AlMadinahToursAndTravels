@@ -1992,9 +1992,9 @@ export const hotelsData = [
     
     gallery: [
       "/assets/images/almanakhahotel.jpg",
-      "/assets/images/almanakhahotel1.jpg",
-      "/assets/images/almanakhahotel2.jpg",
-      "/assets/images/almanakhahotel3.jpg"
+      "/assets/images/almanakhahotel1.webp",
+      "/assets/images/almanakhahotel2.webp",
+      "/assets/images/almanakhahotel3.webp"
     ],
     
     priceRange: "330 - 410 SAR per night",
@@ -2460,9 +2460,9 @@ export const hotelsData = [
     
     gallery: [
       "/assets/images/makaremharamsuites.png",
-      "/assets/images/makaremharamsuites1.png",
-      "/assets/images/makaremharamsuites2.png",
-      "/assets/images/makaremharamsuites3.png"
+      "/assets/images/makaremharamsuites1.webp",
+      "/assets/images/makaremharamsuites2.webp",
+      "/assets/images/makaremharamsuites3.webp"
     ],
     
     priceRange: "480 - 570 SAR per night",

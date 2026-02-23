@@ -65,17 +65,155 @@ section {
 }
 
 /* =====================================
+   HOTEL CATEGORY TOGGLE
+===================================== */
+
+.hotel-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 3rem 0 4rem;
+  flex-wrap: wrap;
+}
+
+.toggle-instruction {
+  font-size: 1.5rem;
+  color: #555555;
+  margin-bottom: 1.75rem;
+  font-weight: 600;
+  padding: 0 0.5rem;
+}
+
+.toggle-btn {
+  position: relative;
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  border: 1px solid rgba(19, 43, 82, 0.2);
+  background: #ffffff;
+  color: #132b52;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.02em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Hover */
+.toggle-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Active State */
+.toggle-btn.active {
+  background: linear-gradient(135deg, #f4c430 0%, #d4a017 100%);
+  color: #0a1628;
+  border-color: transparent;
+  box-shadow: 0 6px 20px rgba(244, 196, 48, 0.35);
+}
+
+/* Optional subtle animation */
+.toggle-btn.active::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  box-shadow: 0 0 0 3px rgba(244, 196, 48, 0.2);
+  animation: pulseToggle 1.5s infinite;
+}
+
+@keyframes pulseToggle {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hotel-toggle {
+    gap: 0.75rem;
+  }
+
+  .toggle-btn {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+}
+
+
+
+/* =====================================
    HOTEL TABLE SECTION
 ===================================== */
 
 .hotel-table-section {
   background: #ffffff;
-  padding: 5rem 8%;
+  padding: 1rem 8%;
+}
+
+.solutions-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-bottom: 0rem;
+}
+
+.solutions-tag {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ff5050;
+  /* Accent color for tag */
+  padding: 0.25rem 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.solutions-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem 0;
+  color: #333333;
+}
+
+.solutions-header p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #666666;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Optional: different style for luxury vs economy */
+.solutions-header.luxury .solutions-tag {
+  background-color: #bfa052;
+  /* golden accent for luxury */
+}
+
+.solutions-header.economy .solutions-tag {
+  background-color: #3498db;
+  /* blue accent for economy */
 }
 
 .table-wrapper {
   width: 100%;
-  overflow-x: auto; /* This allows horizontal swiping on mobile */
+  overflow-x: auto;
+  /* This allows horizontal swiping on mobile */
   -webkit-overflow-scrolling: touch;
   margin-bottom: 2rem;
   border-radius: 8px;
@@ -84,7 +222,8 @@ section {
 .hotel-table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 600px; /* Ensures the table doesn't get squished too thin to read */
+  min-width: 600px;
+  /* Ensures the table doesn't get squished too thin to read */
   background: #fff;
 }
 
@@ -127,19 +266,21 @@ section {
 }
 
 @media (max-width: 768px) {
-  .hotel-table th, 
+
+  .hotel-table th,
   .hotel-table td {
     padding: 8px 4px;
-    font-size: 12px; /* Smaller text for mobile */
+    font-size: 12px;
+    /* Smaller text for mobile */
   }
-  
+
   .table-wrapper h3 {
     font-size: 1.1rem;
     padding-left: 10px;
   }
 }
 
- 
+
 
 .hotel-rates-section {
   position: relative;
@@ -753,7 +894,7 @@ section {
     padding: 4rem 6%;
   }
 
-  .solutions-header{
+  .solutions-header {
     color: black;
   }
 
