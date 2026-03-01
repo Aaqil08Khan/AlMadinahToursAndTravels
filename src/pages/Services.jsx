@@ -88,54 +88,74 @@ const Services = () => {
     hotel => hotel.type === hotelCategory
   );
 
-  // Reusable Table Component
-  const HotelTable = ({ hotels, category }) => (
-    <table className="hotel-table">
-      <thead>
-        <tr>
-          <th>Hotel</th>
-          <th>{category === "luxury" ? "Period" : "Category"}</th>
-          <th>{category === "luxury" ? "Dist." : "Shuttle"}</th>
-          <th>{category === "luxury" ? "Sharing" : "Location "}</th>
-          <th>Double</th>
-          <th>Triple</th>
-          <th>Quad</th>
-          <th>Quint</th>
-          <th>{category === "luxury" ? "Meals" : "Meals"}</th>
-        </tr>
-      </thead>
-      <tbody>
-        {hotels.map(hotel => (
-          <tr key={hotel.id}>
+// Reusable Table Component
+const HotelTable = ({ hotels, category }) => (
+  <table className="hotel-table">
+    <thead>
+      <tr>
+        <th>Hotel</th>
+        <th>{category === "luxury" ? "Period" : "Category"}</th>
+        <th>{category === "luxury" ? "Dist." : "Shuttle"}</th>
+        <th>{category === "luxury" ? "Sharing" : "Location "}</th>
+        <th>Double</th>
+        <th>Triple</th>
+        <th>Quad</th>
+        <th>Quint</th>
+        <th>{category === "luxury" ? "Meals" : "Meals"}</th>
+        {category === "economy" && <th>Details</th>} {/* Add Details column only for economy */}
+      </tr>
+    </thead>
+    <tbody>
+      {hotels.map(hotel => (
+        <tr key={hotel.id}>
+          <td>
+            {hotel.name}
+            {hotel.highlight && (
+              <span style={{
+                marginLeft: "8px",
+                background: "#ff9800",
+                color: "#fff",
+                padding: "2px 8px",
+                borderRadius: "6px",
+                fontSize: "12px",
+                fontWeight: "600"
+              }}>
+                Shuttle
+              </span>
+            )}
+          </td>
+          <td>{category === "luxury" ? hotel.period : hotel.category}</td>
+          <td>{category === "luxury" ? hotel.distance : hotel.shuttle}</td>
+          <td>{category === "luxury" ? hotel.sharing + " SAR" : hotel.locationNote}</td>
+          <td>{hotel.double ? hotel.double + " SAR" : "—"}</td>
+          <td>{hotel.triple ? hotel.triple + " SAR" : "—"}</td>
+          <td>{hotel.quad ? hotel.quad + " SAR" : "—"}</td>
+          <td>{hotel.quint ? hotel.quint + " SAR" : "—"}</td>
+          <td>{category === "luxury" ? hotel.meals : "—"}</td>
+          {category === "economy" && (
             <td>
-              {hotel.name}
-              {hotel.highlight && (
-                <span style={{
-                  marginLeft: "8px",
-                  background: "#ff9800",
+              <Link
+                to={`/hotel/${hotel.slug}`}
+                className="btn-mini"
+                style={{
+                  padding: "4px 10px",
+                  background: "#1e88e5",
                   color: "#fff",
-                  padding: "2px 8px",
                   borderRadius: "6px",
                   fontSize: "12px",
-                  fontWeight: "600"
-                }}>
-                  Shuttle
-                </span>
-              )}
+                  textAlign: "center",
+                  display: "inline-block"
+                }}
+              >
+                Details
+              </Link>
             </td>
-            <td>{category === "luxury" ? hotel.period : hotel.category}</td>
-            <td>{category === "luxury" ? hotel.distance : hotel.shuttle}</td>
-            <td>{category === "luxury" ? hotel.sharing + " SAR" : hotel.locationNote}</td>
-            <td>{hotel.double ? hotel.double + " SAR" : "—"}</td>
-            <td>{hotel.triple ? hotel.triple + " SAR" : "—"}</td>
-            <td>{hotel.quad ? hotel.quad + " SAR" : "—"}</td>
-            <td>{hotel.quint ? hotel.quint + " SAR" : "—"}</td>
-            <td>{category === "luxury" ? hotel.meals : "—"}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
+          )}
+        </tr>
+      ))}
+    </tbody>
+  </table>
+);
 
 
 
@@ -175,14 +195,15 @@ const Services = () => {
               className={`toggle-btn ${hotelCategory === "luxury" ? "active" : ""}`}
               onClick={() => setHotelCategory("luxury")}
             >
-              ⭐ Luxury Hotels
+             <img src="../../public/assets/icons/luxury-icon.svg" alt="" />Luxury Hotels
             </button>
 
             <button
-              className={`toggle-btn ${hotelCategory === "economy" ? "active" : ""}`}
+              className={`toggle-btn ${hotelCategory 
+                === "economy" ? "active" : ""}`}
               onClick={() => setHotelCategory("economy")}
             >
-              💰 Economy Hotels
+              <img src="../../public/assets/icons/economy-icon.svg" alt="" /> Economy Hotels
             </button>
           </div>
         </div>

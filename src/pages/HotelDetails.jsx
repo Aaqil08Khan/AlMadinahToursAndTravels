@@ -3,7 +3,68 @@ import { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { getHotelBySlug } from "../data/hotelData";
+import { hotelRates } from "../data/hotelRates";
 import "../styles/hotelDetails.css";
+
+// Normalize an economy hotel from hotelRates into the shape HotelDetails expects
+const normalizeEconomyHotel = (hotel) => ({
+  id: hotel.id,
+  name: hotel.name,
+  slug: hotel.slug,
+  image: "/assets/images/placeholder-hotel.jpg",
+  rating: hotel.rating || 3,
+  location: hotel.location,
+  distance: `${hotel.locationNote || hotel.location}`,
+  priceRange: "Price On Request",
+  description: `${hotel.name} is an economy accommodation located in ${hotel.locationNote || hotel.location}, ${hotel.location}. Contact us for pricing and availability.`,
+  gallery: ["/assets/images/placeholder-hotel.jpg"],
+  fullAmenities: [
+    { icon: "🕌", name: "Location", detail: hotel.locationNote || hotel.location },
+    { icon: "🚐", name: "Shuttle", detail: hotel.shuttle === "Yes" ? "Shuttle service available" : "No shuttle service" },
+    { icon: "⭐", name: "Category", detail: hotel.category || "Economy" },
+  ],
+  roomTypes: [
+    {
+      type: "Economy Room",
+      description: "Comfortable economy accommodation suitable for pilgrims.",
+      size: "N/A",
+      occupancy: "2–5 adults",
+      features: ["Beds", "Bathroom", "AC", "Basic Amenities"],
+    },
+  ],
+  umrahFacilities: {
+    title: "Pilgrim Services",
+    features: [
+      "Prayer mats available",
+      "Qibla direction in rooms",
+      "Prayer times displayed",
+      hotel.shuttle === "Yes" ? "Shuttle service to Haram" : "Walking distance to Haram",
+      "Halal dining options nearby",
+    ],
+  },
+  diningOptions: [
+    {
+      name: "Local Restaurants",
+      cuisine: "Arabic & International",
+      timing: "Varies",
+      specialty: "Halal meals available nearby",
+    },
+  ],
+  nearbyAttractions: [
+    {
+      name: hotel.location === "Makkah" ? "Masjid al-Haram" : "Masjid an-Nabawi",
+      distance: hotel.locationNote || "Nearby",
+      time: hotel.shuttle === "Yes" ? "Shuttle available" : "Walking distance",
+    },
+  ],
+  policies: {
+    checkIn: "2:00 PM",
+    checkOut: "12:00 PM",
+    cancellation: "Contact us for cancellation policy",
+    children: "Contact us for details",
+    pets: "Not allowed",
+  },
+});
 
 const HotelDetails = () => {
   const { slug } = useParams();
@@ -13,7 +74,17 @@ const HotelDetails = () => {
   const [selectedRoom, setSelectedRoom] = useState(null);
 
   useEffect(() => {
-    const hotelData = getHotelBySlug(slug);
+    // First try luxury hotels from hotelData.js
+    let hotelData = getHotelBySlug(slug);
+
+    // If not found, search economy/standard hotels from hotelRates.js
+    if (!hotelData) {
+      const economyHotel = hotelRates.find((h) => h.slug === slug);
+      if (economyHotel) {
+        hotelData = normalizeEconomyHotel(economyHotel);
+      }
+    }
+
     if (hotelData) {
       setHotel(hotelData);
       window.scrollTo(0, 0);
@@ -68,17 +139,19 @@ const HotelDetails = () => {
             </div>
           </div>
 
-          <div className="gallery-thumbnails">
-            {hotel.gallery.map((img, index) => (
-              <button
-                key={index}
-                className={`thumbnail ${activeImage === index ? "active" : ""}`}
-                onClick={() => setActiveImage(index)}
-              >
-                <img src={img} alt={`View ${index + 1}`} />
-              </button>
-            ))}
-          </div>
+          {hotel.gallery.length > 1 && (
+            <div className="gallery-thumbnails">
+              {hotel.gallery.map((img, index) => (
+                <button
+                  key={index}
+                  className={`thumbnail ${activeImage === index ? "active" : ""}`}
+                  onClick={() => setActiveImage(index)}
+                >
+                  <img src={img} alt={`View ${index + 1}`} />
+                </button>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
@@ -117,12 +190,7 @@ const HotelDetails = () => {
           </div>
 
           <div className="info-item price-item">
-
             <img src="../../public/assets/icons/Saudi_Riyal_Symbol.svg" alt="" />
-            {/* <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <line x1="12" y1="1" x2="12" y2="23"></line>
-              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-            </svg> */}
             <div>
               <span className="info-label">Price Range</span>
               <span className="info-value">{hotel.priceRange}</span>
