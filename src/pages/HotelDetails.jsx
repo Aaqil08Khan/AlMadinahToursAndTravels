@@ -1,10 +1,11 @@
-import { useParams, Link, useNavigate } from "react-router-dom";
+
 import { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { getHotelBySlug } from "../data/hotelData";
 import { hotelRates } from "../data/hotelRates";
 import "../styles/hotelDetails.css";
+import { useParams, Link, useNavigate, useLocation } from "react-router-dom";
 
 // Normalize an economy hotel from hotelRates into the shape HotelDetails expects
 const normalizeEconomyHotel = (hotel) => ({
@@ -64,6 +65,7 @@ const normalizeEconomyHotel = (hotel) => ({
     children: "Contact us for details",
     pets: "Not allowed",
   },
+
 });
 
 const HotelDetails = () => {
@@ -72,6 +74,8 @@ const HotelDetails = () => {
   const [hotel, setHotel] = useState(null);
   const [activeImage, setActiveImage] = useState(0);
   const [selectedRoom, setSelectedRoom] = useState(null);
+  const location = useLocation();
+  const backCategory = location.state?.category || "luxury";
 
   useEffect(() => {
     // First try luxury hotels from hotelData.js
@@ -113,9 +117,9 @@ const HotelDetails = () => {
       {/* Hero Section with Image Gallery */}
       <section className="hotel-detail-hero">
         <div className="hero-back-button">
-          <Link to="/services" className="back-link">
+          <Link to={`/services?category=${backCategory}`} className="back-link">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M19 12H5M12 19l-7-7 7-7"/>
+              <path d="M19 12H5M12 19l-7-7 7-7" />
             </svg>
             Back to Hotels
           </Link>
@@ -125,7 +129,7 @@ const HotelDetails = () => {
           <div className="main-image">
             <img src={hotel.gallery[activeImage]} alt={hotel.name} />
             <div className="image-overlay"></div>
-            
+
             <div className="hotel-hero-content">
               <div className="hotel-badge">{hotel.rating} Star Hotel</div>
               <h1 className="hero-title">{hotel.name}</h1>
@@ -202,7 +206,7 @@ const HotelDetails = () => {
       {/* Main Content */}
       <section className="hotel-content-section">
         <div className="content-container">
-          
+
           {/* About Section */}
           <div className="content-block about-section">
             <h2 className="section-title">About This Hotel</h2>
@@ -228,8 +232,8 @@ const HotelDetails = () => {
             <h2 className="section-title">Room Types & Accommodations</h2>
             <div className="rooms-grid">
               {hotel.roomTypes.map((room, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className={`room-card ${selectedRoom === index ? "selected" : ""}`}
                   onClick={() => setSelectedRoom(selectedRoom === index ? null : index)}
                 >
@@ -238,7 +242,7 @@ const HotelDetails = () => {
                     <span className="room-size">{room.size}</span>
                   </div>
                   <p className="room-description">{room.description}</p>
-                  
+
                   <div className="room-info">
                     <div className="room-occupancy">
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -263,7 +267,7 @@ const HotelDetails = () => {
           <div className="content-block umrah-section">
             <div className="umrah-header">
               <svg className="umrah-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" />
               </svg>
               <h2 className="section-title">{hotel.umrahFacilities.title}</h2>
             </div>
@@ -362,7 +366,7 @@ const HotelDetails = () => {
             <Link to="/book" className="btn-book-now">
               Book This Hotel
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
+                <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </Link>
             <Link to="/contact" className="btn-contact">
