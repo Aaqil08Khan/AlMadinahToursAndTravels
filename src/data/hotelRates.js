@@ -63,11 +63,9 @@ export const hotelRates = [
   { id: 217, name: "Rama Mukhtara Inn", type: "standard", category: "3 Star", shuttle: "No", locationNote: "South Markazia", location: "Madinah", rating: 3, slug: "rama-mukhtara-inn" },
   { id: 218, name: "Mukhtara Palace Hotel", type: "standard", category: "3 Star", shuttle: "No", locationNote: "South Markazia", location: "Madinah", rating: 3, slug: "mukhtara-palace-hotel" },
   { id: 219, name: "Al Mukhtara Royal Inn", type: "standard", category: "3 Star", shuttle: "No", locationNote: "Bab Al Salam Road", location: "Madinah", rating: 3, slug: "al-mukhtara-royal-inn" },
-  { id: 220, name: "Triple One Hotel", type: "standard", showCard: true, category: "3 Star", shuttle: "No", locationNote: "Central Markazia", location: "Madinah", rating: 3, slug: "triple-one-hotel", image: "/assets/images/tripleonehotel.webp" },
   { id: 221, name: "Artal International", type: "standard", showCard: true, category: "3 Star", shuttle: "No", locationNote: "Central Markazia", location: "Madinah", rating: 3, slug: "artal-international", image: "/assets/images/milaadalmajd.jpg" },
 
   { id: 222, name: "Tulip Inn Al Daar Rawafid", type: "standard", category: "3 Star", shuttle: "Yes", locationNote: "Near Haram", location: "Madinah", rating: 3, slug: "tulip-inn-al-daar-rawafid" },
-  { id: 223, name: "Odest Al Madinah Hotel", type: "standard", category: "3 Star", shuttle: "Yes", locationNote: "Near Haram", location: "Madinah", rating: 3, slug: "odest-al-madinah-hotel" },
   { id: 224, name: "Zowar International Hotel", type: "standard", showCard: true, category: "3 Star", shuttle: "Yes", locationNote: "Central", location: "Madinah", rating: 3, slug: "zowar-international-hotel", image: "/assets/images/artalhotel.webp" },
   { id: 225, name: "Hala Taiba", type: "economy", category: "1–2.5 Star", shuttle: "Yes", locationNote: "Abdul Aziz Road / Central", location: "Madinah", rating: 2, slug: "hala-taiba-madinah" },
   { id: 226, name: "Bashayer Taiba", type: "economy", category: "3 Star", shuttle: "Yes", locationNote: "Central / Taiba Area", location: "Madinah", rating: 3, slug: "bashayer-taiba-madinah" },

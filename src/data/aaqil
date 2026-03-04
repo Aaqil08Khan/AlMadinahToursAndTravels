@@ -3434,7 +3434,7 @@ export const hotelsData = [
     featured: false
   },
 
-    // ==================== EMAAR AL DIYAFA MAKKAH HOTELS ====================
+  // ==================== EMAAR AL DIYAFA MAKKAH HOTELS ====================
 
   {
     id: "emaar-grand-makkah",
@@ -3522,10 +3522,10 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/emaargrand.jpg",
-      "/assets/images/emaargrand1.webp",
-      "/assets/images/emaargrand2.webp",
-      "/assets/images/emaargrand3.webp",
+      "/assets/images/emaar-grand-makkah.jpg",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f1/3e/8a/emaar-grand-hotel.jpg?w=1200&h=-1&s=1",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/261234567.jpg?k=emaar-grand-makkah&o=",
+      "https://emaaraldiyafa.com/wp-content/uploads/emaar-grand-exterior.jpg"
     ],
 
     priceRange: "280 - 765 SAR per night",
@@ -3618,10 +3618,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/elitehotel.webp",
-      "/assets/images/elitehotel1.webp",
-      "/assets/images/elitehotel2.webp",
-      "/assets/images/elitehotel3.webp",
+      "/assets/images/emaar-worth-elite.jpg",
+      "/assets/images/emaar-worth-elite1.jpg",
+      "/assets/images/emaar-worth-elite2.jpg"
     ],
 
     priceRange: "245 - 515 SAR per night",
@@ -3713,10 +3712,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/manar.webp",
-      "/assets/images/manar1.webp",
-      "/assets/images/manar2.webp",
-      "/assets/images/manar3.webp",
+      "/assets/images/emaar-al-manar-makkah.jpg",
+      "/assets/images/emaar-al-manar-makkah1.jpg",
+      "/assets/images/emaar-al-manar-makkah2.jpg"
     ],
 
     priceRange: "270 - 705 SAR per night",
@@ -3808,10 +3806,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/andalusiah.webp",
-      "/assets/images/andalusiah1.webp",
-      "/assets/images/andalusiah2.webp",
-      "/assets/images/andalusiah3.webp",
+      "/assets/images/emaar-andalusiah.jpg",
+      "/assets/images/emaar-andalusiah1.jpg",
+      "/assets/images/emaar-andalusiah2.jpg"
     ],
 
     priceRange: "270 - 705 SAR per night",
@@ -3896,10 +3893,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/sultanhotel.jpg",
-      "/assets/images/sultanhotel1.jpg",
-      "/assets/images/sultanhotel2.jpg",
-      "/assets/images/sultanhotel3.webp",
+      "/assets/images/emaar-al-sultan.jpg",
+      "/assets/images/emaar-al-sultan1.jpg",
+      "/assets/images/emaar-al-sultan2.jpg"
     ],
 
     priceRange: "Price On Request",
@@ -3991,10 +3987,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/khalilhotel.webp",
-      "/assets/images/khalilhotel1.webp",
-      "/assets/images/khalilhotel2.webp",
-      "/assets/images/khalilhotel3.jpg",
+      "/assets/images/emaar-al-khalil.jpg",
+      "/assets/images/emaar-al-khalil1.jpg",
+      "/assets/images/emaar-al-khalil2.jpg"
     ],
 
     priceRange: "185 - 475 SAR per night",
@@ -4085,10 +4080,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/afaqalsud.webp",
-      "/assets/images/afaqalsud1.webp",
-      "/assets/images/afaqalsud2.webp",
-      "/assets/images/afaqalsud3.webp",
+      "/assets/images/emaar-afaq-al-sad.jpg",
+      "/assets/images/emaar-afaq-al-sad1.jpg",
+      "/assets/images/emaar-afaq-al-sad2.jpg"
     ],
 
     priceRange: "105 - 290 SAR per night",
@@ -4179,10 +4173,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/diwanajyad.webp",
-      "/assets/images/diwanajyad1.webp",
-      "/assets/images/diwanajyad2.webp",
-      "/assets/images/diwanajyad3.webp",
+      "/assets/images/emaar-al-diwan-ajyad.jpg",
+      "/assets/images/emaar-al-diwan-ajyad1.jpg",
+      "/assets/images/emaar-al-diwan-ajyad2.jpg"
     ],
 
     priceRange: "105 - 290 SAR per night",
@@ -4272,10 +4265,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/osturahotel.webp",
-      "/assets/images/osturahotel1.webp",
-      "/assets/images/osturahotel2.webp",
-      "/assets/images/osturahotel3.webp",
+      "/assets/images/osturat-emaar.jpg",
+      "/assets/images/osturat-emaar1.jpg",
+      "/assets/images/osturat-emaar2.jpg"
     ],
 
     priceRange: "65 - 120 SAR per night",
@@ -4366,10 +4358,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/elitehotel.webp",
-      "/assets/images/elitehotel1.webp",
-      "/assets/images/elitehotel2.webp",
-      "/assets/images/elitehotel3.webp",
+      "/assets/images/emaar-elite-makkah.jpg",
+      "/assets/images/emaar-elite-makkah1.jpg",
+      "/assets/images/emaar-elite-makkah2.jpg"
     ],
 
     priceRange: "110 - 420 SAR per night",
@@ -4459,10 +4450,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/jawharahotel.webp",
-      "/assets/images/jawharahotel1.webp",
-      "/assets/images/jawharahotel2.webp",
-      "/assets/images/jawharahotel3.jpg",
+      "/assets/images/emaar-al-jawhara.jpg",
+      "/assets/images/emaar-al-jawhara1.jpg",
+      "/assets/images/emaar-al-jawhara2.jpg"
     ],
 
     priceRange: "Price On Request",
@@ -4552,10 +4542,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/rawdhahotel.jpg",
-      "/assets/images/rawdhahotel1.jpg",
-      "/assets/images/rawdhahotel2.jpg",
-      "/assets/images/rawdhahotel3.jpg",
+      "/assets/images/emaar-al-rawdah-1.jpg",
+      "/assets/images/emaar-al-rawdah-1a.jpg",
+      "/assets/images/emaar-al-rawdah-1b.jpg"
     ],
 
     priceRange: "Price On Request",
@@ -4645,10 +4634,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/rewdhall.jpg",
-      "/assets/images/rewdhall1.jpg",
-      "/assets/images/rewdhall2.jpg",
-      "/assets/images/rewdhall3.jpg",
+      "/assets/images/emaar-al-rawdah-2.jpg",
+      "/assets/images/emaar-al-rawdah-2a.jpg",
+      "/assets/images/emaar-al-rawdah-2b.jpg"
     ],
 
     priceRange: "Price On Request",
@@ -4738,10 +4726,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/international.webp",
-      "/assets/images/international1.webp",
-      "/assets/images/international2.webp",
-      "/assets/images/international3.webp",
+      "/assets/images/emaar-international.jpg",
+      "/assets/images/emaar-international1.jpg",
+      "/assets/images/emaar-international2.jpg"
     ],
 
     priceRange: "75 - 150 SAR per night",
@@ -4831,10 +4818,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/noor.webp",
-      "/assets/images/noor1.webp",
-      "/assets/images/noor2.webp",
-      "/assets/images/noor3.webp",
+      "/assets/images/emaar-al-noor.jpg",
+      "/assets/images/emaar-al-noor1.jpg",
+      "/assets/images/emaar-al-noor2.jpg"
     ],
 
     priceRange: "65 - 180 SAR per night",
@@ -4917,10 +4903,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/legend.webp",
-      "/assets/images/legend1.webp",
-      "/assets/images/legend2.webp",
-      "/assets/images/legend3.webp",
+      "/assets/images/emaar-legend.jpg",
+      "/assets/images/emaar-legend1.jpg",
+      "/assets/images/emaar-legend2.jpg"
     ],
 
     priceRange: "Price On Request",
@@ -5010,10 +4995,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/forum.webp",
-      "/assets/images/forum1.webp",
-      "/assets/images/forum2.webp",
-      "/assets/images/forum3.webp",
+      "/assets/images/emaar-fourm.jpg",
+      "/assets/images/emaar-fourm1.jpg",
+      "/assets/images/emaar-fourm2.jpg"
     ],
 
     priceRange: "Price On Request",
@@ -5103,10 +5087,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/taqwa.jpg",
-      "/assets/images/taqwa1.jpg",
-      "/assets/images/taqwa2.jpg",
-      "/assets/images/taqwa3.jpg",
+      "/assets/images/emaar-al-taqwa-makkah.jpg",
+      "/assets/images/emaar-al-taqwa-makkah1.jpg",
+      "/assets/images/emaar-al-taqwa-makkah2.jpg"
     ],
 
     priceRange: "Price On Request",
@@ -5196,10 +5179,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/safaemaar.jpg",
-      "/assets/images/safaemaar1.jpg",
-      "/assets/images/safaemaar2.jpg",
-      "/assets/images/safaemaar3.jpg",
+      "/assets/images/emaar-al-safa.jpg",
+      "/assets/images/emaar-al-safa1.jpg",
+      "/assets/images/emaar-al-safa2.jpg"
     ],
 
     priceRange: "Price On Request",
@@ -5289,10 +5271,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/nozha.jpg",
-      "/assets/images/nozha1.jpg",
-      "/assets/images/nozha2.jpg",
-      "/assets/images/nozha3.jpg",
+      "/assets/images/emaar-al-nozha.jpg",
+      "/assets/images/emaar-al-nozha1.jpg",
+      "/assets/images/emaar-al-nozha2.jpg"
     ],
 
     priceRange: "Price On Request",
@@ -5394,10 +5375,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/alharithahotel.jpg",
-      "/assets/images/alharithahotel1.webp",
-      "/assets/images/alharithahotel2.webp",
-      "/assets/images/alharithahotel3.webp",
+      "/assets/images/al-harithia-madinah.jpg",
+      "/assets/images/al-harithia-madinah1.jpg",
+      "/assets/images/al-harithia-madinah2.jpg"
     ],
 
     priceRange: "325 - 1,000 SAR per night",
@@ -5490,10 +5470,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/badralmaqam.webp",
-      "/assets/images/badralmaqam1.webp",
-      "/assets/images/badralmaqam2.webp",
-      "/assets/images/badralmaqam3.jpg",
+      "/assets/images/grand-plaza-badr.jpg",
+      "/assets/images/grand-plaza-badr1.jpg",
+      "/assets/images/grand-plaza-badr2.jpg"
     ],
 
     priceRange: "300 - 750 SAR per night",
@@ -5586,10 +5565,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/grandplazalamadina.webp",
-      "/assets/images/grandplazalamadina1.webp",
-      "/assets/images/grandplazalamadina2.webp",
-      "/assets/images/grandplazalamadina3.webp",
+      "/assets/images/grand-plaza-almadina.jpg",
+      "/assets/images/grand-plaza-almadina1.jpg",
+      "/assets/images/grand-plaza-almadina2.jpg"
     ],
 
     priceRange: "300 - 650 SAR per night",
@@ -5681,10 +5659,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/maysenrehab.png",
-      "/assets/images/maysenrehab1.jpeg",
-      "/assets/images/maysenrehab2.jpeg",
-      "/assets/images/maysenrehab3.jpeg",
+      "/assets/images/maysan-rehab-elmysk.jpg",
+      "/assets/images/maysan-rehab-elmysk1.jpg",
+      "/assets/images/maysan-rehab-elmysk2.jpg"
     ],
 
     priceRange: "275 - 675 SAR per night",
@@ -5776,10 +5753,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/arkanalmanar.webp",
-      "/assets/images/arkanalmanar1.webp",
-      "/assets/images/arkanalmanar2.webp",
-      "/assets/images/arkanalmanar3.webp",
+      "/assets/images/arkan-almanar.jpg",
+      "/assets/images/arkan-almanar1.jpg",
+      "/assets/images/arkan-almanar2.jpg"
     ],
 
     priceRange: "275 - 590 SAR per night",
@@ -5871,10 +5847,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/odestalmadina.webp",
-      "/assets/images/odestalmadina1.webp",
-      "/assets/images/odestalmadina2.webp",
-      "/assets/images/odestalmadina3.webp",
+      "/assets/images/plaza-inn-ohud.jpg",
+      "/assets/images/plaza-inn-ohud1.jpg",
+      "/assets/images/plaza-inn-ohud2.jpg"
     ],
 
     priceRange: "200 - 475 SAR per night",
@@ -5966,10 +5941,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/daraltaqwa.webp",
-      "/assets/images/daraltaqwa1.webp",
-      "/assets/images/daraltaqwa2.webp",
-      "/assets/images/daraltaqwa3.webp",
+      "/assets/images/maysan-altaqwa.jpg",
+      "/assets/images/maysan-altaqwa1.jpg",
+      "/assets/images/maysan-altaqwa2.jpg"
     ],
 
     priceRange: "230 - 575 SAR per night",
@@ -6062,10 +6036,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/alaqeeqhotel.webp",
-      "/assets/images/alaqeeqhotel1.webp",
-      "/assets/images/alaqeeqhotel2.webp",
-      "/assets/images/alaqeeqhotel3.webp",
+      "/assets/images/al-aqeeq-madinah.jpg",
+      "/assets/images/al-aqeeq-madinah1.jpg",
+      "/assets/images/al-aqeeq-madinah2.jpg"
     ],
 
     priceRange: "575 - 1,800 SAR per night",
@@ -6158,10 +6131,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/odestalmadina.webp",
-      "/assets/images/odestalmadina1.webp",
-      "/assets/images/odestalmadina2.webp",
-      "/assets/images/odestalmadina3.webp",
+      "/assets/images/odest-al-madina.jpg",
+      "/assets/images/odest-al-madina1.jpg",
+      "/assets/images/odest-al-madina2.jpg"
     ],
 
     priceRange: "Price On Request",
@@ -6254,10 +6226,9 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/tripleonehotel.webp",
-      "/assets/images/tripleonehotel1.webp",
-      "/assets/images/tripleonehotel2.webp",
-      "/assets/images/tripleonehotel3.jpg",
+      "/assets/images/triple-one-al-madina.jpg",
+      "/assets/images/triple-one-al-madina1.jpg",
+      "/assets/images/triple-one-al-madina2.jpg"
     ],
 
     priceRange: "Price On Request",
