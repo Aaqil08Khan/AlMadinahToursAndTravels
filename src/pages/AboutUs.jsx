@@ -57,7 +57,7 @@ const AboutUs = () => {
 
           <div className="who-image">
             <img
-              src="/assets/images/mission_img2.jpg"
+              src="/assets/images/mission_img2.webp"
               alt="Masjid an-Nabawi"
             />
           </div>

@@ -17,7 +17,7 @@
   /* Background Image - Replace with your actual path */
   background:
     linear-gradient(to bottom, rgb(60 62 65 / 80%), rgb(8 18 38 / 24%)),
-    url(/assets/images/contactlandingbg.jpg);
+    url(/assets/images/contactlandingbg.webp);
   background-size: cover;
   background-position: center;
   color: var(--white);

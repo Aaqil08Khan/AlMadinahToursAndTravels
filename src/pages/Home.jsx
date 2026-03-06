@@ -97,7 +97,7 @@ function Home() {
               <div className="package-image">
                 <span className="badge">Best Offer</span>
                 <img
-                  src="/assets/images/package1.jpg"
+                  src="/assets/images/package1.webp"
                   alt="Budget Umrah Package"
                 />
               </div>
@@ -127,7 +127,7 @@ function Home() {
               <div className="package-image">
                 <span className="badge">Popular</span>
                 <img
-                  src="/assets/images/package2.jpg"
+                  src="/assets/images/package2.webp"
                   alt="Economy Umrah Package"
                 />
               </div>
@@ -240,7 +240,7 @@ function Home() {
         <div className="services-grid">
           <div
             className="service-card"
-            style={{ backgroundImage: 'url("/assets/images/umrah_package.jpg")' }}
+            style={{ backgroundImage: 'url("/assets/images/umrah_package.webp")' }}
           >
             <div className="service-overlay"></div>
             <h3>Umrah Packages</h3>
@@ -249,7 +249,7 @@ function Home() {
 
           <div
             className="service-card"
-            style={{ backgroundImage: 'url("/assets/images/visa_assistance2.jpg")' }}
+            style={{ backgroundImage: 'url("/assets/images/visa_assistance2.webp")' }}
           >
             <div className="service-overlay"></div>
             <h3>Visa Assistance</h3>
@@ -305,7 +305,7 @@ function Home() {
           </div>
 
           <div className="why-visual">
-            <img src="/assets/images/kaaba.jpg" alt="Sacred Journey" />
+            <img src="/assets/images/kaaba.webp" alt="Sacred Journey" />
             <div className="trust-badge">
               <strong>15+</strong>
               <span>Years of Trust</span>

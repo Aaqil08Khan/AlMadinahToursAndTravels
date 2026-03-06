@@ -7,7 +7,7 @@
 
   background-image:
     linear-gradient(rgba(2, 11, 28, 0.475), rgba(2, 11, 28, 0.36)),
-    url("/assets/images/landingpage_background2.jpg");
+    url("/assets/images/landingpage_background2.webp");
 
   background-size: cover;
   background-position: center 30%;

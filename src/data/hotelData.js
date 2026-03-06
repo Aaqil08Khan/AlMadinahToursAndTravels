@@ -3434,472 +3434,1236 @@ export const hotelsData = [
     featured: false
   },
 
-    // ==================== EMAAR AL DIYAFA MAKKAH HOTELS ====================
+  // ==================== NEW MAKKAH ECONOMY HOTELS (IDs 131–157) ====================
 
   {
-    id: "emaar-grand-makkah",
-    name: "Emaar Grand Hotel",
-    slug: "emaar-grand-makkah",
-    image: "/assets/images/emaar-grand-makkah.jpg",
-    rating: 4,
+    id: "al-deafah-tower-hotel",
+    name: "Al Deafah Tower Hotel",
+    slug: "al-deafah-tower-hotel",
+    image: "/assets/images/deafahtower.webp",
+    rating: 3,
     location: "Makkah",
-    distance: "750m from Masjid al-Haram",
-    amenities: ["Free WiFi", "3 Restaurants", "Breakfast Included", "Large Capacity"],
+    distance: "Ibrahim Khalil Road, Makkah",
+    amenities: ["Basic Rooms", "AC", "Daily Housekeeping", "Halal Dining Nearby"],
+    description: "Al Deafah Tower Hotel is a 3-star economy accommodation on Ibrahim Khalil Road, Makkah. It provides clean, functional rooms for pilgrims seeking affordable stays during Umrah, with easy road access to Masjid al-Haram.",
+    fullAmenities: [
+      { icon: "🕌", name: "Haram Access", detail: "Ibrahim Khalil Road — road access to Masjid al-Haram" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms fully air-conditioned" },
+      { icon: "🛎️", name: "Front Desk", detail: "Reception available for guest assistance" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily room cleaning service" },
+      { icon: "🔒", name: "Security", detail: "Basic security measures in place" },
+      { icon: "🍽️", name: "Dining Nearby", detail: "Halal restaurants within walking distance" },
+      { icon: "🅿️", name: "Parking", detail: "Street parking available nearby" },
+      { icon: "💰", name: "Budget-Friendly", detail: "Affordable rates for economy pilgrims" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Clean room with essential amenities.", size: "22 sqm", occupancy: "2–3 adults", features: ["Twin Beds", "Bathroom", "AC", "Basic Amenities"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats available", "Qibla direction marked", "Prayer times displayed", "Halal food options nearby", "Luggage storage available"] },
+    diningOptions: [{ name: "Nearby Local Restaurants", cuisine: "Arabic & South Asian", timing: "Various", specialty: "Affordable halal meals within walking distance" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Ibrahim Khalil Road", time: "Short drive or taxi" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "Contact hotel directly", children: "Contact us for details", pets: "Not allowed" },
+     gallery: [
+      "/assets/images/deafahtower.webp",
+      "/assets/images/deafahtower1.webp",
+      "/assets/images/deafahtower2.webp",
+      "/assets/images/deafahtower3.webp",
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
 
-    description: "Emaar Grand Hotel is one of the flagship properties of Emaar Al Diyafa Hotels, a trusted hospitality group operating in Makkah since 1998. Located 750 metres from Masjid al-Haram on Ibrahim Al Khalil Street in the Al Masfala district, the hotel is a large-capacity property featuring 885 rooms, 15 elevators and 3 restaurants, capable of hosting up to 3,500 pilgrims. It is an ideal choice for groups seeking comfort, scale and reliable services.",
+
+  {
+    id: "areej-al-wafa",
+    name: "Areej Al Wafa",
+    slug: "areej-al-wafa",
+    image: "/assets/images/areejalwafa.webp",
+    rating: 2,
+    location: "Makkah",
+    distance: "Ibrahim Khalil Road, Makkah",
+    amenities: ["Basic Rooms", "AC", "Daily Housekeeping", "Halal Dining Nearby"],
+    description: "Areej Al Wafa is a budget economy hotel on Ibrahim Khalil Road, Makkah. It offers simple, clean accommodation for pilgrims seeking affordable lodging close to the Holy Mosque area during their Umrah journey.",
+    fullAmenities: [
+      { icon: "🕌", name: "Haram Access", detail: "Ibrahim Khalil Road with access to Masjid al-Haram" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms air-conditioned" },
+      { icon: "🛎️", name: "Reception", detail: "Front desk available" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily room cleaning" },
+      { icon: "🔒", name: "Security", detail: "Basic security" },
+      { icon: "🍽️", name: "Dining Nearby", detail: "Halal restaurants nearby" },
+      { icon: "🅿️", name: "Parking", detail: "Street parking available" },
+      { icon: "💰", name: "Budget-Friendly", detail: "Very affordable rates" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Simple clean room with essentials.", size: "20 sqm", occupancy: "2–3 adults", features: ["Twin Beds", "Bathroom", "AC", "Basic Amenities"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats available", "Qibla direction marked", "Prayer times displayed", "Halal food nearby", "Luggage storage"] },
+    diningOptions: [{ name: "Nearby Restaurants", cuisine: "Arabic & South Asian", timing: "Various", specialty: "Halal meals nearby" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Ibrahim Khalil Road", time: "Short drive" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "Contact hotel directly", children: "Contact us for details", pets: "Not allowed" },
+      gallery: [
+      "/assets/images/areejalwafa.webp",
+      "/assets/images/areejalwafa1.webp",
+      "/assets/images/areejalwafa2.webp",
+      "/assets/images/areejalwafa3.webp",
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "areek-al-khalood",
+    name: "Areek Al Khalood",
+    slug: "areek-al-khalood",
+    image: "/assets/images/khalood.webp",
+    rating: 2,
+    location: "Makkah",
+    distance: "Ibrahim Khalil Road, Makkah",
+    amenities: ["Basic Rooms", "AC", "Daily Housekeeping", "Halal Dining Nearby"],
+    description: "Areek Al Khalood is a budget hotel on Ibrahim Khalil Road, Makkah, offering basic yet clean accommodation for pilgrims who prioritise value and proximity to the Holy Mosque area.",
+    fullAmenities: [
+      { icon: "🕌", name: "Haram Access", detail: "Ibrahim Khalil Road access to Masjid al-Haram" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms air-conditioned" },
+      { icon: "🛎️", name: "Reception", detail: "Front desk available" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
+      { icon: "🔒", name: "Security", detail: "Basic security" },
+      { icon: "🍽️", name: "Dining Nearby", detail: "Halal restaurants within reach" },
+      { icon: "🅿️", name: "Parking", detail: "Street parking nearby" },
+      { icon: "💰", name: "Budget-Friendly", detail: "Affordable pricing" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Basic clean room for pilgrims.", size: "20 sqm", occupancy: "2–3 adults", features: ["Twin Beds", "Bathroom", "AC", "Basic Amenities"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats available", "Qibla direction marked", "Prayer times displayed", "Halal food nearby"] },
+    diningOptions: [{ name: "Nearby Restaurants", cuisine: "Arabic & South Asian", timing: "Various", specialty: "Halal meals nearby" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Ibrahim Khalil Road", time: "Short drive" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "Contact hotel directly", children: "Contact us for details", pets: "Not allowed" },
+    gallery: [
+      "/assets/images/khalood.webp",
+      "/assets/images/khalood1.webp",
+      "/assets/images/khalood2.webp",
+      "/assets/images/khalood3.webp",
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "barakah-al-hajlah",
+    name: "Barakah Al Hajlah",
+    slug: "barakah-al-hajlah",
+    image: "/assets/images/barakah.webp",
+    rating: 3,
+    location: "Makkah",
+    distance: "Al Hijrah Road, Makkah",
+    amenities: ["Free WiFi", "AC", "Restaurant", "Breakfast Only"],
+    description: "Barakah Al Hajlah is a 3-star economy hotel on Al Hijrah Road, Makkah, providing comfortable and affordable accommodation for pilgrims. The hotel offers breakfast and is conveniently located for access to the Holy Mosque.",
+    fullAmenities: [
+      { icon: "🕌", name: "Haram Access", detail: "Al Hijrah Road — road access to Masjid al-Haram" },
+      { icon: "📶", name: "Free WiFi", detail: "Complimentary internet" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms climate controlled" },
+      { icon: "🍽️", name: "Restaurant", detail: "On-site halal dining" },
+      { icon: "☕", name: "Breakfast", detail: "Breakfast included" },
+      { icon: "🛎️", name: "Reception", detail: "24/7 front desk" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
+      { icon: "🔒", name: "Security", detail: "24-hour security" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Comfortable room with breakfast.", size: "24 sqm", occupancy: "2–3 adults", features: ["Twin Beds", "Bathroom", "AC", "WiFi", "TV"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats in rooms", "Qibla direction marked", "Prayer times displayed", "Breakfast included", "Luggage storage"] },
+    diningOptions: [{ name: "Hotel Restaurant", cuisine: "Arabic & International", timing: "6:00 AM – 10:00 PM", specialty: "Breakfast and halal meals" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Al Hijrah Road", time: "Short drive" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "48 hours notice required", children: "Children under 10 stay free", pets: "Not allowed" },
+    gallery: [
+      "/assets/images/barakah.webp",
+      "/assets/images/barakah1.webp",
+      "/assets/images/barakah2.webp",
+      "/assets/images/barakah3.webp",
+
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "burj-meezab",
+    name: "Burj Meezab",
+    slug: "burj-meezab",
+    image: "/assets/images/meezab.webp",
+    rating: 3,
+    location: "Makkah",
+    distance: "Ajyad Street, Makkah",
+    amenities: ["AC", "Daily Housekeeping", "Near Haram", "Halal Dining Nearby"],
+    description: "Burj Meezab is a 3-star economy hotel on Ajyad Street, Makkah. Its central location offers excellent proximity to Masjid al-Haram, making it a practical and affordable choice for pilgrims performing Umrah.",
+    fullAmenities: [
+      { icon: "🕌", name: "Ajyad Street", detail: "Central Makkah — close to Masjid al-Haram" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms air-conditioned" },
+      { icon: "🛎️", name: "Reception", detail: "Front desk available" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
+      { icon: "🔒", name: "Security", detail: "In-house security" },
+      { icon: "🍽️", name: "Dining Nearby", detail: "Halal restaurants nearby" },
+      { icon: "🅿️", name: "Parking", detail: "Nearby parking" },
+      { icon: "💰", name: "Budget-Friendly", detail: "Affordable rates" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Clean room near Haram.", size: "22 sqm", occupancy: "2–3 adults", features: ["Twin Beds", "Bathroom", "AC", "Basic Amenities"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats available", "Qibla direction marked", "Prayer times displayed", "Close to Masjid al-Haram"] },
+    diningOptions: [{ name: "Nearby Restaurants", cuisine: "Arabic & International", timing: "Various", specialty: "Halal meals nearby" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Ajyad Street — very close", time: "5–10 min walk" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "Contact hotel directly", children: "Contact us for details", pets: "Not allowed" },
+    gallery: [
+      "/assets/images/meezab.webp", 
+      "/assets/images/meezab1.webp", 
+      "/assets/images/meezab2.webp", 
+      "/assets/images/meezab3.webp", 
+
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "dar-al-byan-al-rshad",
+    name: "Dar Al Byan Al Rshad",
+    slug: "dar-al-byan-al-rshad",
+    image: "/assets/images/alrashd.webp",
+    rating: 2,
+    location: "Makkah",
+    distance: "Al Hijrah Road, Makkah",
+    amenities: ["Basic Rooms", "AC", "Daily Housekeeping", "Halal Dining Nearby"],
+    description: "Dar Al Byan Al Rshad is a budget economy hotel on Al Hijrah Road, Makkah. It provides simple and clean accommodation for pilgrims who want to focus on worship while keeping accommodation costs minimal.",
+    fullAmenities: [
+      { icon: "🕌", name: "Haram Access", detail: "Al Hijrah Road access to Masjid al-Haram" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms air-conditioned" },
+      { icon: "🛎️", name: "Reception", detail: "Front desk available" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
+      { icon: "🔒", name: "Security", detail: "Basic security" },
+      { icon: "🍽️", name: "Dining Nearby", detail: "Halal restaurants nearby" },
+      { icon: "🅿️", name: "Parking", detail: "Street parking available" },
+      { icon: "💰", name: "Budget-Friendly", detail: "Very affordable rates" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Basic clean room for pilgrims.", size: "20 sqm", occupancy: "2–3 adults", features: ["Twin Beds", "Bathroom", "AC", "Basic Amenities"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats available", "Qibla direction marked", "Prayer times displayed", "Halal food nearby"] },
+    diningOptions: [{ name: "Nearby Restaurants", cuisine: "Arabic & South Asian", timing: "Various", specialty: "Halal meals nearby" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Al Hijrah Road", time: "Short drive" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "Contact hotel directly", children: "Contact us for details", pets: "Not allowed" },
+    gallery: [
+      "/assets/images/alrashd.webp",
+      "/assets/images/alrashd1.webp",
+      "/assets/images/alrashd2.webp",
+      "/assets/images/alrashd3.webp",
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "emaar-areej",
+    name: "Emaar Areej",
+    slug: "emaar-areej",
+    image: "/assets/images/areej.webp",
+    rating: 3,
+    location: "Makkah",
+    distance: "Ibrahim Khalil Road, Makkah",
+    amenities: ["Free WiFi", "AC", "Restaurant", "Breakfast Only"],
+    description: "Emaar Areej is a 3-star economy hotel on Ibrahim Khalil Road, Makkah, managed under the Emaar Al Diyafa Hotels brand. It offers comfortable rooms with breakfast and reliable services for pilgrims during Umrah.",
+    fullAmenities: [
+      { icon: "🕌", name: "Ibrahim Khalil Road", detail: "Main artery to Masjid al-Haram" },
+      { icon: "📶", name: "Free WiFi", detail: "Complimentary internet" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms climate controlled" },
+      { icon: "🍽️", name: "Restaurant", detail: "On-site halal dining" },
+      { icon: "☕", name: "Breakfast", detail: "Breakfast included" },
+      { icon: "🛎️", name: "Reception", detail: "24/7 front desk" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
+      { icon: "🔒", name: "Security", detail: "24-hour security" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Comfortable room with breakfast.", size: "24 sqm", occupancy: "2–3 adults", features: ["Twin Beds", "Bathroom", "AC", "WiFi", "TV"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats in rooms", "Qibla direction marked", "Prayer times displayed", "Breakfast included", "Luggage storage"] },
+    diningOptions: [{ name: "Emaar Areej Restaurant", cuisine: "Arabic & International", timing: "6:00 AM – 10:30 PM", specialty: "Breakfast and halal meals" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Ibrahim Khalil Road", time: "Short drive" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "48 hours notice required", children: "Children under 10 stay free", pets: "Not allowed" },
+    gallery: [
+      "/assets/images/areej.webp",
+      "/assets/images/areej1.webp",
+      "/assets/images/areej2.webp",
+      "/assets/images/areej3.webp",
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "hiba-hijra-6",
+    name: "Hiba Hijra 6",
+    slug: "hiba-hijra-6",
+    image: "/assets/images/hiba.webp",
+    rating: 2,
+    location: "Makkah",
+    distance: "Al Hijrah Road, Makkah",
+    amenities: ["Basic Rooms", "AC", "Daily Housekeeping", "Halal Dining Nearby"],
+    description: "Hiba Hijra 6 is a budget economy hotel on Al Hijrah Road, Makkah. It provides simple, affordable accommodation for pilgrims seeking a no-frills base during their Umrah stay.",
+    fullAmenities: [
+      { icon: "🕌", name: "Haram Access", detail: "Al Hijrah Road access to Masjid al-Haram" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms air-conditioned" },
+      { icon: "🛎️", name: "Reception", detail: "Front desk available" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
+      { icon: "🔒", name: "Security", detail: "Basic security" },
+      { icon: "🍽️", name: "Dining Nearby", detail: "Halal restaurants nearby" },
+      { icon: "🅿️", name: "Parking", detail: "Street parking available" },
+      { icon: "💰", name: "Budget-Friendly", detail: "Very affordable rates" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Basic clean room for pilgrims.", size: "20 sqm", occupancy: "2–3 adults", features: ["Twin Beds", "Bathroom", "AC", "Basic Amenities"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats available", "Qibla direction marked", "Prayer times displayed", "Halal food nearby"] },
+    diningOptions: [{ name: "Nearby Restaurants", cuisine: "Arabic & South Asian", timing: "Various", specialty: "Affordable halal meals" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Al Hijrah Road", time: "Short drive" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "Contact hotel directly", children: "Contact us for details", pets: "Not allowed" },
+    gallery: [
+      "/assets/images/hiba.webp",
+      "/assets/images/hiba1.webp",
+      "/assets/images/hiba2.webp",
+      "/assets/images/hiba3.webp",
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "jada-ajiad-dallah-ajyad",
+    name: "Jada Ajiad (Dallah Ajyad)",
+    slug: "jada-ajiad-dallah-ajyad",
+    image: "/assets/images/jada.webp",
+    rating: 3,
+    location: "Makkah",
+    distance: "Ajyad Street, Makkah",
+    amenities: ["Free WiFi", "AC", "Restaurant", "Breakfast Only"],
+    description: "Jada Ajiad, also known as Dallah Ajyad, is a 3-star economy hotel on Ajyad Street in central Makkah. Known for its excellent location near Masjid al-Haram, it is a reliable and affordable choice for Umrah pilgrims.",
+    fullAmenities: [
+      { icon: "🕌", name: "Ajyad Street", detail: "Central Makkah — very close to Masjid al-Haram" },
+      { icon: "📶", name: "Free WiFi", detail: "Complimentary internet" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms climate controlled" },
+      { icon: "🍽️", name: "Restaurant", detail: "On-site halal dining" },
+      { icon: "☕", name: "Breakfast", detail: "Breakfast included" },
+      { icon: "🛎️", name: "Reception", detail: "24/7 front desk" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
+      { icon: "🔒", name: "Security", detail: "24-hour security" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Comfortable room near Haram.", size: "25 sqm", occupancy: "2–3 adults", features: ["Double Bed", "Bathroom", "AC", "WiFi", "TV"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats in rooms", "Qibla direction marked", "Prayer times posted", "On-site restaurant", "Walking distance to Haram"] },
+    diningOptions: [{ name: "Jada Restaurant", cuisine: "Arabic & Pakistani", timing: "6:00 AM – 11:00 PM", specialty: "Breakfast and traditional meals" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Ajyad Street — very close", time: "5–10 min walk" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "48 hours notice required", children: "Children under 10 stay free", pets: "Not allowed" },
+    gallery: [
+      "/assets/images/jada.webp",
+      "/assets/images/jada1.webp",
+      "/assets/images/jada2.webp",
+      "/assets/images/jada3.webp",
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "johra-majd",
+    name: "Johra Majd",
+    slug: "johra-majd",
+    image: "/assets/images/johra.webp",
+    rating: 2,
+    location: "Makkah",
+    distance: "Al Hijrah Road, Makkah",
+    amenities: ["Basic Rooms", "AC", "Daily Housekeeping", "Halal Dining Nearby"],
+    description: "Johra Majd is a budget economy hotel on Al Hijrah Road, Makkah. It offers simple and clean rooms for pilgrims seeking affordable accommodation during their Umrah visit.",
+    fullAmenities: [
+      { icon: "🕌", name: "Haram Access", detail: "Al Hijrah Road access to Masjid al-Haram" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms air-conditioned" },
+      { icon: "🛎️", name: "Reception", detail: "Front desk available" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
+      { icon: "🔒", name: "Security", detail: "Basic security" },
+      { icon: "🍽️", name: "Dining Nearby", detail: "Halal restaurants nearby" },
+      { icon: "🅿️", name: "Parking", detail: "Street parking nearby" },
+      { icon: "💰", name: "Budget-Friendly", detail: "Very affordable" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Basic clean room for pilgrims.", size: "20 sqm", occupancy: "2–3 adults", features: ["Twin Beds", "Bathroom", "AC", "Basic Amenities"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats available", "Qibla direction marked", "Prayer times displayed", "Halal food nearby"] },
+    diningOptions: [{ name: "Nearby Restaurants", cuisine: "Arabic & South Asian", timing: "Various", specialty: "Halal meals nearby" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Al Hijrah Road", time: "Short drive" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "Contact hotel directly", children: "Contact us for details", pets: "Not allowed" },
+    gallery: [
+      "/assets/images/johra.webp",
+      "/assets/images/johra1.webp",
+      "/assets/images/johra2.webp",
+      "/assets/images/johra3.webp",
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "johra-mouassar",
+    name: "Johra Mouassar",
+    slug: "johra-mouassar",
+    image: "/assets/images/mouassar.webp",
+    rating: 2,
+    location: "Makkah",
+    distance: "Ibrahim Khalil Road, Makkah",
+    amenities: ["Basic Rooms", "AC", "Daily Housekeeping", "Halal Dining Nearby"],
+    description: "Johra Mouassar is a budget hotel on Ibrahim Khalil Road, Makkah, providing simple, clean rooms for pilgrims at very affordable rates during their Umrah stay.",
+    fullAmenities: [
+      { icon: "🕌", name: "Haram Access", detail: "Ibrahim Khalil Road access to Masjid al-Haram" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms air-conditioned" },
+      { icon: "🛎️", name: "Reception", detail: "Front desk available" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
+      { icon: "🔒", name: "Security", detail: "Basic security" },
+      { icon: "🍽️", name: "Dining Nearby", detail: "Halal restaurants nearby" },
+      { icon: "🅿️", name: "Parking", detail: "Street parking nearby" },
+      { icon: "💰", name: "Budget-Friendly", detail: "Very affordable" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Basic clean room for pilgrims.", size: "20 sqm", occupancy: "2–3 adults", features: ["Twin Beds", "Bathroom", "AC", "Basic Amenities"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats available", "Qibla direction marked", "Prayer times displayed", "Halal food nearby"] },
+    diningOptions: [{ name: "Nearby Restaurants", cuisine: "Arabic & South Asian", timing: "Various", specialty: "Halal meals nearby" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Ibrahim Khalil Road", time: "Short drive" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "Contact hotel directly", children: "Contact us for details", pets: "Not allowed" },
+    gallery: [
+      "/assets/images/mouassar.webp",
+      "/assets/images/mouassar1.webp",
+      "/assets/images/mouassar2.webp",
+      "/assets/images/mouassar3.webp",
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "land-premium",
+    name: "Land Premium",
+    slug: "land-premium",
+    image: "/assets/images/landpremium.webp",
+    rating: 3,
+    location: "Makkah",
+    distance: "Ajyad Street, Makkah",
+    amenities: ["Free WiFi", "AC", "Restaurant", "Breakfast Only"],
+    description: "Land Premium is a 3-star economy hotel on Ajyad Street, Makkah. Offering a good balance of comfort and affordability, it is a popular choice for pilgrims who want a convenient central location near the Holy Mosque.",
+    fullAmenities: [
+      { icon: "🕌", name: "Ajyad Street", detail: "Central Makkah — close to Masjid al-Haram" },
+      { icon: "📶", name: "Free WiFi", detail: "Complimentary internet" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms climate controlled" },
+      { icon: "🍽️", name: "Restaurant", detail: "On-site halal dining" },
+      { icon: "☕", name: "Breakfast", detail: "Breakfast included" },
+      { icon: "🛎️", name: "Reception", detail: "24/7 front desk" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
+      { icon: "🔒", name: "Security", detail: "24-hour security" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Comfortable room with breakfast.", size: "25 sqm", occupancy: "2 adults", features: ["Double Bed", "Bathroom", "AC", "WiFi", "TV"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats in rooms", "Qibla direction marked", "Prayer times posted", "Breakfast included", "Walking distance to Haram"] },
+    diningOptions: [{ name: "Land Premium Restaurant", cuisine: "Arabic & International", timing: "6:00 AM – 11:00 PM", specialty: "Breakfast and halal meals" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Ajyad Street — very close", time: "5–10 min walk" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "48 hours notice required", children: "Children under 10 stay free", pets: "Not allowed" },
+    gallery: [
+      "/assets/images/landpremium.webp",
+      "/assets/images/landpremium1.webp",
+      "/assets/images/landpremium2.webp",
+      "/assets/images/landpremium3.webp",
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "maatouq-al-qarhi",
+    name: "Maatouq Al Qarhi",
+    slug: "maatouq-al-qarhi",
+    image: "/assets/images/qarhi.webp",
+    rating: 3,
+    location: "Makkah",
+    distance: "Al Hijrah Road, Makkah",
+    amenities: ["AC", "Daily Housekeeping", "Halal Dining Nearby", "Budget-Friendly"],
+    description: "Maatouq Al Qarhi is a 3-star economy hotel on Al Hijrah Road, Makkah. It provides reliable, affordable accommodation with essential services for pilgrims performing Umrah.",
+    fullAmenities: [
+      { icon: "🕌", name: "Haram Access", detail: "Al Hijrah Road access to Masjid al-Haram" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms air-conditioned" },
+      { icon: "🛎️", name: "Reception", detail: "Front desk available" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
+      { icon: "🔒", name: "Security", detail: "In-house security" },
+      { icon: "🍽️", name: "Dining Nearby", detail: "Halal restaurants nearby" },
+      { icon: "🅿️", name: "Parking", detail: "Nearby parking" },
+      { icon: "💰", name: "Budget-Friendly", detail: "Affordable rates" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Comfortable economy room.", size: "22 sqm", occupancy: "2–3 adults", features: ["Twin Beds", "Bathroom", "AC", "Basic Amenities"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats available", "Qibla direction marked", "Prayer times displayed", "Halal food nearby"] },
+    diningOptions: [{ name: "Nearby Restaurants", cuisine: "Arabic & South Asian", timing: "Various", specialty: "Halal meals nearby" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Al Hijrah Road", time: "Short drive" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "Contact hotel directly", children: "Contact us for details", pets: "Not allowed" },
+    gallery: [
+      "/assets/images/qarhi.webp",
+      "/assets/images/qarhi1.webp",
+      "/assets/images/qarhi2.webp",
+      "/assets/images/qarhi3.webp",
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "majd-al-zahbi",
+    name: "Majd Al Zahbi",
+    slug: "majd-al-zahbi",
+    image: "/assets/images/zahbi.webp",
+    rating: 2,
+    location: "Makkah",
+    distance: "Al Hijrah Road, Makkah",
+    amenities: ["Basic Rooms", "AC", "Daily Housekeeping", "Halal Dining Nearby"],
+    description: "Majd Al Zahbi is a budget economy hotel on Al Hijrah Road, Makkah. It offers simple and clean accommodation at very affordable rates for pilgrims visiting for Umrah.",
+    fullAmenities: [
+      { icon: "🕌", name: "Haram Access", detail: "Al Hijrah Road access to Masjid al-Haram" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms air-conditioned" },
+      { icon: "🛎️", name: "Reception", detail: "Front desk available" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
+      { icon: "🔒", name: "Security", detail: "Basic security" },
+      { icon: "🍽️", name: "Dining Nearby", detail: "Halal restaurants nearby" },
+      { icon: "🅿️", name: "Parking", detail: "Street parking nearby" },
+      { icon: "💰", name: "Budget-Friendly", detail: "Very affordable" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Basic clean room for pilgrims.", size: "20 sqm", occupancy: "2–3 adults", features: ["Twin Beds", "Bathroom", "AC", "Basic Amenities"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats available", "Qibla direction marked", "Prayer times displayed", "Halal food nearby"] },
+    diningOptions: [{ name: "Nearby Restaurants", cuisine: "Arabic & South Asian", timing: "Various", specialty: "Halal meals nearby" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Al Hijrah Road", time: "Short drive" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "Contact hotel directly", children: "Contact us for details", pets: "Not allowed" },
+    gallery: [
+      "/assets/images/zahbi.webp",
+      "/assets/images/zahbi1.webp",
+      "/assets/images/zahbi2.webp",
+      "/assets/images/zahbi3.webp",
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "manara-badaya",
+    name: "Manara Badaya",
+    slug: "manara-badaya",
+    image: "/assets/images/manara.webp",
+    rating: 3,
+    location: "Makkah",
+    distance: "Ibrahim Khalil Road, Makkah",
+    amenities: ["AC", "Daily Housekeeping", "Halal Dining Nearby", "Budget-Friendly"],
+    description: "Manara Badaya is a 3-star economy hotel on Ibrahim Khalil Road, Makkah. It provides comfortable, budget-friendly rooms for pilgrims performing Umrah, with essential services and good road access to the Holy Mosque.",
+    fullAmenities: [
+      { icon: "🕌", name: "Ibrahim Khalil Road", detail: "Main artery to Masjid al-Haram" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms air-conditioned" },
+      { icon: "🛎️", name: "Reception", detail: "Front desk available" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
+      { icon: "🔒", name: "Security", detail: "In-house security" },
+      { icon: "🍽️", name: "Dining Nearby", detail: "Halal restaurants nearby" },
+      { icon: "🅿️", name: "Parking", detail: "Nearby parking" },
+      { icon: "💰", name: "Budget-Friendly", detail: "Affordable rates" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Comfortable economy room.", size: "22 sqm", occupancy: "2–3 adults", features: ["Twin Beds", "Bathroom", "AC", "Basic Amenities"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats available", "Qibla direction marked", "Prayer times displayed", "Halal food nearby"] },
+    diningOptions: [{ name: "Nearby Restaurants", cuisine: "Arabic & International", timing: "Various", specialty: "Halal meals nearby" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Ibrahim Khalil Road", time: "Short drive" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "Contact hotel directly", children: "Contact us for details", pets: "Not allowed" },
+    gallery: [
+      "/assets/images/manara.webp",
+      "/assets/images/manara1.webp",
+      "/assets/images/manara2.webp",
+      "/assets/images/manara3.webp",
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "manazil-al-fateh-marwa",
+    name: "Manazil Al Fateh (Marwa Side)",
+    slug: "manazil-al-fateh-marwa",
+    image: "/assets/images/fateh.webp",
+    rating: 3,
+    location: "Makkah",
+    distance: "Marwa Side, Makkah",
+    amenities: ["Free WiFi", "AC", "Restaurant", "Breakfast Only"],
+    description: "Manazil Al Fateh is a 3-star economy hotel located on the Marwa side of Makkah, offering excellent access to both Masjid al-Haram and the Safa-Marwa corridor. It is an ideal base for pilgrims wishing to be close to the sacred sites.",
+    fullAmenities: [
+      { icon: "🕌", name: "Marwa Side", detail: "Excellent proximity to Masjid al-Haram and Safa-Marwa" },
+      { icon: "📶", name: "Free WiFi", detail: "Complimentary internet" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms climate controlled" },
+      { icon: "🍽️", name: "Restaurant", detail: "On-site halal dining" },
+      { icon: "☕", name: "Breakfast", detail: "Breakfast included" },
+      { icon: "🛎️", name: "Reception", detail: "24/7 front desk" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
+      { icon: "🔒", name: "Security", detail: "24-hour security" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Comfortable room near Marwa.", size: "25 sqm", occupancy: "2–3 adults", features: ["Double Bed", "Bathroom", "AC", "WiFi", "TV"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats in rooms", "Qibla direction marked", "Prayer times displayed", "Close to Safa and Marwa", "Breakfast included"] },
+    diningOptions: [{ name: "Hotel Restaurant", cuisine: "Arabic & International", timing: "6:00 AM – 10:30 PM", specialty: "Breakfast and halal meals" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Marwa Side", time: "Short walk" }, { name: "Safa and Marwa", distance: "Very close", time: "Walking distance" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "48 hours notice required", children: "Children under 10 stay free", pets: "Not allowed" },
+    gallery: [
+      "/assets/images/fateh.webp",
+      "/assets/images/fateh1.webp",
+      "/assets/images/fateh2.webp",
+      "/assets/images/fateh3.webp",
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "nawarat-al-shams-1",
+    name: "Nawarat Al Shams 1",
+    slug: "nawarat-al-shams-1",
+    image: "/assets/images/nawarat.webp",
+    rating: 3,
+    location: "Makkah",
+    distance: "Ibrahim Khalil Road, Makkah",
+    amenities: ["AC", "Daily Housekeeping", "Halal Dining Nearby", "Budget-Friendly"],
+    description: "Nawarat Al Shams 1 is a 3-star economy hotel on Ibrahim Khalil Road, Makkah. Part of the Nawarat Al Shams hotel group, it provides reliable and affordable accommodation for pilgrims performing Umrah.",
+    fullAmenities: [
+      { icon: "🕌", name: "Ibrahim Khalil Road", detail: "Main artery to Masjid al-Haram" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms air-conditioned" },
+      { icon: "🛎️", name: "Reception", detail: "Front desk available" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
+      { icon: "🔒", name: "Security", detail: "In-house security" },
+      { icon: "🍽️", name: "Dining Nearby", detail: "Halal restaurants nearby" },
+      { icon: "🅿️", name: "Parking", detail: "Nearby parking" },
+      { icon: "💰", name: "Budget-Friendly", detail: "Affordable rates" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Comfortable economy room.", size: "22 sqm", occupancy: "2–3 adults", features: ["Twin Beds", "Bathroom", "AC", "Basic Amenities"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats available", "Qibla direction marked", "Prayer times displayed", "Halal food nearby"] },
+    diningOptions: [{ name: "Nearby Restaurants", cuisine: "Arabic & International", timing: "Various", specialty: "Halal meals nearby" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Ibrahim Khalil Road", time: "Short drive" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "Contact hotel directly", children: "Contact us for details", pets: "Not allowed" },
+    gallery: [
+      "/assets/images/nawarat.webp",
+      "/assets/images/nawarat1.webp",
+      "/assets/images/nawarat2.webp",
+      "/assets/images/nawarat3.webp",
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "nawarat-al-shams-2",
+    name: "Nawarat Al Shams 2",
+    slug: "nawarat-al-shams-2",
+    image: "/assets/images/2_nawarat.webp",
+    rating: 3,
+    location: "Makkah",
+    distance: "Ibrahim Khalil Road, Makkah",
+    amenities: ["AC", "Daily Housekeeping", "Halal Dining Nearby", "Budget-Friendly"],
+    description: "Nawarat Al Shams 2 is a 3-star economy hotel on Ibrahim Khalil Road, Makkah. As part of the Nawarat Al Shams group, it maintains consistent standards of cleanliness and service for Umrah pilgrims.",
+    fullAmenities: [
+      { icon: "🕌", name: "Ibrahim Khalil Road", detail: "Main artery to Masjid al-Haram" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms air-conditioned" },
+      { icon: "🛎️", name: "Reception", detail: "Front desk available" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
+      { icon: "🔒", name: "Security", detail: "In-house security" },
+      { icon: "🍽️", name: "Dining Nearby", detail: "Halal restaurants nearby" },
+      { icon: "🅿️", name: "Parking", detail: "Nearby parking" },
+      { icon: "💰", name: "Budget-Friendly", detail: "Affordable rates" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Comfortable economy room.", size: "22 sqm", occupancy: "2–3 adults", features: ["Twin Beds", "Bathroom", "AC", "Basic Amenities"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats available", "Qibla direction marked", "Prayer times displayed", "Halal food nearby"] },
+    diningOptions: [{ name: "Nearby Restaurants", cuisine: "Arabic & International", timing: "Various", specialty: "Halal meals nearby" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Ibrahim Khalil Road", time: "Short drive" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "Contact hotel directly", children: "Contact us for details", pets: "Not allowed" },
+    gallery: [
+      "/assets/images/2_nawarat.webp",
+      "/assets/images/2_nawarat1.webp",
+      "/assets/images/2_nawarat2.webp",
+      "/assets/images/2_nawarat3.webp",
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "qasr-saad",
+    name: "Qasr Saad",
+    slug: "qasr-saad",
+    image: "/assets/images/qasrsaad.webp",
+    rating: 3,
+    location: "Makkah",
+    distance: "Ajyad Street, Makkah",
+    amenities: ["Free WiFi", "AC", "Restaurant", "Breakfast Only"],
+    description: "Qasr Saad is a 3-star economy hotel on Ajyad Street in central Makkah. Its strategic location near the Holy Mosque combined with competitive pricing makes it a preferred choice for pilgrims performing Umrah.",
+    fullAmenities: [
+      { icon: "🕌", name: "Ajyad Street", detail: "Central Makkah — close to Masjid al-Haram" },
+      { icon: "📶", name: "Free WiFi", detail: "Complimentary internet" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms climate controlled" },
+      { icon: "🍽️", name: "Restaurant", detail: "On-site halal dining" },
+      { icon: "☕", name: "Breakfast", detail: "Breakfast included" },
+      { icon: "🛎️", name: "Reception", detail: "24/7 front desk" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
+      { icon: "🔒", name: "Security", detail: "24-hour security" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Comfortable room near Haram.", size: "25 sqm", occupancy: "2 adults", features: ["Double Bed", "Bathroom", "AC", "WiFi", "TV"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats in rooms", "Qibla direction marked", "Prayer times posted", "Breakfast included", "Close to Masjid al-Haram"] },
+    diningOptions: [{ name: "Qasr Saad Restaurant", cuisine: "Arabic & International", timing: "6:00 AM – 11:00 PM", specialty: "Breakfast and halal meals" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Ajyad Street — very close", time: "5–10 min walk" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "48 hours notice required", children: "Children under 10 stay free", pets: "Not allowed" },
+    gallery: [
+      "/assets/images/qasrsaad.webp",
+      "/assets/images/qasrsaad1.webp",
+      "/assets/images/qasrsaad2.webp",
+      "/assets/images/qasrsaad3.webp",
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "rushd-al-majd",
+    name: "Rushd Al Majd",
+    slug: "rushd-al-majd",
+    image: "/assets/images/rushdalmajd.webp",
+    rating: 2,
+    location: "Makkah",
+    distance: "Al Hijrah Road, Makkah",
+    amenities: ["Basic Rooms", "AC", "Daily Housekeeping", "Halal Dining Nearby"],
+    description: "Rushd Al Majd is a budget economy hotel on Al Hijrah Road, Makkah. It caters to pilgrims looking for a simple, clean, and affordable base during their Umrah journey.",
+    fullAmenities: [
+      { icon: "🕌", name: "Haram Access", detail: "Al Hijrah Road access to Masjid al-Haram" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms air-conditioned" },
+      { icon: "🛎️", name: "Reception", detail: "Front desk available" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
+      { icon: "🔒", name: "Security", detail: "Basic security" },
+      { icon: "🍽️", name: "Dining Nearby", detail: "Halal restaurants nearby" },
+      { icon: "🅿️", name: "Parking", detail: "Street parking nearby" },
+      { icon: "💰", name: "Budget-Friendly", detail: "Very affordable" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Basic clean room for pilgrims.", size: "20 sqm", occupancy: "2–3 adults", features: ["Twin Beds", "Bathroom", "AC", "Basic Amenities"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats available", "Qibla direction marked", "Prayer times displayed", "Halal food nearby"] },
+    diningOptions: [{ name: "Nearby Restaurants", cuisine: "Arabic & South Asian", timing: "Various", specialty: "Halal meals nearby" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Al Hijrah Road", time: "Short drive" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "Contact hotel directly", children: "Contact us for details", pets: "Not allowed" },
+    gallery: [
+      "/assets/images/rushdalmajd.webp",
+      "/assets/images/rushdalmajd1.webp",
+      "/assets/images/rushdalmajd2.webp",
+      "/assets/images/rushdalmajd3.webp",
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "yasmin-al-majd",
+    name: "Yasmin Al Majd",
+    slug: "yasmin-al-majd",
+    image: "/assets/images/yasmin.webp",
+    rating: 2,
+    location: "Makkah",
+    distance: "Al Hijrah Road, Makkah",
+    amenities: ["Basic Rooms", "AC", "Daily Housekeeping", "Halal Dining Nearby"],
+    description: "Yasmin Al Majd is a budget economy hotel on Al Hijrah Road, Makkah. It offers clean, simple rooms for pilgrims seeking affordable accommodation during Umrah.",
+    fullAmenities: [
+      { icon: "🕌", name: "Haram Access", detail: "Al Hijrah Road access to Masjid al-Haram" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms air-conditioned" },
+      { icon: "🛎️", name: "Reception", detail: "Front desk available" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
+      { icon: "🔒", name: "Security", detail: "Basic security" },
+      { icon: "🍽️", name: "Dining Nearby", detail: "Halal restaurants nearby" },
+      { icon: "🅿️", name: "Parking", detail: "Street parking nearby" },
+      { icon: "💰", name: "Budget-Friendly", detail: "Very affordable" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Basic clean room for pilgrims.", size: "20 sqm", occupancy: "2–3 adults", features: ["Twin Beds", "Bathroom", "AC", "Basic Amenities"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats available", "Qibla direction marked", "Prayer times displayed", "Halal food nearby"] },
+    diningOptions: [{ name: "Nearby Restaurants", cuisine: "Arabic & South Asian", timing: "Various", specialty: "Halal meals nearby" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Al Hijrah Road", time: "Short drive" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "Contact hotel directly", children: "Contact us for details", pets: "Not allowed" },
+    gallery: [
+      "/assets/images/yasmin.webp",
+      "/assets/images/yasmin1.webp",
+      "/assets/images/yasmin2.webp",
+      "/assets/images/yasmin3.webp",
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "dhaif-al-aziziyah",
+    name: "Dhaif Al Aziziyah",
+    slug: "dhaif-al-aziziyah",
+    image: "/assets/images/dhaif.webp",
+    rating: 3,
+    location: "Makkah",
+    distance: "Aziziyah, Makkah",
+    amenities: ["AC", "Daily Housekeeping", "Halal Dining Nearby", "Budget-Friendly"],
+    description: "Dhaif Al Aziziyah is a 3-star economy hotel in the Aziziyah district of Makkah. It offers affordable accommodation for pilgrims who are comfortable with a short commute to the Holy Mosque.",
+    fullAmenities: [
+      { icon: "🕌", name: "Aziziyah", detail: "Aziziyah district — short commute to Haram" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms air-conditioned" },
+      { icon: "🛎️", name: "Reception", detail: "Front desk available" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
+      { icon: "🔒", name: "Security", detail: "In-house security" },
+      { icon: "🍽️", name: "Dining Nearby", detail: "Halal restaurants nearby" },
+      { icon: "🅿️", name: "Parking", detail: "Parking available" },
+      { icon: "💰", name: "Budget-Friendly", detail: "Affordable rates" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Clean economy room in Aziziyah.", size: "22 sqm", occupancy: "2–3 adults", features: ["Twin Beds", "Bathroom", "AC", "Basic Amenities"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats available", "Qibla direction marked", "Prayer times displayed", "Halal food nearby", "Transport to Haram"] },
+    diningOptions: [{ name: "Nearby Restaurants", cuisine: "Arabic & International", timing: "Various", specialty: "Halal meals nearby" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Aziziyah", time: "Short drive" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "Contact hotel directly", children: "Contact us for details", pets: "Not allowed" },
+    gallery: [
+      "/assets/images/dhaif.webp",
+      "/assets/images/dhaif1.webp",
+      "/assets/images/dhaif2.webp",
+      "/assets/images/dhaif3.webp",
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "hotel-one-makkah",
+    name: "Hotel One Makkah",
+    slug: "hotel-one-makkah",
+    image: "/assets/images/hotelonemakkah.webp",
+    rating: 3,
+    location: "Makkah",
+    distance: "Ajyad Street, Makkah",
+    amenities: ["Free WiFi", "AC", "Restaurant", "Breakfast Only"],
+    description: "Hotel One Makkah is a contemporary 3-star hotel on Ajyad Street, Makkah. Offering modern rooms with breakfast, it is a well-regarded choice for pilgrims seeking comfort and value in a central location close to Masjid al-Haram.",
+    fullAmenities: [
+      { icon: "🕌", name: "Ajyad Street", detail: "Central Makkah — close to Masjid al-Haram" },
+      { icon: "📶", name: "Free WiFi", detail: "High-speed internet" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms climate controlled" },
+      { icon: "🍽️", name: "Restaurant", detail: "On-site halal dining" },
+      { icon: "☕", name: "Breakfast", detail: "Breakfast included" },
+      { icon: "🛎️", name: "Reception", detail: "24/7 front desk" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
+      { icon: "🔒", name: "Security", detail: "24-hour security" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Modern room with breakfast.", size: "26 sqm", occupancy: "2 adults", features: ["Double Bed", "Bathroom", "AC", "WiFi", "TV"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats in rooms", "Qibla direction marked", "Prayer times posted", "Breakfast included", "Close to Masjid al-Haram"] },
+    diningOptions: [{ name: "Hotel One Restaurant", cuisine: "Arabic & International", timing: "6:00 AM – 11:00 PM", specialty: "Breakfast buffet and halal meals" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Ajyad Street — very close", time: "5–10 min walk" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "48 hours notice required", children: "Children under 10 stay free", pets: "Not allowed" },
+    gallery: [
+      "/assets/images/hotelonemakkah.webp",
+      "/assets/images/hotelonemakkah1.webp",
+      "/assets/images/hotelonemakkah2.webp",
+      "/assets/images/hotelonemakkah3.webp",
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "maysen-al-maqam",
+    name: "Maysen Al Maqam",
+    slug: "maysen-al-maqam",
+    image: "/assets/images/maqam.webp",
+    rating: 3,
+    location: "Makkah",
+    distance: "Ajyad Street, Makkah",
+    amenities: ["Free WiFi", "AC", "Restaurant", "Breakfast Only"],
+    description: "Maysen Al Maqam is a well-regarded 3-star economy hotel on Ajyad Street, Makkah. Part of the Maysen Hotels group operating in the Holy Cities, it offers comfortable rooms with breakfast and reliable services for Umrah pilgrims.",
+    fullAmenities: [
+      { icon: "🕌", name: "Ajyad Street", detail: "Very close to Masjid al-Haram" },
+      { icon: "📶", name: "Free WiFi", detail: "Complimentary internet" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms climate controlled" },
+      { icon: "🍽️", name: "Restaurant", detail: "On-site halal dining" },
+      { icon: "☕", name: "Breakfast", detail: "Breakfast included" },
+      { icon: "🛎️", name: "Reception", detail: "24/7 front desk" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
+      { icon: "🔒", name: "Security", detail: "24-hour security" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Comfortable room with breakfast.", size: "26 sqm", occupancy: "2 adults", features: ["Double Bed", "Bathroom", "AC", "WiFi", "TV"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats in rooms", "Qibla direction marked", "Prayer times posted", "Breakfast included", "Walking distance to Haram"] },
+    diningOptions: [{ name: "Maysen Al Maqam Restaurant", cuisine: "Arabic & International", timing: "6:00 AM – 11:00 PM", specialty: "Breakfast and halal meals" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Ajyad Street — very close", time: "5–10 min walk" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "48 hours notice required", children: "Children under 10 stay free", pets: "Not allowed" },
+    gallery: [
+      "/assets/images/maqam.webp",
+      "/assets/images/maqam1.webp",
+      "/assets/images/maqam2.webp",
+      "/assets/images/maqam3.webp",
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "maysen-al-masher",
+    name: "Maysen Al Masher",
+    slug: "maysen-al-masher",
+    image: "/assets/images/masher.webp",
+    rating: 3,
+    location: "Makkah",
+    distance: "Aziziyah, Makkah",
+    amenities: ["Free WiFi", "AC", "Restaurant", "Breakfast Only"],
+    description: "Maysen Al Masher is a 3-star economy hotel in the Aziziyah district of Makkah, part of the Maysen Hotels group. It offers comfortable accommodation with breakfast for pilgrims who prefer a quieter setting with easy access to the Holy Mosque.",
+    fullAmenities: [
+      { icon: "🕌", name: "Aziziyah", detail: "Aziziyah district — accessible to Masjid al-Haram" },
+      { icon: "📶", name: "Free WiFi", detail: "Complimentary internet" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms climate controlled" },
+      { icon: "🍽️", name: "Restaurant", detail: "On-site halal dining" },
+      { icon: "☕", name: "Breakfast", detail: "Breakfast included" },
+      { icon: "🛎️", name: "Reception", detail: "24/7 front desk" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
+      { icon: "🔒", name: "Security", detail: "24-hour security" }
+    ],
+    roomTypes: [{ type: "Standard Room", description: "Comfortable room with breakfast.", size: "25 sqm", occupancy: "2 adults", features: ["Double Bed", "Bathroom", "AC", "WiFi", "TV"] }],
+    umrahFacilities: { title: "Pilgrim Services", features: ["Prayer mats in rooms", "Qibla direction marked", "Prayer times posted", "Breakfast included", "Transport to Haram available"] },
+    diningOptions: [{ name: "Maysen Al Masher Restaurant", cuisine: "Arabic & International", timing: "6:00 AM – 10:30 PM", specialty: "Breakfast and halal meals" }],
+    nearbyAttractions: [{ name: "Masjid al-Haram", distance: "Aziziyah", time: "Short drive" }],
+    policies: { checkIn: "2:00 PM", checkOut: "12:00 PM", cancellation: "48 hours notice required", children: "Children under 10 stay free", pets: "Not allowed" },
+    gallery: [
+      "/assets/images/masher.webp",
+      "/assets/images/masher1.webp",
+      "/assets/images/masher2.webp",
+      "/assets/images/masher3.webp",
+    ],
+    priceRange: "Price On Request",
+    featured: false
+  },
+  // ============================================================
+// ADD THESE ENTRIES TO hotelsData ARRAY IN hotelData.js
+// Place them after the last existing entry (elaf-al-taqwa-hotel)
+// before the closing ]; of the array
+// ============================================================
+
+  // ---- EXISTING HOTELS NEEDING CARDS (ids 108, 109, 111, 117, 118, 128, 130) ----
+
+  {
+    id: "mila-1-hotel",
+    name: "Mila 1 Hotel",
+    slug: "mila-1-hotel",
+    image: "/assets/images/1_mila.webp",
+    rating: 2,
+    location: "Makkah",
+    distance: "Ibrahim Khalil Road, Makkah",
+    amenities: ["Basic Rooms", "AC", "Daily Housekeeping", "Halal Dining Nearby"],
+
+    description: "Mila 1 Hotel is a budget-friendly accommodation on Ibrahim Khalil Road, one of Makkah's key routes to Masjid al-Haram. Situated approximately 650 metres from the Holy Mosque, it offers clean and straightforward rooms for pilgrims who want to stay close to the sacred sites without stretching their budget. The surrounding area is vibrant with halal restaurants, souvenir shops, and essential services.",
 
     fullAmenities: [
-      { icon: "🕌", name: "Near Haram", detail: "750m from Masjid al-Haram, Al Masfala area" },
-      { icon: "🍽️", name: "3 Restaurants", detail: "Multiple on-site halal dining options" },
-      { icon: "🛗", name: "15 Elevators", detail: "High-capacity elevator system for 885 rooms" },
-      { icon: "📶", name: "Free WiFi", detail: "High-speed internet throughout" },
-      { icon: "☕", name: "Breakfast", detail: "Breakfast included with BB plan" },
-      { icon: "🛎️", name: "24/7 Reception", detail: "Round-the-clock front desk service" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily room cleaning" },
-      { icon: "🔒", name: "Security", detail: "24-hour security personnel" }
+      { icon: "🕌", name: "Haram Access", detail: "Ibrahim Khalil Road — approx. 650m from Masjid al-Haram" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms fully air-conditioned" },
+      { icon: "🛎️", name: "Front Desk", detail: "Reception available for guest assistance" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily room cleaning service" },
+      { icon: "🔒", name: "Security", detail: "Basic security measures in place" },
+      { icon: "🍽️", name: "Dining Nearby", detail: "Halal restaurants within walking distance" },
+      { icon: "🅿️", name: "Parking", detail: "Street parking available nearby" },
+      { icon: "💰", name: "Budget-Friendly", detail: "Affordable rates for economy pilgrims" }
     ],
 
     roomTypes: [
       {
-        type: "Double Room",
-        description: "Comfortable double room with full amenities",
-        size: "28 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV", "WiFi"]
-      },
-      {
-        type: "Triple Room",
-        description: "Spacious triple room for small groups",
-        size: "33 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV", "WiFi"]
+        type: "Standard Room",
+        description: "Clean room with blue carpeted and tiled floors, decorated with rich fabrics and essential amenities.",
+        size: "20 sqm",
+        occupancy: "2–3 adults",
+        features: ["Twin Beds", "Private Bathroom", "AC", "Flat-Screen TV"]
       },
       {
         type: "Quad Room",
-        description: "Quad room suitable for families",
-        size: "38 sqm",
-        occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV", "WiFi"]
+        description: "Spacious room suitable for small groups or families on a budget.",
+        size: "28 sqm",
+        occupancy: "4–5 adults",
+        features: ["Multiple Beds", "Bathroom", "AC", "Storage Space"]
       }
     ],
 
     umrahFacilities: {
       title: "Pilgrim Services",
       features: [
-        "Prayer mats and Qibla direction in all rooms",
-        "Holy Quran available",
-        "Prayer times displayed throughout",
-        "Zamzam water access",
-        "Ziyarat tour assistance",
-        "Fajr wake-up call service",
-        "Halal dining available",
-        "Group coordination support"
+        "Prayer mats available on request",
+        "Qibla direction marked in rooms",
+        "Prayer times displayed at reception",
+        "Halal food options within walking distance",
+        "Luggage storage available",
+        "Transport guidance to Masjid al-Haram"
       ]
     },
 
     diningOptions: [
       {
-        name: "Emaar Grand Restaurant",
-        cuisine: "Arabic & International",
-        timing: "5:30 AM – 11:00 PM",
-        specialty: "Breakfast buffet; full board options available"
+        name: "Nearby Local Restaurants",
+        cuisine: "Arabic & South Asian",
+        timing: "Various — open throughout the day",
+        specialty: "Affordable halal meals within walking distance"
       }
     ],
 
     nearbyAttractions: [
-      { name: "Masjid al-Haram", distance: "750m", time: "10 min walk" },
-      { name: "Kaaba", distance: "850m", time: "12 min walk" },
-      { name: "Safa and Marwa", distance: "900m", time: "13 min walk" },
-      { name: "Abraj Al Bait Mall", distance: "700m", time: "10 min walk" }
+      { name: "Masjid al-Haram", distance: "Approx. 650m", time: "10–15 min walk or short taxi" },
+      { name: "Abraj Al Bait (Clock Tower)", distance: "Approx. 700m", time: "10 min walk" }
     ],
 
     policies: {
-      checkIn: "4:00 PM",
+      checkIn: "2:00 PM",
       checkOut: "12:00 PM",
-      cancellation: "21 days notice required",
-      children: "Children under 10 stay free",
+      cancellation: "Contact hotel directly for cancellation policy",
+      children: "Contact us for details",
       pets: "Not allowed"
     },
 
     gallery: [
-      "/assets/images/emaargrand.jpg",
-      "/assets/images/emaargrand1.webp",
-      "/assets/images/emaargrand2.webp",
-      "/assets/images/emaargrand3.webp",
+      "/assets/images/1_mila.webp",
+      "/assets/images/1_mila1.webp",
+      "/assets/images/1_mila2.webp",
+      "/assets/images/1_mila3.webp",
     ],
 
-    priceRange: "280 - 765 SAR per night",
+    priceRange: "Price On Request",
     featured: false
   },
 
   {
-    id: "emaar-worth-elite",
-    name: "Emaar Worth Elite Hotel",
-    slug: "emaar-worth-elite",
-    image: "/assets/images/emaar-worth-elite.jpg",
-    rating: 4,
+    id: "mila-2-hotel",
+    name: "Mila 2 Hotel",
+    slug: "mila-2-hotel",
+    image: "/assets/images/2_mila.webp",
+    rating: 2,
     location: "Makkah",
-    distance: "150m from Masjid al-Haram",
-    amenities: ["Free WiFi", "Near Haram", "Room Only", "Elevator Access"],
+    distance: "Ibrahim Khalil Road, Makkah",
+    amenities: ["Basic Rooms", "AC", "Daily Housekeeping", "Halal Dining Nearby"],
 
-    description: "Emaar Worth Elite Hotel is an excellently positioned property just 150 metres from Masjid al-Haram on Ibrahim Al Khalil Street in the Al Masfala district, Makkah. Operated by Emaar Al Diyafa Hotels since 1998, the hotel features 162 rooms and 3 elevators, accommodating up to 489 pilgrims. Its proximity to the Grand Mosque makes it a premium choice for pilgrims who prioritise walking distance to the Haram.",
+    description: "Mila 2 Hotel is the sister property of Mila 1 Hotel, also located on Ibrahim Khalil Road in Makkah. Sharing the same commitment to clean, affordable accommodation, it is an ideal choice for budget-conscious pilgrims. Located approximately 650 metres from Masjid al-Haram, the hotel is surrounded by a lively neighbourhood offering halal dining, shopping, and essential services.",
 
     fullAmenities: [
-      { icon: "🕌", name: "150m from Haram", detail: "Walking distance to Masjid al-Haram" },
-      { icon: "📶", name: "Free WiFi", detail: "Internet access throughout" },
-      { icon: "🛗", name: "3 Elevators", detail: "Efficient elevator access" },
-      { icon: "🛎️", name: "24/7 Reception", detail: "Full-time front desk" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily room cleaning" },
-      { icon: "🔒", name: "Security", detail: "24-hour security" },
-      { icon: "🧳", name: "Luggage Storage", detail: "Secure luggage facilities" },
-      { icon: "🌆", name: "City Views", detail: "Views of central Makkah" }
+      { icon: "🕌", name: "Haram Access", detail: "Ibrahim Khalil Road — approx. 650m from Masjid al-Haram" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms fully air-conditioned" },
+      { icon: "🛎️", name: "Front Desk", detail: "Reception available for guest assistance" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily room cleaning service" },
+      { icon: "🔒", name: "Security", detail: "Basic security measures in place" },
+      { icon: "🍽️", name: "Dining Nearby", detail: "Halal restaurants within walking distance" },
+      { icon: "🅿️", name: "Parking", detail: "Street parking available nearby" },
+      { icon: "💰", name: "Budget-Friendly", detail: "Affordable rates for economy pilgrims" }
     ],
 
     roomTypes: [
       {
-        type: "Double Room",
-        description: "Well-appointed double room",
-        size: "26 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV", "WiFi"]
+        type: "Standard Room",
+        description: "Well-kept room with blue carpeted and tiled floors and comfortable bedding.",
+        size: "20 sqm",
+        occupancy: "2–3 adults",
+        features: ["Twin Beds", "Private Bathroom", "AC", "Flat-Screen TV"]
       },
       {
         type: "Triple Room",
-        description: "Triple room for small groups",
-        size: "30 sqm",
+        description: "Practical room for groups of three pilgrims travelling together.",
+        size: "25 sqm",
         occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV", "WiFi"]
+        features: ["Three Single Beds", "Bathroom", "AC", "Basic Storage"]
+      }
+    ],
+
+    umrahFacilities: {
+      title: "Pilgrim Essentials",
+      features: [
+        "Prayer mats available on request",
+        "Qibla direction indicated",
+        "Prayer times posted at front desk",
+        "Halal meals easily accessible nearby",
+        "Luggage storage on request",
+        "Taxi and transport assistance"
+      ]
+    },
+
+    diningOptions: [
+      {
+        name: "Street-Level Restaurants",
+        cuisine: "Arabic, Pakistani & Indian",
+        timing: "Open throughout the day",
+        specialty: "Affordable halal meals for pilgrims"
+      }
+    ],
+
+    nearbyAttractions: [
+      { name: "Masjid al-Haram", distance: "Approx. 650m", time: "10–15 min walk or short taxi" },
+      { name: "Abraj Al Bait Mall", distance: "Approx. 700m", time: "10 min walk" }
+    ],
+
+    policies: {
+      checkIn: "2:00 PM",
+      checkOut: "12:00 PM",
+      cancellation: "Contact hotel for cancellation terms",
+      children: "Contact us for details",
+      pets: "Not allowed"
+    },
+
+    gallery: [
+      "/assets/images/2_mila.webp",
+      "/assets/images/2_mila1.webp",
+      "/assets/images/2_mila2.webp",
+      "/assets/images/2_mila3.webp",
+    ],
+
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "nawarat-shams-3",
+    name: "Nawarat Shams 3",
+    slug: "nawarat-shamas-3",
+    image: "/assets/images/3_nawarat.webp",
+    rating: 3,
+    location: "Makkah",
+    distance: "Ibrahim Khalil Road, Makkah",
+    amenities: ["AC", "Daily Housekeeping", "Near Haram", "Halal Dining Nearby"],
+
+    description: "Nawarat Shams 3 is a 3-star economy hotel situated on Ibrahim Khalil Road, Makkah, and is the third property in the well-known Nawarat Al Shams group. Maintaining consistent standards across all its branches, the hotel provides clean, reliable accommodation for Umrah pilgrims who want a trusted name at an affordable price. Its location on one of Makkah's main roads ensures good access to the Holy Mosque.",
+
+    fullAmenities: [
+      { icon: "🕌", name: "Ibrahim Khalil Road", detail: "Main artery leading to Masjid al-Haram" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms fully air-conditioned" },
+      { icon: "🛎️", name: "Reception", detail: "Front desk available for assistance" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily room cleaning service" },
+      { icon: "🔒", name: "Security", detail: "In-house security team" },
+      { icon: "🍽️", name: "Dining Nearby", detail: "Halal restaurants within walking distance" },
+      { icon: "🅿️", name: "Parking", detail: "Nearby parking options" },
+      { icon: "💰", name: "Budget-Friendly", detail: "Affordable rates with reliable standards" }
+    ],
+
+    roomTypes: [
+      {
+        type: "Standard Room",
+        description: "Clean, comfortable room ideal for couples or solo pilgrims.",
+        size: "22 sqm",
+        occupancy: "2 adults",
+        features: ["Double or Twin Beds", "Private Bathroom", "AC", "TV"]
+      },
+      {
+        type: "Triple Room",
+        description: "Practical room for three pilgrims sharing.",
+        size: "28 sqm",
+        occupancy: "3 adults",
+        features: ["Three Single Beds", "Bathroom", "AC", "Storage"]
       },
       {
         type: "Quad Room",
-        description: "Quad room for families or groups",
-        size: "35 sqm",
+        description: "Spacious room accommodating a small family or group.",
+        size: "34 sqm",
         occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV", "WiFi"]
+        features: ["Four Beds", "Bathroom", "AC", "Wardrobe"]
       }
     ],
 
     umrahFacilities: {
       title: "Pilgrim Services",
       features: [
-        "Prayer mats and Qibla in all rooms",
-        "Holy Quran provided",
-        "Walking distance to Masjid al-Haram",
-        "Prayer times displayed",
-        "Zamzam water access",
-        "Ziyarat guidance",
-        "Fajr wake-up call",
-        "Luggage assistance"
+        "Prayer mats available on request",
+        "Qibla direction marked in rooms",
+        "Prayer times displayed at reception",
+        "Halal food options nearby",
+        "Luggage storage available",
+        "Transport information to Haram"
+      ]
+    },
+
+    diningOptions: [
+      {
+        name: "Nearby Local Restaurants",
+        cuisine: "Arabic & International",
+        timing: "Various",
+        specialty: "Halal meals within walking distance"
+      }
+    ],
+
+    nearbyAttractions: [
+      { name: "Masjid al-Haram", distance: "Ibrahim Khalil Road", time: "Short drive or taxi" },
+      { name: "Abraj Al Bait Towers", distance: "Approx. 2 km", time: "5–8 min drive" }
+    ],
+
+    policies: {
+      checkIn: "2:00 PM",
+      checkOut: "12:00 PM",
+      cancellation: "Contact hotel directly",
+      children: "Contact us for details",
+      pets: "Not allowed"
+    },
+
+    gallery: [
+      "/assets/images/3_nawarat.webp",
+      "/assets/images/3_nawarat1.webp",
+      "/assets/images/3_nawarat2.webp",
+      "/assets/images/3_nawarat3.webp",
+    ],
+
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "areej-al-zahbi",
+    name: "Areej Al Zahbi",
+    slug: "areej-al-zahbi",
+    image: "/assets/images/areejalzahbi.webp",
+    rating: 2,
+    location: "Makkah",
+    distance: "Ibrahim Khalil Road, Makkah",
+    amenities: ["Basic Rooms", "AC", "Flat-Screen TV", "Halal Dining Nearby"],
+
+    description: "Areej Al Zahbi is a budget economy hotel conveniently located on Ibrahim Khalil Road in Makkah, approximately 600 metres from Masjid al-Haram. The hotel offers air-conditioned rooms with comfortable bedding and flat-screen TVs. Some rooms include a seating area for added comfort. The surrounding neighbourhood is vibrant with grocery stores, souvenir shops, international banks, ATMs, currency exchange, and a wide range of restaurants serving local and continental cuisines — making it an ideal base for pilgrims performing Umrah.",
+
+    fullAmenities: [
+      { icon: "🕌", name: "Haram Access", detail: "Ibrahim Khalil Road — approx. 600m from Masjid al-Haram" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms fully air-conditioned" },
+      { icon: "📺", name: "Flat-Screen TV", detail: "Modern flat-screen TV in all rooms" },
+      { icon: "🛎️", name: "Reception", detail: "Front desk available for guest assistance" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily room cleaning service" },
+      { icon: "🔒", name: "Security", detail: "Basic security measures in place" },
+      { icon: "🍽️", name: "Dining Nearby", detail: "Wide variety of halal restaurants nearby" },
+      { icon: "🏧", name: "ATM Nearby", detail: "Banks and ATMs within walking distance" }
+    ],
+
+    roomTypes: [
+      {
+        type: "Standard Room",
+        description: "Comfortable room with modern amenities and a cosy feel.",
+        size: "20 sqm",
+        occupancy: "2 adults",
+        features: ["Double or Twin Beds", "Private Bathroom", "AC", "Flat-Screen TV"]
+      },
+      {
+        type: "Standard Room with Seating Area",
+        description: "Slightly larger room with an additional seating area for comfort.",
+        size: "24 sqm",
+        occupancy: "2–3 adults",
+        features: ["Double Bed", "Seating Area", "Bathroom", "AC", "Flat-Screen TV"]
+      }
+    ],
+
+    umrahFacilities: {
+      title: "Pilgrim Services",
+      features: [
+        "Prayer mats available on request",
+        "Qibla direction marked in rooms",
+        "Prayer times displayed at reception",
+        "Halal restaurants within easy reach",
+        "Currency exchange nearby",
+        "Luggage storage available",
+        "Transport guidance to Masjid al-Haram"
       ]
     },
 
     diningOptions: [
       {
         name: "Nearby Restaurants",
-        cuisine: "Arabic & International",
-        timing: "Varies",
-        specialty: "Multiple halal dining options within walking distance"
+        cuisine: "Local & Continental",
+        timing: "Open throughout the day",
+        specialty: "Wide variety of halal dining options in the surrounding area"
       }
     ],
 
     nearbyAttractions: [
-      { name: "Masjid al-Haram", distance: "150m", time: "2 min walk" },
-      { name: "Kaaba", distance: "250m", time: "4 min walk" },
-      { name: "Safa and Marwa", distance: "300m", time: "5 min walk" },
-      { name: "Abraj Al Bait Mall", distance: "200m", time: "3 min walk" }
+      { name: "Masjid al-Haram", distance: "Approx. 600m", time: "10 min walk or short taxi" },
+      { name: "Abraj Al Bait Towers", distance: "Approx. 700m", time: "10 min walk" },
+      { name: "Jabal al-Nour", distance: "Approx. 4 km", time: "10–15 min drive" }
     ],
 
     policies: {
-      checkIn: "4:00 PM",
+      checkIn: "2:00 PM",
       checkOut: "12:00 PM",
-      cancellation: "21 days notice required",
-      children: "Children under 10 stay free",
+      cancellation: "Contact hotel directly for cancellation policy",
+      children: "Contact us for details",
       pets: "Not allowed"
     },
 
     gallery: [
-      "/assets/images/elitehotel.webp",
-      "/assets/images/elitehotel1.webp",
-      "/assets/images/elitehotel2.webp",
-      "/assets/images/elitehotel3.webp",
-    ],
-
-    priceRange: "245 - 515 SAR per night",
-    featured: false
-  },
-
-  {
-    id: "emaar-al-manar-makkah",
-    name: "Emaar Al Manar Hotel",
-    slug: "emaar-al-manar-makkah",
-    image: "/assets/images/emaar-al-manar-makkah.jpg",
-    rating: 4,
-    location: "Makkah",
-    distance: "700m from Masjid al-Haram",
-    amenities: ["Free WiFi", "2 Restaurants", "Breakfast Included", "7 Elevators"],
-
-    description: "Emaar Al Manar Hotel is a well-established Makkah property managed by Emaar Al Diyafa Hotels, situated 700 metres from Masjid al-Haram on Ibrahim Al Khalil Street in Al Masfala. With 383 rooms spread across multiple floors served by 7 elevators, and 2 on-site restaurants, the hotel comfortably accommodates up to 1,650 pilgrims and offers dependable services throughout the Umrah and Hajj seasons.",
-
-    fullAmenities: [
-      { icon: "🕌", name: "Near Haram", detail: "700m from Masjid al-Haram, Al Masfala" },
-      { icon: "🍽️", name: "2 Restaurants", detail: "On-site halal dining" },
-      { icon: "🛗", name: "7 Elevators", detail: "Efficient building access" },
-      { icon: "📶", name: "Free WiFi", detail: "Internet throughout the property" },
-      { icon: "☕", name: "Breakfast", detail: "Breakfast included" },
-      { icon: "🛎️", name: "24/7 Reception", detail: "Round-the-clock service" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
-      { icon: "🔒", name: "Security", detail: "24-hour security" }
-    ],
-
-    roomTypes: [
-      {
-        type: "Double Room",
-        description: "Comfortable double room",
-        size: "27 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV", "WiFi"]
-      },
-      {
-        type: "Triple Room",
-        description: "Triple room for groups",
-        size: "31 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV", "WiFi"]
-      },
-      {
-        type: "Quad Room",
-        description: "Quad room for families",
-        size: "36 sqm",
-        occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV", "WiFi"]
-      }
-    ],
-
-    umrahFacilities: {
-      title: "Pilgrim Services",
-      features: [
-        "Prayer mats and Qibla direction",
-        "Holy Quran in rooms",
-        "Prayer times displayed",
-        "Zamzam water access",
-        "Ziyarat tour information",
-        "Fajr wake-up service",
-        "Halal meals all day",
-        "Group coordination"
-      ]
-    },
-
-    diningOptions: [
-      {
-        name: "Emaar Al Manar Restaurant",
-        cuisine: "Arabic & International",
-        timing: "5:30 AM – 11:00 PM",
-        specialty: "Breakfast buffet; full board available"
-      }
-    ],
-
-    nearbyAttractions: [
-      { name: "Masjid al-Haram", distance: "700m", time: "10 min walk" },
-      { name: "Kaaba", distance: "800m", time: "11 min walk" },
-      { name: "Abraj Al Bait Mall", distance: "650m", time: "9 min walk" }
-    ],
-
-    policies: {
-      checkIn: "4:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "21 days notice required",
-      children: "Children under 10 stay free",
-      pets: "Not allowed"
-    },
-
-    gallery: [
-      "/assets/images/manar.webp",
-      "/assets/images/manar1.webp",
-      "/assets/images/manar2.webp",
-      "/assets/images/manar3.webp",
-    ],
-
-    priceRange: "270 - 705 SAR per night",
-    featured: false
-  },
-
-  {
-    id: "emaar-andalusiah",
-    name: "Emaar Andalusiah Hotel",
-    slug: "emaar-andalusiah",
-    image: "/assets/images/emaar-andalusiah.jpg",
-    rating: 4,
-    location: "Makkah",
-    distance: "200m from Masjid al-Haram",
-    amenities: ["Free WiFi", "2 Restaurants", "Breakfast Included", "Near Haram"],
-
-    description: "Emaar Andalusiah Hotel is an excellent mid-range property located just 200 metres from Masjid al-Haram on Ibrahim Al Khalil Street in Al Masfala, Makkah. Managed by Emaar Al Diyafa Hotels, the hotel features 280 rooms, 4 elevators and 2 restaurants, accommodating up to 940 pilgrims. Its close proximity to the Grand Mosque and reliable meal plan options make it a popular choice for Umrah groups.",
-
-    fullAmenities: [
-      { icon: "🕌", name: "200m from Haram", detail: "Very close walking distance to the Grand Mosque" },
-      { icon: "🍽️", name: "2 Restaurants", detail: "On-site halal dining" },
-      { icon: "🛗", name: "4 Elevators", detail: "Convenient building access" },
-      { icon: "📶", name: "Free WiFi", detail: "Internet throughout" },
-      { icon: "☕", name: "Breakfast", detail: "Breakfast included" },
-      { icon: "🛎️", name: "24/7 Reception", detail: "All-day front desk service" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
-      { icon: "🔒", name: "Security", detail: "24-hour security" }
-    ],
-
-    roomTypes: [
-      {
-        type: "Double Room",
-        description: "Comfortable double room near the Haram",
-        size: "27 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV", "WiFi"]
-      },
-      {
-        type: "Triple Room",
-        description: "Triple room for groups",
-        size: "32 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV", "WiFi"]
-      },
-      {
-        type: "Quad Room",
-        description: "Quad room for families",
-        size: "37 sqm",
-        occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV", "WiFi"]
-      }
-    ],
-
-    umrahFacilities: {
-      title: "Pilgrim Services",
-      features: [
-        "Prayer mats and Qibla direction",
-        "Holy Quran in rooms",
-        "Prayer times displayed",
-        "Zamzam water access",
-        "Walking distance to Haram",
-        "Ziyarat tour assistance",
-        "Fajr wake-up call",
-        "Halal meals available"
-      ]
-    },
-
-    diningOptions: [
-      {
-        name: "Emaar Andalusiah Restaurant",
-        cuisine: "Arabic & International",
-        timing: "5:30 AM – 11:00 PM",
-        specialty: "Breakfast buffet; full board available"
-      }
-    ],
-
-    nearbyAttractions: [
-      { name: "Masjid al-Haram", distance: "200m", time: "3 min walk" },
-      { name: "Kaaba", distance: "300m", time: "5 min walk" },
-      { name: "Abraj Al Bait Mall", distance: "250m", time: "4 min walk" }
-    ],
-
-    policies: {
-      checkIn: "4:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "21 days notice required",
-      children: "Children under 10 stay free",
-      pets: "Not allowed"
-    },
-
-    gallery: [
-      "/assets/images/andalusiah.webp",
-      "/assets/images/andalusiah1.webp",
-      "/assets/images/andalusiah2.webp",
-      "/assets/images/andalusiah3.webp",
-    ],
-
-    priceRange: "270 - 705 SAR per night",
-    featured: false
-  },
-
-  {
-    id: "emaar-al-sultan",
-    name: "Emaar Al Sultan Hotel",
-    slug: "emaar-al-sultan",
-    image: "/assets/images/emaar-al-sultan.jpg",
-    rating: 4,
-    location: "Makkah",
-    distance: "150m from Masjid al-Haram",
-    amenities: ["Free WiFi", "2 Restaurants", "Very Near Haram", "Group Friendly"],
-
-    description: "Emaar Al Sultan Hotel stands just 150 metres from Masjid al-Haram on Ibrahim Al Khalil Street, Al Masfala, Makkah. Part of the trusted Emaar Al Diyafa Hotels group, this boutique-sized property offers 118 rooms with 4 elevators and 2 restaurants, accommodating up to 352 pilgrims. Its exceptional proximity to the Grand Mosque makes it highly sought after for pilgrims who want a short walk to prayer.",
-
-    fullAmenities: [
-      { icon: "🕌", name: "150m from Haram", detail: "Prime walking distance to Masjid al-Haram" },
-      { icon: "🍽️", name: "2 Restaurants", detail: "On-site halal dining" },
-      { icon: "🛗", name: "4 Elevators", detail: "Convenient access across all floors" },
-      { icon: "📶", name: "Free WiFi", detail: "Internet throughout" },
-      { icon: "🛎️", name: "24/7 Reception", detail: "Full-time front desk" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily room service" },
-      { icon: "🔒", name: "Security", detail: "24-hour security" },
-      { icon: "🧳", name: "Luggage Storage", detail: "Secure storage facilities" }
-    ],
-
-    roomTypes: [
-      {
-        type: "Double Room",
-        description: "Cosy double room with all essentials",
-        size: "25 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV", "WiFi"]
-      },
-      {
-        type: "Triple Room",
-        description: "Triple room for small groups",
-        size: "30 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV", "WiFi"]
-      }
-    ],
-
-    umrahFacilities: {
-      title: "Pilgrim Services",
-      features: [
-        "Prayer mats and Qibla direction",
-        "Holy Quran available",
-        "Walking distance to Haram",
-        "Prayer times displayed",
-        "Zamzam water access",
-        "Ziyarat guidance",
-        "Fajr wake-up service",
-        "Halal dining available"
-      ]
-    },
-
-    diningOptions: [
-      {
-        name: "Emaar Al Sultan Restaurant",
-        cuisine: "Arabic & International",
-        timing: "5:30 AM – 10:30 PM",
-        specialty: "Breakfast buffet; halal à la carte"
-      }
-    ],
-
-    nearbyAttractions: [
-      { name: "Masjid al-Haram", distance: "150m", time: "2 min walk" },
-      { name: "Kaaba", distance: "250m", time: "4 min walk" },
-      { name: "Abraj Al Bait Mall", distance: "200m", time: "3 min walk" }
-    ],
-
-    policies: {
-      checkIn: "4:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "21 days notice required",
-      children: "Children under 10 stay free",
-      pets: "Not allowed"
-    },
-
-    gallery: [
-      "/assets/images/sultanhotel.jpg",
-      "/assets/images/sultanhotel1.jpg",
-      "/assets/images/sultanhotel2.jpg",
-      "/assets/images/sultanhotel3.webp",
+      "/assets/images/areejalzahbi.webp",
+      "/assets/images/areejalzahbi1.webp",
+      "/assets/images/areejalzahbi2.webp",
+      "/assets/images/areejalzahbi3.webp",
     ],
 
     priceRange: "Price On Request",
@@ -3907,2054 +4671,247 @@ export const hotelsData = [
   },
 
   {
-    id: "emaar-al-khalil",
-    name: "Emaar Al Khalil Hotel",
-    slug: "emaar-al-khalil",
-    image: "/assets/images/emaar-al-khalil.jpg",
-    rating: 4,
+    id: "badar-al-masa-hotel",
+    name: "Badar Al Masa Hotel",
+    slug: "bada-al-masa-hotel",
+    image: "/assets/images/badaralmasa.webp",
+    rating: 2,
     location: "Makkah",
-    distance: "650m from Masjid al-Haram",
-    amenities: ["Free WiFi", "2 Restaurants", "Breakfast Available", "5 Elevators"],
+    distance: "Ibrahim Khalil Road, Makkah",
+    amenities: ["Basic Rooms", "AC", "Daily Housekeeping", "Halal Dining Nearby"],
 
-    description: "Emaar Al Khalil Hotel is a sizeable Makkah property managed by Emaar Al Diyafa Hotels, located 650 metres from Masjid al-Haram on Ibrahim Al Khalil Street in Al Masfala. Featuring 252 rooms, 5 elevators and 2 restaurants with capacity for up to 712 pilgrims, the hotel offers both breakfast and room-only plans at competitive seasonal rates, making it a reliable choice for Umrah groups.",
-
-    fullAmenities: [
-      { icon: "🕌", name: "Near Haram", detail: "650m from Masjid al-Haram" },
-      { icon: "🍽️", name: "2 Restaurants", detail: "On-site halal dining" },
-      { icon: "🛗", name: "5 Elevators", detail: "Efficient building access" },
-      { icon: "📶", name: "Free WiFi", detail: "Internet access throughout" },
-      { icon: "☕", name: "Breakfast", detail: "Breakfast plan available" },
-      { icon: "🛎️", name: "24/7 Reception", detail: "Round-the-clock service" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
-      { icon: "🔒", name: "Security", detail: "24-hour security" }
-    ],
-
-    roomTypes: [
-      {
-        type: "Double Room",
-        description: "Well-furnished double room",
-        size: "27 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV", "WiFi"]
-      },
-      {
-        type: "Triple Room",
-        description: "Triple room for groups",
-        size: "32 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV", "WiFi"]
-      },
-      {
-        type: "Quad Room",
-        description: "Quad room for families",
-        size: "37 sqm",
-        occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV", "WiFi"]
-      }
-    ],
-
-    umrahFacilities: {
-      title: "Pilgrim Services",
-      features: [
-        "Prayer mats and Qibla direction",
-        "Holy Quran available",
-        "Prayer times posted",
-        "Zamzam water access",
-        "Ziyarat tour desk",
-        "Fajr wake-up call",
-        "Halal meals",
-        "Group coordination"
-      ]
-    },
-
-    diningOptions: [
-      {
-        name: "Emaar Al Khalil Restaurant",
-        cuisine: "Arabic & International",
-        timing: "5:30 AM – 11:00 PM",
-        specialty: "Breakfast buffet; room only also available"
-      }
-    ],
-
-    nearbyAttractions: [
-      { name: "Masjid al-Haram", distance: "650m", time: "9 min walk" },
-      { name: "Kaaba", distance: "750m", time: "11 min walk" },
-      { name: "Abraj Al Bait Mall", distance: "600m", time: "8 min walk" }
-    ],
-
-    policies: {
-      checkIn: "4:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "21 days notice required",
-      children: "Children under 10 stay free",
-      pets: "Not allowed"
-    },
-
-    gallery: [
-      "/assets/images/khalilhotel.webp",
-      "/assets/images/khalilhotel1.webp",
-      "/assets/images/khalilhotel2.webp",
-      "/assets/images/khalilhotel3.jpg",
-    ],
-
-    priceRange: "185 - 475 SAR per night",
-    featured: false
-  },
-
-  {
-    id: "emaar-afaq-al-sad",
-    name: "Emaar Afaq Al Sad Hotel",
-    slug: "emaar-afaq-al-sad",
-    image: "/assets/images/emaar-afaq-al-sad.jpg",
-    rating: 3,
-    location: "Makkah",
-    distance: "700m from Masjid al-Haram",
-    amenities: ["Free WiFi", "Restaurant", "Room Only", "11 Elevators"],
-
-    description: "Emaar Afaq Al Sad Hotel is a large budget-category property managed by Emaar Al Diyafa Hotels, located 700 metres from Masjid al-Haram in the Ajyad Beer Ballilah area of Makkah. With 543 rooms, an impressive 11 elevators and 1 restaurant, the hotel can accommodate up to 2,176 pilgrims, making it one of the highest-capacity options in the Emaar portfolio for large pilgrim groups.",
+    description: "Badar Al Masa Hotel is a straightforward economy hotel on Ibrahim Khalil Road, Makkah. Catering to pilgrims who value simplicity and affordability, the hotel provides clean rooms and essential services. Its location on Ibrahim Khalil Road offers convenient access to Masjid al-Haram and is surrounded by halal dining options and local shops to meet everyday pilgrim needs.",
 
     fullAmenities: [
-      { icon: "🕌", name: "Near Haram", detail: "700m from Masjid al-Haram, Ajyad area" },
-      { icon: "🍽️", name: "Restaurant", detail: "On-site halal dining" },
-      { icon: "🛗", name: "11 Elevators", detail: "High-capacity elevator system" },
-      { icon: "📶", name: "Free WiFi", detail: "Internet access throughout" },
-      { icon: "👥", name: "Large Capacity", detail: "Accommodates up to 2,176 pilgrims" },
-      { icon: "🛎️", name: "24/7 Reception", detail: "All-day front desk" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily room cleaning" },
-      { icon: "🔒", name: "Security", detail: "24-hour security" }
-    ],
-
-    roomTypes: [
-      {
-        type: "Double Room",
-        description: "Budget double room with essentials",
-        size: "24 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Triple Room",
-        description: "Triple room for small groups",
-        size: "28 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Quad Room",
-        description: "Quad room for families",
-        size: "32 sqm",
-        occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV"]
-      }
-    ],
-
-    umrahFacilities: {
-      title: "Pilgrim Services",
-      features: [
-        "Prayer mats and Qibla direction",
-        "Prayer times displayed",
-        "Zamzam water access",
-        "Halal meals available",
-        "Ziyarat assistance",
-        "Group coordination support",
-        "Luggage storage"
-      ]
-    },
-
-    diningOptions: [
-      {
-        name: "Emaar Afaq Restaurant",
-        cuisine: "Arabic",
-        timing: "6:00 AM – 10:30 PM",
-        specialty: "Halal meals; room only plan available"
-      }
-    ],
-
-    nearbyAttractions: [
-      { name: "Masjid al-Haram", distance: "700m", time: "10 min walk" },
-      { name: "Ajyad Castle Area", distance: "400m", time: "6 min walk" },
-      { name: "Abraj Al Bait Mall", distance: "650m", time: "9 min walk" }
-    ],
-
-    policies: {
-      checkIn: "4:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "21 days notice required",
-      children: "Children under 10 stay free",
-      pets: "Not allowed"
-    },
-
-    gallery: [
-      "/assets/images/afaqalsud.webp",
-      "/assets/images/afaqalsud1.webp",
-      "/assets/images/afaqalsud2.webp",
-      "/assets/images/afaqalsud3.webp",
-    ],
-
-    priceRange: "105 - 290 SAR per night",
-    featured: false
-  },
-
-  {
-    id: "emaar-al-diwan-ajyad",
-    name: "Emaar Al Diwan Ajyad Hotel",
-    slug: "emaar-al-diwan-ajyad",
-    image: "/assets/images/emaar-al-diwan-ajyad.jpg",
-    rating: 3,
-    location: "Makkah",
-    distance: "900m from Masjid al-Haram",
-    amenities: ["Free WiFi", "2 Restaurants", "Room Only", "9 Elevators"],
-
-    description: "Emaar Al Diwan Ajyad Hotel is a large-capacity property under the Emaar Al Diyafa Hotels brand, situated 900 metres from Masjid al-Haram in the Ajyad Al Sad district of Makkah. With 530 rooms, 9 elevators and 2 restaurants, the hotel accommodates up to 2,120 pilgrims. At competitive room-only rates, it is particularly well suited to budget-conscious pilgrims and large tour groups.",
-
-    fullAmenities: [
-      { icon: "🕌", name: "Near Haram", detail: "900m from Masjid al-Haram, Ajyad Al Sad" },
-      { icon: "🍽️", name: "2 Restaurants", detail: "On-site halal dining" },
-      { icon: "🛗", name: "9 Elevators", detail: "High-capacity elevator system" },
-      { icon: "📶", name: "Free WiFi", detail: "Internet throughout" },
-      { icon: "👥", name: "Large Capacity", detail: "Up to 2,120 pilgrims" },
-      { icon: "🛎️", name: "24/7 Reception", detail: "Full-time front desk" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
-      { icon: "🔒", name: "Security", detail: "24-hour security" }
-    ],
-
-    roomTypes: [
-      {
-        type: "Double Room",
-        description: "Budget double room",
-        size: "24 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Triple Room",
-        description: "Triple room for groups",
-        size: "28 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Quad Room",
-        description: "Quad room for families",
-        size: "32 sqm",
-        occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV"]
-      }
-    ],
-
-    umrahFacilities: {
-      title: "Pilgrim Services",
-      features: [
-        "Prayer mats and Qibla direction",
-        "Prayer times displayed",
-        "Zamzam water access",
-        "Halal meals available",
-        "Ziyarat tour guidance",
-        "Group coordination",
-        "Luggage storage"
-      ]
-    },
-
-    diningOptions: [
-      {
-        name: "Emaar Al Diwan Restaurant",
-        cuisine: "Arabic",
-        timing: "6:00 AM – 10:30 PM",
-        specialty: "Halal meals; room only plan"
-      }
-    ],
-
-    nearbyAttractions: [
-      { name: "Masjid al-Haram", distance: "900m", time: "13 min walk" },
-      { name: "Ajyad Castle Area", distance: "500m", time: "7 min walk" },
-      { name: "Abraj Al Bait Mall", distance: "850m", time: "12 min walk" }
-    ],
-
-    policies: {
-      checkIn: "4:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "21 days notice required",
-      children: "Children under 10 stay free",
-      pets: "Not allowed"
-    },
-
-    gallery: [
-      "/assets/images/diwanajyad.webp",
-      "/assets/images/diwanajyad1.webp",
-      "/assets/images/diwanajyad2.webp",
-      "/assets/images/diwanajyad3.webp",
-    ],
-
-    priceRange: "105 - 290 SAR per night",
-    featured: false
-  },
-
-  {
-    id: "osturat-emaar",
-    name: "Osturat Emaar Hotel",
-    slug: "osturat-emaar",
-    image: "/assets/images/osturat-emaar.jpg",
-    rating: 3,
-    location: "Makkah",
-    distance: "2 km from Masjid al-Haram",
-    amenities: ["Free WiFi", "Restaurant", "Room Only", "Mahbas Al Jin Area"],
-
-    description: "Osturat Emaar Hotel is a budget property under the Emaar Al Diyafa Hotels brand, located 2 kilometres from Masjid al-Haram in the Mahbas Al Jin district of Makkah. With 225 rooms and 3 elevators accommodating up to 900 pilgrims, this hotel provides practical, affordable accommodation for groups primarily looking for basic comfort at low rates during their Umrah stay.",
-
-    fullAmenities: [
-      { icon: "🕌", name: "Makkah Location", detail: "2km from Masjid al-Haram, Mahbas Al Jin" },
-      { icon: "🍽️", name: "Restaurant", detail: "On-site halal dining" },
-      { icon: "🛗", name: "3 Elevators", detail: "Building access" },
-      { icon: "📶", name: "Free WiFi", detail: "Internet access" },
-      { icon: "💰", name: "Budget Rates", detail: "Affordable room-only pricing" },
-      { icon: "🛎️", name: "24/7 Reception", detail: "Full-time front desk" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
-      { icon: "🔒", name: "Security", detail: "24-hour security" }
-    ],
-
-    roomTypes: [
-      {
-        type: "Double Room",
-        description: "Simple double room",
-        size: "22 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Triple Room",
-        description: "Triple room for groups",
-        size: "26 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Quad Room",
-        description: "Quad room for families",
-        size: "30 sqm",
-        occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV"]
-      }
-    ],
-
-    umrahFacilities: {
-      title: "Pilgrim Services",
-      features: [
-        "Prayer mats and Qibla direction",
-        "Prayer times displayed",
-        "Halal meals available",
-        "Ziyarat assistance",
-        "Transport to Haram",
-        "Group coordination",
-        "Luggage storage"
-      ]
-    },
-
-    diningOptions: [
-      {
-        name: "Osturat Restaurant",
-        cuisine: "Arabic",
-        timing: "6:00 AM – 10:00 PM",
-        specialty: "Basic halal meals; room only plan"
-      }
-    ],
-
-    nearbyAttractions: [
-      { name: "Masjid al-Haram", distance: "2 km", time: "Transport available" },
-      { name: "Mina", distance: "3 km", time: "Short drive" }
-    ],
-
-    policies: {
-      checkIn: "4:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "21 days notice required",
-      children: "Children under 10 stay free",
-      pets: "Not allowed"
-    },
-
-    gallery: [
-      "/assets/images/osturahotel.webp",
-      "/assets/images/osturahotel1.webp",
-      "/assets/images/osturahotel2.webp",
-      "/assets/images/osturahotel3.webp",
-    ],
-
-    priceRange: "65 - 120 SAR per night",
-    featured: false
-  },
-
-  {
-    id: "emaar-elite-makkah",
-    name: "Emaar Elite Makkah Hotel",
-    slug: "emaar-elite-makkah",
-    image: "/assets/images/emaar-elite-makkah.jpg",
-    rating: 3,
-    location: "Makkah",
-    distance: "1.3 km from Masjid al-Haram",
-    amenities: ["Free WiFi", "Restaurant", "Breakfast Available", "4 Elevators"],
-
-    description: "Emaar Elite Makkah Hotel is a budget-category property under the Emaar Al Diyafa Hotels brand, located 1.3 kilometres from Masjid al-Haram on Ajyad Street in the Rae Bakhsh area of Makkah. With 221 rooms and 4 elevators accommodating up to 870 pilgrims, and both breakfast and room-only plans available, the hotel serves as an economical option for pilgrims who are comfortable with a short commute to the Grand Mosque.",
-
-    fullAmenities: [
-      { icon: "🕌", name: "Makkah Location", detail: "1.3km from Haram, Rae Bakhsh – Ajyad St." },
-      { icon: "🍽️", name: "Restaurant", detail: "On-site halal dining" },
-      { icon: "🛗", name: "4 Elevators", detail: "Building access" },
-      { icon: "📶", name: "Free WiFi", detail: "Internet access" },
-      { icon: "☕", name: "Breakfast", detail: "Breakfast plan available" },
-      { icon: "🛎️", name: "24/7 Reception", detail: "Full-time front desk" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
-      { icon: "🔒", name: "Security", detail: "24-hour security" }
-    ],
-
-    roomTypes: [
-      {
-        type: "Double Room",
-        description: "Economy double room",
-        size: "23 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Triple Room",
-        description: "Triple room for groups",
-        size: "27 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Quad Room",
-        description: "Quad room for families",
-        size: "31 sqm",
-        occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV"]
-      }
-    ],
-
-    umrahFacilities: {
-      title: "Pilgrim Services",
-      features: [
-        "Prayer mats and Qibla direction",
-        "Prayer times displayed",
-        "Zamzam water access",
-        "Halal meals",
-        "Ziyarat guidance",
-        "Transport to Haram",
-        "Group coordination",
-        "Luggage storage"
-      ]
-    },
-
-    diningOptions: [
-      {
-        name: "Emaar Elite Restaurant",
-        cuisine: "Arabic",
-        timing: "6:00 AM – 10:30 PM",
-        specialty: "Breakfast and halal à la carte"
-      }
-    ],
-
-    nearbyAttractions: [
-      { name: "Masjid al-Haram", distance: "1.3 km", time: "Transport available" },
-      { name: "Ajyad Castle Area", distance: "800m", time: "10 min walk" }
-    ],
-
-    policies: {
-      checkIn: "4:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "21 days notice required",
-      children: "Children under 10 stay free",
-      pets: "Not allowed"
-    },
-
-    gallery: [
-      "/assets/images/elitehotel.webp",
-      "/assets/images/elitehotel1.webp",
-      "/assets/images/elitehotel2.webp",
-      "/assets/images/elitehotel3.webp",
-    ],
-
-    priceRange: "110 - 420 SAR per night",
-    featured: false
-  },
-
-  {
-    id: "emaar-al-jawhara",
-    name: "Emaar Al Jawhara Hotel",
-    slug: "emaar-al-jawhara",
-    image: "/assets/images/emaar-al-jawhara.jpg",
-    rating: 3,
-    location: "Makkah",
-    distance: "2 km from Masjid al-Haram",
-    amenities: ["Free WiFi", "Restaurant", "Room Only", "Al Shashah Area"],
-
-    description: "Emaar Al Jawhara Hotel is a budget property by Emaar Al Diyafa Hotels, situated 2 kilometres from Masjid al-Haram in the Al Shashah district of Makkah. The hotel features 248 rooms with 4 elevators and can accommodate up to 1,004 pilgrims. Offering room-only pricing, it is a practical choice for pilgrims seeking affordable accommodation within greater Makkah.",
-
-    fullAmenities: [
-      { icon: "🕌", name: "Makkah Location", detail: "2km from Haram, Al Shashah area" },
-      { icon: "🍽️", name: "Restaurant", detail: "On-site halal dining" },
-      { icon: "🛗", name: "4 Elevators", detail: "Building access" },
-      { icon: "📶", name: "Free WiFi", detail: "Internet access" },
-      { icon: "💰", name: "Budget Rates", detail: "Room-only affordable pricing" },
-      { icon: "🛎️", name: "24/7 Reception", detail: "Full-time front desk" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
-      { icon: "🔒", name: "Security", detail: "24-hour security" }
-    ],
-
-    roomTypes: [
-      {
-        type: "Double Room",
-        description: "Economy double room",
-        size: "22 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Triple Room",
-        description: "Triple room for groups",
-        size: "26 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Quad Room",
-        description: "Quad room for families",
-        size: "30 sqm",
-        occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV"]
-      }
-    ],
-
-    umrahFacilities: {
-      title: "Pilgrim Services",
-      features: [
-        "Prayer mats and Qibla direction",
-        "Prayer times displayed",
-        "Halal meals available",
-        "Ziyarat assistance",
-        "Transport to Haram",
-        "Group coordination",
-        "Luggage storage"
-      ]
-    },
-
-    diningOptions: [
-      {
-        name: "Emaar Al Jawhara Restaurant",
-        cuisine: "Arabic",
-        timing: "6:00 AM – 10:00 PM",
-        specialty: "Basic halal meals"
-      }
-    ],
-
-    nearbyAttractions: [
-      { name: "Masjid al-Haram", distance: "2 km", time: "Transport available" },
-      { name: "Makkah City Centre", distance: "1.5 km", time: "Short drive" }
-    ],
-
-    policies: {
-      checkIn: "4:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "21 days notice required",
-      children: "Children under 10 stay free",
-      pets: "Not allowed"
-    },
-
-    gallery: [
-      "/assets/images/jawharahotel.webp",
-      "/assets/images/jawharahotel1.webp",
-      "/assets/images/jawharahotel2.webp",
-      "/assets/images/jawharahotel3.jpg",
-    ],
-
-    priceRange: "Price On Request",
-    featured: false
-  },
-
-  {
-    id: "emaar-al-rawdah-1",
-    name: "Emaar Al Rawdah I Hotel",
-    slug: "emaar-al-rawdah-1",
-    image: "/assets/images/emaar-al-rawdah-1.jpg",
-    rating: 3,
-    location: "Makkah",
-    distance: "3 km from Masjid al-Haram",
-    amenities: ["Free WiFi", "Restaurant", "Room Only", "11 Elevators"],
-
-    description: "Emaar Al Rawdah I Hotel is a large-capacity Emaar Al Diyafa property in the Al Rawda district of Makkah, situated 3 kilometres from Masjid al-Haram. With 455 rooms served by 11 elevators and 1 restaurant, the hotel can host up to 2,185 pilgrims, making it one of the highest-volume options in the Emaar portfolio. It is an ideal base for large group pilgrimages seeking budget accommodation.",
-
-    fullAmenities: [
-      { icon: "🕌", name: "Makkah Location", detail: "3km from Haram, Al Rawda district" },
-      { icon: "🍽️", name: "Restaurant", detail: "On-site halal dining" },
-      { icon: "🛗", name: "11 Elevators", detail: "High-capacity elevator system" },
-      { icon: "📶", name: "Free WiFi", detail: "Internet access" },
-      { icon: "👥", name: "Large Capacity", detail: "Up to 2,185 pilgrims" },
-      { icon: "🛎️", name: "24/7 Reception", detail: "Full-time front desk" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
-      { icon: "🔒", name: "Security", detail: "24-hour security" }
-    ],
-
-    roomTypes: [
-      {
-        type: "Double Room",
-        description: "Economy double room",
-        size: "22 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Triple Room",
-        description: "Triple room for groups",
-        size: "26 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Quad Room",
-        description: "Quad room for families",
-        size: "30 sqm",
-        occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV"]
-      }
-    ],
-
-    umrahFacilities: {
-      title: "Pilgrim Services",
-      features: [
-        "Prayer mats and Qibla direction",
-        "Prayer times displayed",
-        "Halal meals available",
-        "Ziyarat assistance",
-        "Transport to Haram",
-        "Group coordination",
-        "Luggage storage"
-      ]
-    },
-
-    diningOptions: [
-      {
-        name: "Emaar Al Rawdah Restaurant",
-        cuisine: "Arabic",
-        timing: "6:00 AM – 10:00 PM",
-        specialty: "Halal meals; room only plan"
-      }
-    ],
-
-    nearbyAttractions: [
-      { name: "Masjid al-Haram", distance: "3 km", time: "Transport available" },
-      { name: "Makkah City Centre", distance: "2 km", time: "Short drive" }
-    ],
-
-    policies: {
-      checkIn: "4:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "21 days notice required",
-      children: "Children under 10 stay free",
-      pets: "Not allowed"
-    },
-
-    gallery: [
-      "/assets/images/rawdhahotel.jpg",
-      "/assets/images/rawdhahotel1.jpg",
-      "/assets/images/rawdhahotel2.jpg",
-      "/assets/images/rawdhahotel3.jpg",
-    ],
-
-    priceRange: "Price On Request",
-    featured: false
-  },
-
-  {
-    id: "emaar-al-rawdah-2",
-    name: "Emaar Al Rawdah II Hotel",
-    slug: "emaar-al-rawdah-2",
-    image: "/assets/images/emaar-al-rawdah-2.jpg",
-    rating: 3,
-    location: "Makkah",
-    distance: "2 km from Masjid al-Haram",
-    amenities: ["Free WiFi", "2 Restaurants", "Room Only", "Al Rawda Area"],
-
-    description: "Emaar Al Rawdah II Hotel is a compact property by Emaar Al Diyafa Hotels, located 2 kilometres from Masjid al-Haram in the Al Rawda district of Makkah. Featuring 120 rooms, 4 elevators and 2 restaurants with capacity for up to 525 pilgrims, the hotel offers a quieter alternative to the larger Emaar properties while still providing all the essential services pilgrims need.",
-
-    fullAmenities: [
-      { icon: "🕌", name: "Makkah Location", detail: "2km from Haram, Al Rawda district" },
-      { icon: "🍽️", name: "2 Restaurants", detail: "On-site halal dining" },
-      { icon: "🛗", name: "4 Elevators", detail: "Building access" },
-      { icon: "📶", name: "Free WiFi", detail: "Internet access" },
-      { icon: "🛎️", name: "24/7 Reception", detail: "Full-time front desk" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
-      { icon: "🔒", name: "Security", detail: "24-hour security" },
-      { icon: "🧳", name: "Luggage Storage", detail: "Secure facilities" }
-    ],
-
-    roomTypes: [
-      {
-        type: "Double Room",
-        description: "Economy double room",
-        size: "22 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Triple Room",
-        description: "Triple room for groups",
-        size: "26 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Quad Room",
-        description: "Quad room for families",
-        size: "30 sqm",
-        occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV"]
-      }
-    ],
-
-    umrahFacilities: {
-      title: "Pilgrim Services",
-      features: [
-        "Prayer mats and Qibla direction",
-        "Prayer times displayed",
-        "Halal meals available",
-        "Ziyarat assistance",
-        "Transport to Haram",
-        "Group coordination",
-        "Luggage storage"
-      ]
-    },
-
-    diningOptions: [
-      {
-        name: "Emaar Al Rawdah II Restaurant",
-        cuisine: "Arabic",
-        timing: "6:00 AM – 10:00 PM",
-        specialty: "Halal meals; room only plan"
-      }
-    ],
-
-    nearbyAttractions: [
-      { name: "Masjid al-Haram", distance: "2 km", time: "Transport available" },
-      { name: "Makkah City Centre", distance: "1.5 km", time: "Short drive" }
-    ],
-
-    policies: {
-      checkIn: "4:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "21 days notice required",
-      children: "Children under 10 stay free",
-      pets: "Not allowed"
-    },
-
-    gallery: [
-      "/assets/images/rewdhall.jpg",
-      "/assets/images/rewdhall1.jpg",
-      "/assets/images/rewdhall2.jpg",
-      "/assets/images/rewdhall3.jpg",
-    ],
-
-    priceRange: "Price On Request",
-    featured: false
-  },
-
-  {
-    id: "emaar-international",
-    name: "Emaar International Hotel",
-    slug: "emaar-international",
-    image: "/assets/images/emaar-international.jpg",
-    rating: 3,
-    location: "Makkah",
-    distance: "1.7 km from Masjid al-Haram",
-    amenities: ["Free WiFi", "Restaurant", "Room Only", "Al Jumaiza Area"],
-
-    description: "Emaar International Hotel is an economy property by Emaar Al Diyafa Hotels, located 1.7 kilometres from Masjid al-Haram in the Al Jumaiza district of Makkah. With 234 rooms, 4 elevators and 1 restaurant, the hotel accommodates up to 936 pilgrims. Seasonal room-only rates make it a budget-friendly option for pilgrims who are comfortable with a short commute to the Grand Mosque.",
-
-    fullAmenities: [
-      { icon: "🕌", name: "Makkah Location", detail: "1.7km from Haram, Al Jumaiza area" },
-      { icon: "🍽️", name: "Restaurant", detail: "On-site halal dining" },
-      { icon: "🛗", name: "4 Elevators", detail: "Building access" },
-      { icon: "📶", name: "Free WiFi", detail: "Internet access" },
-      { icon: "💰", name: "Budget Rates", detail: "Room-only seasonal pricing" },
-      { icon: "🛎️", name: "24/7 Reception", detail: "Full-time front desk" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
-      { icon: "🔒", name: "Security", detail: "24-hour security" }
-    ],
-
-    roomTypes: [
-      {
-        type: "Double Room",
-        description: "Economy double room",
-        size: "22 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Triple Room",
-        description: "Triple room for groups",
-        size: "26 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Quad Room",
-        description: "Quad room for families",
-        size: "30 sqm",
-        occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV"]
-      }
-    ],
-
-    umrahFacilities: {
-      title: "Pilgrim Services",
-      features: [
-        "Prayer mats and Qibla direction",
-        "Prayer times displayed",
-        "Halal meals available",
-        "Ziyarat assistance",
-        "Transport to Haram",
-        "Group coordination",
-        "Luggage storage"
-      ]
-    },
-
-    diningOptions: [
-      {
-        name: "Emaar International Restaurant",
-        cuisine: "Arabic",
-        timing: "6:00 AM – 10:00 PM",
-        specialty: "Halal meals; room only plan"
-      }
-    ],
-
-    nearbyAttractions: [
-      { name: "Masjid al-Haram", distance: "1.7 km", time: "Transport available" },
-      { name: "Makkah City Centre", distance: "1 km", time: "Short drive" }
-    ],
-
-    policies: {
-      checkIn: "4:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "21 days notice required",
-      children: "Children under 10 stay free",
-      pets: "Not allowed"
-    },
-
-    gallery: [
-      "/assets/images/international.webp",
-      "/assets/images/international1.webp",
-      "/assets/images/international2.webp",
-      "/assets/images/international3.webp",
-    ],
-
-    priceRange: "75 - 150 SAR per night",
-    featured: false
-  },
-
-  {
-    id: "emaar-al-noor",
-    name: "Emaar Al Noor Hotel",
-    slug: "emaar-al-noor",
-    image: "/assets/images/emaar-al-noor.jpg",
-    rating: 3,
-    location: "Makkah",
-    distance: "3 km from Masjid al-Haram",
-    amenities: ["Free WiFi", "Restaurant", "Room Only", "Al Aziziyah Area"],
-
-    description: "Emaar Al Noor Hotel is a budget property by Emaar Al Diyafa Hotels, located 3 kilometres from Masjid al-Haram on Al Noor Street in the Al Aziziyah district of Makkah. With 236 rooms, 5 elevators and 1 restaurant accommodating up to 944 pilgrims, the hotel is popular with groups seeking the most affordable accommodation while still being within Makkah's city limits.",
-
-    fullAmenities: [
-      { icon: "🕌", name: "Makkah Location", detail: "3km from Haram, Al Aziziyah – Al Noor St." },
-      { icon: "🍽️", name: "Restaurant", detail: "On-site halal dining" },
-      { icon: "🛗", name: "5 Elevators", detail: "Building access" },
-      { icon: "📶", name: "Free WiFi", detail: "Internet access" },
-      { icon: "💰", name: "Budget Rates", detail: "Very competitive room-only pricing" },
-      { icon: "🛎️", name: "24/7 Reception", detail: "Full-time front desk" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
-      { icon: "🔒", name: "Security", detail: "24-hour security" }
-    ],
-
-    roomTypes: [
-      {
-        type: "Double Room",
-        description: "Economy double room",
-        size: "21 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Triple Room",
-        description: "Triple room for groups",
-        size: "25 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Quad Room",
-        description: "Quad room for families",
-        size: "29 sqm",
-        occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV"]
-      }
-    ],
-
-    umrahFacilities: {
-      title: "Pilgrim Services",
-      features: [
-        "Prayer mats and Qibla direction",
-        "Prayer times displayed",
-        "Halal meals available",
-        "Ziyarat assistance",
-        "Transport to Haram",
-        "Group coordination",
-        "Luggage storage"
-      ]
-    },
-
-    diningOptions: [
-      {
-        name: "Emaar Al Noor Restaurant",
-        cuisine: "Arabic",
-        timing: "6:00 AM – 10:00 PM",
-        specialty: "Halal meals; room only plan"
-      }
-    ],
-
-    nearbyAttractions: [
-      { name: "Masjid al-Haram", distance: "3 km", time: "Transport available" },
-      { name: "Al Aziziyah District", distance: "Walking", time: "Local area" }
-    ],
-
-    policies: {
-      checkIn: "4:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "21 days notice required",
-      children: "Children under 10 stay free",
-      pets: "Not allowed"
-    },
-
-    gallery: [
-      "/assets/images/noor.webp",
-      "/assets/images/noor1.webp",
-      "/assets/images/noor2.webp",
-      "/assets/images/noor3.webp",
-    ],
-
-    priceRange: "65 - 180 SAR per night",
-    featured: false
-  },
-
-  {
-    id: "emaar-legend",
-    name: "Emaar Legend Hotel",
-    slug: "emaar-legend",
-    image: "/assets/images/emaar-legend.jpg",
-    rating: 3,
-    location: "Makkah",
-    distance: "5 km from Masjid al-Haram",
-    amenities: ["Free WiFi", "Restaurant", "Room Only", "Al Aziziyah Area"],
-
-    description: "Emaar Legend Hotel is a budget property managed by Emaar Al Diyafa Hotels, located 5 kilometres from Masjid al-Haram on Al Aziziyah Street in the Al Aziziyah district of Makkah. With 220 rooms and 6 elevators accommodating up to 880 pilgrims, the hotel offers very economical room-only rates and is suitable for pilgrims and groups who prioritise price over proximity to the Haram.",
-
-    fullAmenities: [
-      { icon: "🕌", name: "Makkah Location", detail: "5km from Haram, Al Aziziyah St." },
-      { icon: "🍽️", name: "Restaurant", detail: "On-site halal dining" },
-      { icon: "🛗", name: "6 Elevators", detail: "Building access" },
-      { icon: "📶", name: "Free WiFi", detail: "Internet access" },
-      { icon: "💰", name: "Budget Rates", detail: "Very affordable room-only pricing" },
-      { icon: "🛎️", name: "24/7 Reception", detail: "Full-time front desk" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
-      { icon: "🔒", name: "Security", detail: "24-hour security" }
-    ],
-
-    roomTypes: [
-      {
-        type: "Double Room",
-        description: "Economy double room",
-        size: "21 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Triple Room",
-        description: "Triple room for groups",
-        size: "25 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV"]
-      }
-    ],
-
-    umrahFacilities: {
-      title: "Pilgrim Services",
-      features: [
-        "Prayer mats and Qibla direction",
-        "Prayer times displayed",
-        "Halal meals available",
-        "Ziyarat assistance",
-        "Transport to Haram",
-        "Group coordination",
-        "Luggage storage"
-      ]
-    },
-
-    diningOptions: [
-      {
-        name: "Emaar Legend Restaurant",
-        cuisine: "Arabic",
-        timing: "6:00 AM – 10:00 PM",
-        specialty: "Halal meals; room only plan"
-      }
-    ],
-
-    nearbyAttractions: [
-      { name: "Masjid al-Haram", distance: "5 km", time: "Transport available" },
-      { name: "Al Aziziyah District", distance: "Walking", time: "Local area" }
-    ],
-
-    policies: {
-      checkIn: "4:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "21 days notice required",
-      children: "Children under 10 stay free",
-      pets: "Not allowed"
-    },
-
-    gallery: [
-      "/assets/images/legend.webp",
-      "/assets/images/legend1.webp",
-      "/assets/images/legend2.webp",
-      "/assets/images/legend3.webp",
-    ],
-
-    priceRange: "Price On Request",
-    featured: false
-  },
-
-  {
-    id: "emaar-fourm",
-    name: "Emaar Fourm Hotel",
-    slug: "emaar-fourm",
-    image: "/assets/images/emaar-fourm.jpg",
-    rating: 3,
-    location: "Makkah",
-    distance: "8 km from Masjid al-Haram",
-    amenities: ["Free WiFi", "4 Restaurants", "Room Only", "10 Elevators"],
-
-    description: "Emaar Fourm Hotel is one of the largest properties in the Emaar Al Diyafa Hotels portfolio, located 8 kilometres from Masjid al-Haram on Sudqi Street in the Al Aziziyah district of Makkah. With an impressive 477 rooms, 10 elevators and 4 restaurants, the hotel can accommodate up to 1,908 pilgrims. Despite the distance from the Haram, its scale, multiple dining options and budget pricing make it a strong choice for large pilgrim delegations.",
-
-    fullAmenities: [
-      { icon: "🕌", name: "Makkah Location", detail: "8km from Haram, Al Aziziyah – Sudqi St." },
-      { icon: "🍽️", name: "4 Restaurants", detail: "Multiple on-site halal dining options" },
-      { icon: "🛗", name: "10 Elevators", detail: "High-capacity elevator system" },
-      { icon: "📶", name: "Free WiFi", detail: "Internet access" },
-      { icon: "👥", name: "Large Capacity", detail: "Up to 1,908 pilgrims" },
-      { icon: "🛎️", name: "24/7 Reception", detail: "Full-time front desk" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
-      { icon: "🔒", name: "Security", detail: "24-hour security" }
-    ],
-
-    roomTypes: [
-      {
-        type: "Double Room",
-        description: "Economy double room",
-        size: "22 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Triple Room",
-        description: "Triple room for groups",
-        size: "26 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Quad Room",
-        description: "Quad room for families",
-        size: "30 sqm",
-        occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV"]
-      }
-    ],
-
-    umrahFacilities: {
-      title: "Pilgrim Services",
-      features: [
-        "Prayer mats and Qibla direction",
-        "Prayer times displayed",
-        "Halal meals available",
-        "Ziyarat assistance",
-        "Transport to Haram arranged",
-        "Group coordination support",
-        "Luggage storage"
-      ]
-    },
-
-    diningOptions: [
-      {
-        name: "Emaar Fourm Restaurants",
-        cuisine: "Arabic & International",
-        timing: "5:30 AM – 11:00 PM",
-        specialty: "Multiple halal dining halls for large groups"
-      }
-    ],
-
-    nearbyAttractions: [
-      { name: "Masjid al-Haram", distance: "8 km", time: "Transport available" },
-      { name: "Al Aziziyah District", distance: "Walking", time: "Local area" }
-    ],
-
-    policies: {
-      checkIn: "4:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "21 days notice required",
-      children: "Children under 10 stay free",
-      pets: "Not allowed"
-    },
-
-    gallery: [
-      "/assets/images/forum.webp",
-      "/assets/images/forum1.webp",
-      "/assets/images/forum2.webp",
-      "/assets/images/forum3.webp",
-    ],
-
-    priceRange: "Price On Request",
-    featured: false
-  },
-
-  {
-    id: "emaar-al-taqwa-makkah",
-    name: "Emaar Al Taqwa Hotel",
-    slug: "emaar-al-taqwa-makkah",
-    image: "/assets/images/emaar-al-taqwa-makkah.jpg",
-    rating: 3,
-    location: "Makkah",
-    distance: "3.5 km from Masjid al-Haram",
-    amenities: ["Free WiFi", "Restaurant", "12 Elevators", "Large Capacity"],
-
-    description: "Emaar Al Taqwa Hotel is one of the largest properties in the Emaar Al Diyafa Hotels portfolio in Makkah, located 3.5 kilometres from Masjid al-Haram on Al Hajj Street in Hai Al Adel. With 690 rooms and an extensive 12-elevator system, the hotel accommodates up to 2,760 pilgrims — making it one of the highest-capacity hotels in its class. It is particularly popular with large national delegations and tour operators managing high volumes of pilgrims.",
-
-    fullAmenities: [
-      { icon: "🕌", name: "Makkah Location", detail: "3.5km from Haram, Hai Al Adel – Al Hajj St." },
-      { icon: "🍽️", name: "Restaurant", detail: "On-site halal dining" },
-      { icon: "🛗", name: "12 Elevators", detail: "Highest-capacity elevator system" },
-      { icon: "📶", name: "Free WiFi", detail: "Internet throughout" },
-      { icon: "👥", name: "Large Capacity", detail: "Up to 2,760 pilgrims" },
-      { icon: "🛎️", name: "24/7 Reception", detail: "Full-time front desk" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
-      { icon: "🔒", name: "Security", detail: "24-hour security" }
-    ],
-
-    roomTypes: [
-      {
-        type: "Double Room",
-        description: "Economy double room",
-        size: "22 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Triple Room",
-        description: "Triple room for groups",
-        size: "26 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Quad Room",
-        description: "Quad room for families",
-        size: "30 sqm",
-        occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV"]
-      }
-    ],
-
-    umrahFacilities: {
-      title: "Pilgrim Services",
-      features: [
-        "Prayer mats and Qibla direction",
-        "Prayer times displayed",
-        "Halal meals available",
-        "Ziyarat assistance",
-        "Transport to Haram",
-        "Group coordination support",
-        "Luggage storage"
-      ]
-    },
-
-    diningOptions: [
-      {
-        name: "Emaar Al Taqwa Restaurant",
-        cuisine: "Arabic",
-        timing: "5:30 AM – 11:00 PM",
-        specialty: "Halal meals for large groups"
-      }
-    ],
-
-    nearbyAttractions: [
-      { name: "Masjid al-Haram", distance: "3.5 km", time: "Transport available" },
-      { name: "Mina", distance: "2 km", time: "Short drive" }
-    ],
-
-    policies: {
-      checkIn: "4:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "21 days notice required",
-      children: "Children under 10 stay free",
-      pets: "Not allowed"
-    },
-
-    gallery: [
-      "/assets/images/taqwa.jpg",
-      "/assets/images/taqwa1.jpg",
-      "/assets/images/taqwa2.jpg",
-      "/assets/images/taqwa3.jpg",
-    ],
-
-    priceRange: "Price On Request",
-    featured: false
-  },
-
-  {
-    id: "emaar-al-safa",
-    name: "Emaar Al Safa Hotel",
-    slug: "emaar-al-safa",
-    image: "/assets/images/emaar-al-safa.jpg",
-    rating: 3,
-    location: "Makkah",
-    distance: "4 km from Masjid al-Haram",
-    amenities: ["Free WiFi", "Restaurant", "Room Only", "Al Aziziyah Area"],
-
-    description: "Emaar Al Safa Hotel is a compact economy property under Emaar Al Diyafa Hotels, located 4 kilometres from Masjid al-Haram on Abdullah Al Khayat Street in the Al Aziziyah district of Makkah. With 108 rooms, 4 elevators and 1 restaurant accommodating up to 432 pilgrims, it is one of the smaller Emaar properties and is ideal for smaller groups looking for a quiet, affordable base in Makkah.",
-
-    fullAmenities: [
-      { icon: "🕌", name: "Makkah Location", detail: "4km from Haram, Al Aziziyah – Abdullah Al Khayat St." },
-      { icon: "🍽️", name: "Restaurant", detail: "On-site halal dining" },
-      { icon: "🛗", name: "4 Elevators", detail: "Building access" },
-      { icon: "📶", name: "Free WiFi", detail: "Internet access" },
-      { icon: "💰", name: "Budget Rates", detail: "Affordable room-only pricing" },
-      { icon: "🛎️", name: "24/7 Reception", detail: "Full-time front desk" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
-      { icon: "🔒", name: "Security", detail: "24-hour security" }
-    ],
-
-    roomTypes: [
-      {
-        type: "Double Room",
-        description: "Economy double room",
-        size: "21 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Triple Room",
-        description: "Triple room for groups",
-        size: "25 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Quad Room",
-        description: "Quad room for families",
-        size: "29 sqm",
-        occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV"]
-      }
-    ],
-
-    umrahFacilities: {
-      title: "Pilgrim Services",
-      features: [
-        "Prayer mats and Qibla direction",
-        "Prayer times displayed",
-        "Halal meals available",
-        "Ziyarat assistance",
-        "Transport to Haram",
-        "Group coordination",
-        "Luggage storage"
-      ]
-    },
-
-    diningOptions: [
-      {
-        name: "Emaar Al Safa Restaurant",
-        cuisine: "Arabic",
-        timing: "6:00 AM – 10:00 PM",
-        specialty: "Halal meals; room only plan"
-      }
-    ],
-
-    nearbyAttractions: [
-      { name: "Masjid al-Haram", distance: "4 km", time: "Transport available" },
-      { name: "Al Aziziyah District", distance: "Walking", time: "Local area" }
-    ],
-
-    policies: {
-      checkIn: "4:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "21 days notice required",
-      children: "Children under 10 stay free",
-      pets: "Not allowed"
-    },
-
-    gallery: [
-      "/assets/images/safaemaar.jpg",
-      "/assets/images/safaemaar1.jpg",
-      "/assets/images/safaemaar2.jpg",
-      "/assets/images/safaemaar3.jpg",
-    ],
-
-    priceRange: "Price On Request",
-    featured: false
-  },
-
-  {
-    id: "emaar-al-nozha",
-    name: "Emaar Al Nozha Hotel",
-    slug: "emaar-al-nozha",
-    image: "/assets/images/emaar-al-nozha.jpg",
-    rating: 3,
-    location: "Makkah",
-    distance: "6 km from Masjid al-Haram",
-    amenities: ["Free WiFi", "Restaurant", "Room Only", "Al Nuzha Area"],
-
-    description: "Emaar Al Nozha Hotel is a budget property by Emaar Al Diyafa Hotels, located 6 kilometres from Masjid al-Haram in the Al Nuzha district of Makkah. With 237 rooms, 3 elevators and 1 restaurant accommodating up to 825 pilgrims, the hotel caters primarily to pilgrims and groups seeking the most economical accommodation options during Umrah and Hajj seasons.",
-
-    fullAmenities: [
-      { icon: "🕌", name: "Makkah Location", detail: "6km from Haram, Al Nuzha district" },
-      { icon: "🍽️", name: "Restaurant", detail: "On-site halal dining" },
-      { icon: "🛗", name: "3 Elevators", detail: "Building access" },
-      { icon: "📶", name: "Free WiFi", detail: "Internet access" },
-      { icon: "💰", name: "Budget Rates", detail: "Very affordable pricing" },
-      { icon: "🛎️", name: "24/7 Reception", detail: "Full-time front desk" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
-      { icon: "🔒", name: "Security", detail: "24-hour security" }
-    ],
-
-    roomTypes: [
-      {
-        type: "Double Room",
-        description: "Economy double room",
-        size: "21 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Triple Room",
-        description: "Triple room for groups",
-        size: "25 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Quad Room",
-        description: "Quad room for families",
-        size: "29 sqm",
-        occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV"]
-      }
-    ],
-
-    umrahFacilities: {
-      title: "Pilgrim Services",
-      features: [
-        "Prayer mats and Qibla direction",
-        "Prayer times displayed",
-        "Halal meals available",
-        "Ziyarat assistance",
-        "Transport to Haram",
-        "Group coordination",
-        "Luggage storage"
-      ]
-    },
-
-    diningOptions: [
-      {
-        name: "Emaar Al Nozha Restaurant",
-        cuisine: "Arabic",
-        timing: "6:00 AM – 10:00 PM",
-        specialty: "Halal meals; room only plan"
-      }
-    ],
-
-    nearbyAttractions: [
-      { name: "Masjid al-Haram", distance: "6 km", time: "Transport available" },
-      { name: "Al Nuzha District", distance: "Walking", time: "Local area" }
-    ],
-
-    policies: {
-      checkIn: "4:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "21 days notice required",
-      children: "Children under 10 stay free",
-      pets: "Not allowed"
-    },
-
-    gallery: [
-      "/assets/images/nozha.jpg",
-      "/assets/images/nozha1.jpg",
-      "/assets/images/nozha2.jpg",
-      "/assets/images/nozha3.jpg",
-    ],
-
-    priceRange: "Price On Request",
-    featured: false
-  },
-
-  // ==================== NEW MADINAH HOTELS ====================
-
-  {
-    id: "al-harithia-madinah",
-    name: "Al Harithia Hotel Madinah",
-    slug: "al-harithia-madinah",
-    image: "/assets/images/al-harithia-madinah.jpg",
-    rating: 4,
-    location: "Madinah",
-    distance: "600m from Masjid an-Nabawi",
-    amenities: ["Free WiFi", "Restaurant", "24/7 Reception", "Room Service"],
-
-    description: "Al Harithia Hotel Madinah is a well-regarded mid-range property located in the central area of Madinah, offering comfortable accommodation suitable for pilgrims and visitors to the Prophet's Mosque. The hotel provides a range of room configurations at competitive rates with optional meal plans, making it a popular choice for group pilgrimages.",
-
-    fullAmenities: [
-      { icon: "🕌", name: "Near Nabawi", detail: "Approx. 600m from Masjid an-Nabawi" },
-      { icon: "📶", name: "Free WiFi", detail: "High-speed internet throughout the property" },
-      { icon: "🍽️", name: "Restaurant", detail: "On-site halal dining with international options" },
-      { icon: "🛎️", name: "24/7 Reception", detail: "Round-the-clock front desk assistance" },
+      { icon: "🕌", name: "Haram Access", detail: "Ibrahim Khalil Road access to Masjid al-Haram" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms fully air-conditioned" },
+      { icon: "🛎️", name: "Front Desk", detail: "Reception available for assistance" },
       { icon: "🧹", name: "Housekeeping", detail: "Daily room cleaning service" },
-      { icon: "🅿️", name: "Parking", detail: "On-site parking available" },
-      { icon: "🧳", name: "Luggage Storage", detail: "Secure luggage facilities for early arrivals" },
-      { icon: "☕", name: "Breakfast", detail: "Optional breakfast available (BB plan)" }
+      { icon: "🔒", name: "Security", detail: "Basic in-house security" },
+      { icon: "🍽️", name: "Dining Nearby", detail: "Halal restaurants within walking distance" },
+      { icon: "🅿️", name: "Parking", detail: "Street parking available nearby" },
+      { icon: "💰", name: "Budget-Friendly", detail: "Very affordable rates" }
     ],
 
     roomTypes: [
       {
-        type: "Double Room",
-        description: "Comfortable double room ideal for couples or two pilgrims",
+        type: "Standard Room",
+        description: "Clean and functional room with essential amenities.",
+        size: "20 sqm",
+        occupancy: "2–3 adults",
+        features: ["Twin Beds", "Private Bathroom", "AC", "Basic Amenities"]
+      },
+      {
+        type: "Quad Room",
+        description: "Larger room for a group or family seeking economy accommodation.",
         size: "28 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV", "WiFi"]
-      },
-      {
-        type: "Triple Room",
-        description: "Spacious room accommodating three guests with full amenities",
-        size: "32 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV", "WiFi"]
-      },
-      {
-        type: "Quad Room",
-        description: "Four-person room suitable for families or pilgrim groups",
-        size: "38 sqm",
         occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV", "WiFi"]
-      },
-      {
-        type: "Junior Suite",
-        description: "Spacious junior suite with separate living area for two guests",
-        size: "45 sqm",
-        occupancy: "2 adults",
-        features: ["King Bed", "Separate Sitting Area", "Premium Amenities", "City View"]
+        features: ["Multiple Beds", "Bathroom", "AC", "Storage Space"]
       }
     ],
 
     umrahFacilities: {
-      title: "Pilgrim Services",
+      title: "Pilgrim Essentials",
       features: [
-        "Prayer mats and Qibla direction in all rooms",
-        "Holy Quran available on request",
-        "Prayer times displayed throughout hotel",
-        "Zamzam water access",
-        "Ziyarat and tour assistance",
-        "Fajr wake-up call service",
-        "Halal meal options available",
-        "Luggage storage for late check-outs"
+        "Prayer mats available on request",
+        "Qibla direction indicated in rooms",
+        "Prayer times posted at reception",
+        "Halal food options within walking distance",
+        "Luggage storage available",
+        "Transport information to Masjid al-Haram"
       ]
     },
 
     diningOptions: [
       {
-        name: "Al Harithia Restaurant",
-        cuisine: "Arabic & International",
-        timing: "6:00 AM – 11:00 PM",
-        specialty: "Halal breakfast buffet and full board meals"
+        name: "Nearby Restaurants",
+        cuisine: "Arabic & South Asian",
+        timing: "Various",
+        specialty: "Affordable halal meals nearby"
       }
     ],
 
     nearbyAttractions: [
-      { name: "Masjid an-Nabawi", distance: "600m", time: "8 min walk" },
-      { name: "Jannat al-Baqi", distance: "900m", time: "12 min walk" },
-      { name: "Quba Mosque", distance: "4.5 km", time: "10 min drive" },
-      { name: "Mount Uhud", distance: "5 km", time: "12 min drive" }
+      { name: "Masjid al-Haram", distance: "Ibrahim Khalil Road", time: "Short drive or taxi" },
+      { name: "Abraj Al Bait Towers", distance: "Approx. 2 km", time: "5–8 min drive" }
     ],
 
     policies: {
       checkIn: "2:00 PM",
       checkOut: "12:00 PM",
-      cancellation: "48 hours notice required",
-      children: "Children under 10 stay free when using existing beds",
+      cancellation: "Contact hotel directly for cancellation policy",
+      children: "Contact us for details",
       pets: "Not allowed"
     },
 
     gallery: [
-      "/assets/images/alharithahotel.jpg",
-      "/assets/images/alharithahotel1.webp",
-      "/assets/images/alharithahotel2.webp",
-      "/assets/images/alharithahotel3.webp",
+      "/assets/images/badaralmasa.webp",
+      "/assets/images/badaralmasa1.webp",
+      "/assets/images/badaralmasa2.webp",
+      "/assets/images/badaralmasa3.webp",
     ],
 
-    priceRange: "325 - 1,000 SAR per night",
+    priceRange: "Price On Request",
     featured: false
   },
 
   {
-    id: "grand-plaza-badr-almaqam",
-    name: "Grand Plaza Badr Al Maqam",
-    slug: "grand-plaza-badr-almaqam",
-    image: "/assets/images/grand-plaza-badr.jpg",
-    rating: 4,
-    location: "Madinah",
-    distance: "500m from Masjid an-Nabawi",
-    amenities: ["Free WiFi", "Restaurant", "Breakfast", "24/7 Service"],
-
-    description: "Grand Plaza Badr Al Maqam is a comfortable 4-star hotel situated in the heart of Madinah, offering well-appointed rooms at accessible rates. Its strategic location near the Prophet's Mosque makes it a preferred choice for pilgrims seeking a balance of comfort and value during Umrah and Ramadan seasons.",
-
-    fullAmenities: [
-      { icon: "🕌", name: "Central Location", detail: "Close proximity to Masjid an-Nabawi" },
-      { icon: "📶", name: "Free WiFi", detail: "Complimentary internet access" },
-      { icon: "🍽️", name: "Restaurant", detail: "On-site halal dining" },
-      { icon: "☕", name: "Breakfast", detail: "Daily breakfast service available" },
-      { icon: "🛎️", name: "24/7 Desk", detail: "Round-the-clock reception" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning service" },
-      { icon: "🅿️", name: "Parking", detail: "Parking facilities on site" },
-      { icon: "🔒", name: "Security", detail: "24-hour security service" }
-    ],
-
-    roomTypes: [
-      {
-        type: "Double Room",
-        description: "Well-furnished double room with standard amenities",
-        size: "26 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV", "WiFi"]
-      },
-      {
-        type: "Triple Room",
-        description: "Comfortable triple room for small groups",
-        size: "30 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV", "WiFi"]
-      },
-      {
-        type: "Quad Room",
-        description: "Spacious room suitable for families or groups of four",
-        size: "36 sqm",
-        occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV", "WiFi"]
-      }
-    ],
-
-    umrahFacilities: {
-      title: "Pilgrim Services",
-      features: [
-        "Prayer mats and Qibla direction in all rooms",
-        "Holy Quran available in rooms",
-        "Prayer times posted throughout",
-        "Zamzam water available",
-        "Ziyarat guidance and assistance",
-        "Fajr wake-up calls on request",
-        "Halal dining at all times",
-        "Group coordination support"
-      ]
-    },
-
-    diningOptions: [
-      {
-        name: "Grand Plaza Restaurant",
-        cuisine: "Arabic & International",
-        timing: "5:30 AM – 11:00 PM",
-        specialty: "Breakfast buffet; Iftar and Sahour during Ramadan"
-      }
-    ],
-
-    nearbyAttractions: [
-      { name: "Masjid an-Nabawi", distance: "500m", time: "7 min walk" },
-      { name: "Jannat al-Baqi", distance: "800m", time: "10 min walk" },
-      { name: "Quba Mosque", distance: "5 km", time: "12 min drive" },
-      { name: "Mount Uhud", distance: "5.5 km", time: "13 min drive" }
-    ],
-
-    policies: {
-      checkIn: "2:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "48 hours notice required",
-      children: "Children under 10 stay free",
-      pets: "Not allowed"
-    },
-
-    gallery: [
-      "/assets/images/badralmaqam.webp",
-      "/assets/images/badralmaqam1.webp",
-      "/assets/images/badralmaqam2.webp",
-      "/assets/images/badralmaqam3.jpg",
-    ],
-
-    priceRange: "300 - 750 SAR per night",
-    featured: false
-  },
-
-  {
-    id: "grand-plaza-almadina",
-    name: "Grand Plaza Al Madina",
-    slug: "grand-plaza-almadina",
-    image: "/assets/images/grand-plaza-almadina.jpg",
-    rating: 4,
-    location: "Madinah",
-    distance: "700m from Masjid an-Nabawi",
-    amenities: ["Free WiFi", "Restaurant", "Breakfast", "Room Service"],
-
-    description: "Grand Plaza Al Madina offers dependable 4-star accommodation in central Madinah, providing pilgrims with comfortable rooms and essential services at competitive prices. The hotel is well-suited for Umrah groups and individual travellers seeking reliable hospitality close to the sacred sites of Madinah.",
-
-    fullAmenities: [
-      { icon: "🕌", name: "Near Nabawi", detail: "Approx. 700m from the Prophet's Mosque" },
-      { icon: "📶", name: "Free WiFi", detail: "Internet access throughout" },
-      { icon: "🍽️", name: "Restaurant", detail: "Full-service halal dining" },
-      { icon: "☕", name: "Breakfast", detail: "Daily breakfast available" },
-      { icon: "🛎️", name: "Room Service", detail: "In-room dining available" },
-      { icon: "🛎️", name: "Reception", detail: "24/7 front desk" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
-      { icon: "🔒", name: "Security", detail: "24-hour on-site security" }
-    ],
-
-    roomTypes: [
-      {
-        type: "Double Room",
-        description: "Comfortably appointed double room",
-        size: "27 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV", "WiFi"]
-      },
-      {
-        type: "Triple Room",
-        description: "Spacious triple room for groups",
-        size: "31 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV", "WiFi"]
-      },
-      {
-        type: "Quad Room",
-        description: "Family-sized quad room",
-        size: "37 sqm",
-        occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV", "WiFi"]
-      }
-    ],
-
-    umrahFacilities: {
-      title: "Pilgrim Services",
-      features: [
-        "Prayer mats and Qibla in all rooms",
-        "Holy Quran available",
-        "Prayer times displayed",
-        "Zamzam water available",
-        "Ziyarat tour information desk",
-        "Fajr wake-up call service",
-        "Halal meals all day",
-        "Luggage assistance"
-      ]
-    },
-
-    diningOptions: [
-      {
-        name: "Grand Plaza Dining",
-        cuisine: "Arabic & International",
-        timing: "5:30 AM – 11:00 PM",
-        specialty: "Breakfast buffet; special Ramadan Iftar and Sahour"
-      }
-    ],
-
-    nearbyAttractions: [
-      { name: "Masjid an-Nabawi", distance: "700m", time: "10 min walk" },
-      { name: "Jannat al-Baqi", distance: "1 km", time: "13 min walk" },
-      { name: "Quba Mosque", distance: "5.5 km", time: "13 min drive" },
-      { name: "Mount Uhud", distance: "6 km", time: "14 min drive" }
-    ],
-
-    policies: {
-      checkIn: "2:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "48 hours notice required",
-      children: "Children under 10 stay free",
-      pets: "Not allowed"
-    },
-
-    gallery: [
-      "/assets/images/grandplazalamadina.webp",
-      "/assets/images/grandplazalamadina1.webp",
-      "/assets/images/grandplazalamadina2.webp",
-      "/assets/images/grandplazalamadina3.webp",
-    ],
-
-    priceRange: "300 - 650 SAR per night",
-    featured: false
-  },
-
-  {
-    id: "maysan-rehab-elmysk",
-    name: "Maysan Rehab Elmysk",
-    slug: "maysan-rehab-elmysk",
-    image: "/assets/images/maysan-rehab-elmysk.jpg",
-    rating: 4,
-    location: "Madinah",
-    distance: "800m from Masjid an-Nabawi",
-    amenities: ["Free WiFi", "Restaurant", "Group Friendly", "Breakfast"],
-
-    description: "Maysan Rehab Elmysk is a comfortable hotel in Madinah managed by the reputable Maysan International Group, a well-established hospitality brand in the Holy Cities. Designed with pilgrims in mind, the hotel offers practical amenities and is particularly popular with group bookings (minimum 20 pax), providing affordable room rates with flexible meal plans across Umrah and Ramadan seasons.",
-
-    fullAmenities: [
-      { icon: "🕌", name: "Madinah Location", detail: "Accessible distance from Masjid an-Nabawi" },
-      { icon: "📶", name: "Free WiFi", detail: "Internet throughout the property" },
-      { icon: "🍽️", name: "Restaurant", detail: "Halal dining with Iftar and Sahour during Ramadan" },
-      { icon: "👥", name: "Group Friendly", detail: "Ideal for group pilgrimages (min. 20 pax)" },
-      { icon: "☕", name: "Breakfast", detail: "Optional breakfast plan available" },
-      { icon: "🛎️", name: "24/7 Reception", detail: "Around-the-clock guest services" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning service" },
-      { icon: "🔒", name: "Security", detail: "24-hour security" }
-    ],
-
-    roomTypes: [
-      {
-        type: "Double Room",
-        description: "Practical double room suited for two pilgrims",
-        size: "25 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV", "WiFi"]
-      },
-      {
-        type: "Triple Room",
-        description: "Triple room for small groups",
-        size: "29 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV", "WiFi"]
-      },
-      {
-        type: "Quad Room",
-        description: "Quad room for families or groups of four",
-        size: "34 sqm",
-        occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV", "WiFi"]
-      }
-    ],
-
-    umrahFacilities: {
-      title: "Pilgrim Services",
-      features: [
-        "Prayer mats and Qibla direction in all rooms",
-        "Prayer times displayed",
-        "Zamzam water available",
-        "Halal meals with Iftar and Sahour options",
-        "Ziyarat assistance available",
-        "Group coordination services",
-        "Luggage storage"
-      ]
-    },
-
-    diningOptions: [
-      {
-        name: "Maysan Restaurant",
-        cuisine: "Arabic & International",
-        timing: "6:00 AM – 11:00 PM",
-        specialty: "Breakfast; Iftar and Sahour buffet during Ramadan"
-      }
-    ],
-
-    nearbyAttractions: [
-      { name: "Masjid an-Nabawi", distance: "800m", time: "11 min walk" },
-      { name: "Jannat al-Baqi", distance: "1.1 km", time: "14 min walk" },
-      { name: "Quba Mosque", distance: "5 km", time: "12 min drive" },
-      { name: "Mount Uhud", distance: "5.5 km", time: "13 min drive" }
-    ],
-
-    policies: {
-      checkIn: "2:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "48 hours notice required",
-      children: "Children under 10 stay free",
-      pets: "Not allowed"
-    },
-
-    gallery: [
-      "/assets/images/maysenrehab.png",
-      "/assets/images/maysenrehab1.jpeg",
-      "/assets/images/maysenrehab2.jpeg",
-      "/assets/images/maysenrehab3.jpeg",
-    ],
-
-    priceRange: "275 - 675 SAR per night",
-    featured: false
-  },
-
-  {
-    id: "arkan-almanar-madinah",
-    name: "Arkan Al Manar Hotel",
-    slug: "arkan-almanar-madinah",
-    image: "/assets/images/arkan-almanar.jpg",
+    id: "fakhir-al-azizia",
+    name: "Fakhir Al Azizia",
+    slug: "fakhir-al-azizia",
+    image: "/assets/images/fakhir.webp",
     rating: 3,
-    location: "Madinah",
-    distance: "1 km from Masjid an-Nabawi",
-    amenities: ["Free WiFi", "Restaurant", "Group Packages", "Budget-Friendly"],
+    location: "Makkah",
+    distance: "Aziziyah, Makkah",
+    amenities: ["AC", "Daily Housekeeping", "Halal Dining Nearby", "Budget-Friendly"],
 
-    description: "Arkan Al Manar Hotel is a budget-friendly accommodation option in Madinah, managed under the Maysan International Group umbrella. The hotel caters primarily to pilgrim groups (minimum 20 pax) and offers straightforward rooms with essential amenities at economical rates, making it an ideal base for those focused on maximising their time at the sacred sites.",
+    description: "Fakhir Al Azizia is a 3-star economy hotel in the Aziziyah district of Makkah. It is a popular choice among pilgrims who prefer a quieter residential setting while maintaining easy transport access to Masjid al-Haram. The Aziziyah area is well connected to the Holy Mosque area and offers a range of local restaurants and shops within easy reach.",
 
     fullAmenities: [
-      { icon: "🕌", name: "Madinah Location", detail: "Within reach of Masjid an-Nabawi" },
-      { icon: "📶", name: "Free WiFi", detail: "Internet access in common areas" },
-      { icon: "🍽️", name: "Dining", detail: "Basic halal dining available" },
-      { icon: "👥", name: "Group Packages", detail: "Special rates for groups of 20+ pax" },
-      { icon: "💰", name: "Budget-Friendly", detail: "Competitive rates for pilgrims" },
-      { icon: "🛎️", name: "Reception", detail: "24/7 front desk" },
-      { icon: "🧹", name: "Housekeeping", detail: "Regular room cleaning" },
-      { icon: "🔒", name: "Security", detail: "On-site security" }
+      { icon: "🕌", name: "Aziziyah District", detail: "Residential area with good transport links to Masjid al-Haram" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms fully air-conditioned" },
+      { icon: "🛎️", name: "Reception", detail: "Front desk available for assistance" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily room cleaning service" },
+      { icon: "🔒", name: "Security", detail: "In-house security team" },
+      { icon: "🍽️", name: "Dining Nearby", detail: "Halal restaurants within the neighbourhood" },
+      { icon: "🅿️", name: "Parking", detail: "Parking available on-site or nearby" },
+      { icon: "💰", name: "Budget-Friendly", detail: "Affordable economy rates" }
     ],
 
     roomTypes: [
       {
-        type: "Double Room",
-        description: "Basic double room with essential amenities",
+        type: "Standard Room",
+        description: "Clean and comfortable economy room in Aziziyah.",
         size: "22 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Triple Room",
-        description: "Triple occupancy room for small groups",
-        size: "26 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV"]
+        occupancy: "2–3 adults",
+        features: ["Twin Beds", "Private Bathroom", "AC", "Basic Amenities"]
       },
       {
         type: "Quad Room",
-        description: "Quad room for families or groups",
+        description: "Good-sized room for a group or family on a budget.",
         size: "30 sqm",
         occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV"]
+        features: ["Multiple Beds", "Bathroom", "AC", "Storage"]
       }
     ],
 
     umrahFacilities: {
       title: "Pilgrim Services",
       features: [
-        "Prayer mats provided",
-        "Qibla direction marked in rooms",
-        "Prayer times displayed",
-        "Halal food available",
-        "Iftar and Sahour during Ramadan",
-        "Group tour coordination",
-        "Luggage assistance"
-      ]
-    },
-
-    diningOptions: [
-      {
-        name: "Arkan Dining",
-        cuisine: "Arabic",
-        timing: "6:00 AM – 10:00 PM",
-        specialty: "Halal meals; Iftar and Sahour during Ramadan"
-      }
-    ],
-
-    nearbyAttractions: [
-      { name: "Masjid an-Nabawi", distance: "1 km", time: "14 min walk" },
-      { name: "Jannat al-Baqi", distance: "1.4 km", time: "18 min walk" },
-      { name: "Quba Mosque", distance: "5.5 km", time: "13 min drive" },
-      { name: "Mount Uhud", distance: "6 km", time: "14 min drive" }
-    ],
-
-    policies: {
-      checkIn: "2:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "48 hours notice required",
-      children: "Children under 10 stay free",
-      pets: "Not allowed"
-    },
-
-    gallery: [
-      "/assets/images/arkanalmanar.webp",
-      "/assets/images/arkanalmanar1.webp",
-      "/assets/images/arkanalmanar2.webp",
-      "/assets/images/arkanalmanar3.webp",
-    ],
-
-    priceRange: "275 - 590 SAR per night",
-    featured: false
-  },
-
-  {
-    id: "plaza-inn-ohud",
-    name: "Plaza Inn Ohud",
-    slug: "plaza-inn-ohud",
-    image: "/assets/images/plaza-inn-ohud.jpg",
-    rating: 3,
-    location: "Madinah",
-    distance: "Near Mount Uhud, Madinah",
-    amenities: ["Free WiFi", "Restaurant", "Group Friendly", "Budget Rates"],
-
-    description: "Plaza Inn Ohud is a practical budget hotel in Madinah offering affordable accommodation managed under the Maysan International Group. Ideally positioned for groups and individual pilgrims alike, the hotel provides straightforward facilities with all essential services at economical rates, and benefits from proximity to the historic Mount Uhud area.",
-
-    fullAmenities: [
-      { icon: "⛰️", name: "Uhud Location", detail: "Located near the historic Mount Uhud" },
-      { icon: "📶", name: "Free WiFi", detail: "Internet access available" },
-      { icon: "🍽️", name: "Restaurant", detail: "Halal meals on-site" },
-      { icon: "👥", name: "Group Friendly", detail: "Suitable for pilgrim groups (min. 20 pax)" },
-      { icon: "💰", name: "Budget Rates", detail: "Affordable seasonal pricing" },
-      { icon: "🛎️", name: "Reception", detail: "24/7 front desk service" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily room cleaning" },
-      { icon: "🔒", name: "Security", detail: "24-hour security" }
-    ],
-
-    roomTypes: [
-      {
-        type: "Double Room",
-        description: "Simple double room for two pilgrims",
-        size: "22 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Triple Room",
-        description: "Triple room for small groups",
-        size: "26 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV"]
-      },
-      {
-        type: "Quad Room",
-        description: "Quad room for families",
-        size: "30 sqm",
-        occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV"]
-      }
-    ],
-
-    umrahFacilities: {
-      title: "Pilgrim Services",
-      features: [
-        "Prayer mats and Qibla direction",
-        "Prayer times displayed",
-        "Halal dining available",
-        "Iftar and Sahour during Ramadan",
-        "Ziyarat transport to Masjid an-Nabawi",
-        "Group coordination assistance",
-        "Luggage storage"
-      ]
-    },
-
-    diningOptions: [
-      {
-        name: "Plaza Inn Restaurant",
-        cuisine: "Arabic",
-        timing: "6:00 AM – 10:00 PM",
-        specialty: "Halal meals; Iftar and Sahour during Ramadan"
-      }
-    ],
-
-    nearbyAttractions: [
-      { name: "Mount Uhud", distance: "500m", time: "7 min walk" },
-      { name: "Masjid an-Nabawi", distance: "4 km", time: "10 min drive" },
-      { name: "Quba Mosque", distance: "3 km", time: "8 min drive" },
-      { name: "Jannat al-Baqi", distance: "4.5 km", time: "11 min drive" }
-    ],
-
-    policies: {
-      checkIn: "2:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "48 hours notice required",
-      children: "Children under 10 stay free",
-      pets: "Not allowed"
-    },
-
-    gallery: [
-      "/assets/images/odestalmadina.webp",
-      "/assets/images/odestalmadina1.webp",
-      "/assets/images/odestalmadina2.webp",
-      "/assets/images/odestalmadina3.webp",
-    ],
-
-    priceRange: "200 - 475 SAR per night",
-    featured: false
-  },
-
-  {
-    id: "maysan-altaqwa",
-    name: "Maysan Al Taqwa",
-    slug: "maysan-altaqwa",
-    image: "/assets/images/maysan-altaqwa.jpg",
-    rating: 3,
-    location: "Madinah",
-    distance: "900m from Masjid an-Nabawi",
-    amenities: ["Free WiFi", "Restaurant", "Group Packages", "Breakfast"],
-
-    description: "Maysan Al Taqwa is a comfortable budget-class hotel in central Madinah, part of the Maysan International Group's portfolio of pilgrim-focused properties in the Holy Cities. The hotel offers clean, functional rooms with flexible meal plans and is particularly well-suited to group pilgrimages of 20 or more guests, providing dependable service throughout the Umrah and Ramadan seasons.",
-
-    fullAmenities: [
-      { icon: "🕌", name: "Central Madinah", detail: "Well-positioned for access to Masjid an-Nabawi" },
-      { icon: "📶", name: "Free WiFi", detail: "Internet access throughout" },
-      { icon: "🍽️", name: "Restaurant", detail: "Halal dining with Iftar and Sahour options" },
-      { icon: "👥", name: "Group Packages", detail: "Special rates for groups of 20+ pax" },
-      { icon: "☕", name: "Breakfast", detail: "Optional breakfast plan" },
-      { icon: "🛎️", name: "24/7 Reception", detail: "Round-the-clock front desk" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning" },
-      { icon: "🔒", name: "Security", detail: "24-hour security" }
-    ],
-
-    roomTypes: [
-      {
-        type: "Double Room",
-        description: "Clean and practical double room",
-        size: "23 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV", "WiFi"]
-      },
-      {
-        type: "Triple Room",
-        description: "Triple room for pilgrim groups",
-        size: "27 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV", "WiFi"]
-      },
-      {
-        type: "Quad Room",
-        description: "Quad room for families or groups",
-        size: "32 sqm",
-        occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV", "WiFi"]
-      }
-    ],
-
-    umrahFacilities: {
-      title: "Pilgrim Services",
-      features: [
-        "Prayer mats and Qibla direction in rooms",
-        "Prayer times displayed",
-        "Zamzam water access",
-        "Halal meals all day",
-        "Iftar and Sahour during Ramadan",
-        "Group coordination support",
+        "Prayer mats available on request",
+        "Qibla direction marked",
+        "Prayer times displayed at reception",
+        "Halal food options nearby",
+        "Transport information to Masjid al-Haram",
         "Luggage storage available"
       ]
     },
 
     diningOptions: [
       {
-        name: "Al Taqwa Restaurant",
+        name: "Nearby Local Restaurants",
         cuisine: "Arabic & International",
-        timing: "6:00 AM – 11:00 PM",
-        specialty: "Breakfast buffet; Iftar and Sahour during Ramadan"
+        timing: "Various",
+        specialty: "Halal meals in the Aziziyah neighbourhood"
       }
     ],
 
     nearbyAttractions: [
-      { name: "Masjid an-Nabawi", distance: "900m", time: "12 min walk" },
-      { name: "Jannat al-Baqi", distance: "1.2 km", time: "15 min walk" },
-      { name: "Quba Mosque", distance: "5 km", time: "12 min drive" },
-      { name: "Mount Uhud", distance: "5.5 km", time: "13 min drive" }
+      { name: "Masjid al-Haram", distance: "Aziziyah", time: "Short drive or taxi" },
+      { name: "Jabal Thawr", distance: "Approx. 3 km", time: "8–10 min drive" }
+    ],
+
+    policies: {
+      checkIn: "2:00 PM",
+      checkOut: "12:00 PM",
+      cancellation: "Contact hotel directly",
+      children: "Contact us for details",
+      pets: "Not allowed"
+    },
+
+    gallery: [
+      "/assets/images/fakhir.webp",
+      "/assets/images/fakhir1.webp",
+      "/assets/images/fakhir2.webp",
+      "/assets/images/fakhir3.webp",
+    ],
+
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  {
+    id: "al-hidayah-towers",
+    name: "Al Hidayah Towers",
+    slug: "al-hidayah-towers",
+    image: "/assets/images/hidaya.webp",
+    rating: 3,
+    location: "Makkah",
+    distance: "Al Jamiah District, Makkah",
+    amenities: ["Free WiFi", "AC", "Restaurant", "Breakfast Only"],
+
+    description: "Al Hidayah Towers is a well-maintained 3-star hotel in the Al Jamiah District of Makkah. Known for its welcoming environment and reliable services, the hotel is a popular choice for student and pilgrim groups visiting Makkah. It offers comfortable rooms with breakfast included and is within accessible distance of Masjid al-Haram via local transport.",
+
+    fullAmenities: [
+      { icon: "🕌", name: "Al Jamiah District", detail: "Makkah's university area — accessible to Masjid al-Haram" },
+      { icon: "📶", name: "Free WiFi", detail: "Complimentary internet throughout the hotel" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms fully air-conditioned" },
+      { icon: "🍽️", name: "Restaurant", detail: "On-site halal dining" },
+      { icon: "☕", name: "Breakfast", detail: "Breakfast included in room rate" },
+      { icon: "🛎️", name: "Reception", detail: "24/7 front desk service" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily room cleaning" },
+      { icon: "🔒", name: "Security", detail: "24-hour security personnel" }
+    ],
+
+    roomTypes: [
+      {
+        type: "Standard Room",
+        description: "Comfortable room with breakfast — good value in Makkah.",
+        size: "24 sqm",
+        occupancy: "2 adults",
+        features: ["Double or Twin Beds", "Bathroom", "AC", "WiFi", "TV"]
+      },
+      {
+        type: "Triple Room",
+        description: "Practical room for three pilgrims or a small family.",
+        size: "30 sqm",
+        occupancy: "3 adults",
+        features: ["Three Beds", "Bathroom", "AC", "WiFi", "Wardrobe"]
+      },
+      {
+        type: "Quad Room",
+        description: "Spacious room for groups of four.",
+        size: "36 sqm",
+        occupancy: "4 adults",
+        features: ["Four Beds", "Bathroom", "AC", "WiFi", "Storage"]
+      }
+    ],
+
+    umrahFacilities: {
+      title: "Pilgrim Services",
+      features: [
+        "Prayer mats in all rooms",
+        "Qibla direction marked",
+        "Prayer times displayed in lobby",
+        "Breakfast included",
+        "On-site halal restaurant",
+        "Luggage storage available",
+        "Transport information to Haram"
+      ]
+    },
+
+    diningOptions: [
+      {
+        name: "Al Hidayah Restaurant",
+        cuisine: "Arabic & International",
+        timing: "6:00 AM – 10:30 PM",
+        specialty: "Breakfast buffet and halal meals"
+      }
+    ],
+
+    nearbyAttractions: [
+      { name: "Masjid al-Haram", distance: "Al Jamiah District", time: "Short drive" },
+      { name: "King Abdulaziz University", distance: "Approx. 1 km", time: "5 min drive" }
     ],
 
     policies: {
@@ -5966,202 +4923,184 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/daraltaqwa.webp",
-      "/assets/images/daraltaqwa1.webp",
-      "/assets/images/daraltaqwa2.webp",
-      "/assets/images/daraltaqwa3.webp",
+      "/assets/images/hidaya.webp",
+      "/assets/images/hidaya1.webp",
+      "/assets/images/hidaya2.webp",
+      "/assets/images/hidaya3.webp",
     ],
 
-    priceRange: "230 - 575 SAR per night",
+    priceRange: "Price On Request",
     featured: false
   },
 
   {
-    id: "al-aqeeq-madinah",
-    name: "Al Aqeeq Hotel Madinah",
-    slug: "al-aqeeq-madinah",
-    image: "/assets/images/al-aqeeq-madinah.jpg",
-    rating: 4,
-    location: "Madinah",
-    distance: "400m from Masjid an-Nabawi",
-    amenities: ["Free WiFi", "Restaurant", "Breakfast Included", "Near Nabawi"],
+    id: "that-hotel",
+    name: "That Hotel",
+    slug: "that-hotel",
+    image: "/assets/images/thathotel.webp",
+    rating: 3,
+    location: "Makkah",
+    distance: "Misfalah Kubri, Makkah",
+    amenities: ["AC", "Daily Housekeeping", "Halal Dining Nearby", "Budget-Friendly"],
 
-    description: "Al Aqeeq Hotel Madinah is a well-located 4-star property offering comfortable accommodation steps away from the Prophet's Mosque. Part of the Maysan International Group's Madinah portfolio, the hotel provides a generous range of room types including suites, with competitive seasonal rates and full meal plan options. It is an excellent choice for pilgrims wanting proximity to the Haram without luxury hotel pricing.",
-
-    fullAmenities: [
-      { icon: "🕌", name: "Near Nabawi", detail: "Approx. 400m from Masjid an-Nabawi" },
-      { icon: "📶", name: "Free WiFi", detail: "High-speed internet throughout" },
-      { icon: "🍽️", name: "Restaurant", detail: "Full-service halal dining" },
-      { icon: "☕", name: "Breakfast", detail: "Breakfast included with B.B plan" },
-      { icon: "🛎️", name: "24/7 Service", detail: "Round-the-clock reception and assistance" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily room service" },
-      { icon: "🅿️", name: "Parking", detail: "Available on-site" },
-      { icon: "🔒", name: "Security", detail: "24-hour security personnel" }
-    ],
-
-    roomTypes: [
-      {
-        type: "Double Room",
-        description: "Comfortable double room with all standard amenities",
-        size: "28 sqm",
-        occupancy: "2 adults",
-        features: ["Double Bed", "Private Bathroom", "AC", "TV", "WiFi"]
-      },
-      {
-        type: "Triple Room",
-        description: "Spacious triple room for small groups or families",
-        size: "33 sqm",
-        occupancy: "3 adults",
-        features: ["Three Beds", "Private Bathroom", "AC", "TV", "WiFi"]
-      },
-      {
-        type: "Quad Room",
-        description: "Generously sized quad room",
-        size: "38 sqm",
-        occupancy: "4 adults",
-        features: ["Four Beds", "Private Bathroom", "AC", "TV", "WiFi"]
-      }
-    ],
-
-    umrahFacilities: {
-      title: "Pilgrim Services",
-      features: [
-        "Prayer mats and Qibla direction in all rooms",
-        "Holy Quran provided",
-        "Prayer times displayed throughout",
-        "Zamzam water available",
-        "Ziyarat guidance and tour assistance",
-        "Fajr wake-up call service",
-        "Halal dining with Iftar and Sahour during Ramadan",
-        "Luggage storage"
-      ]
-    },
-
-    diningOptions: [
-      {
-        name: "Al Aqeeq Restaurant",
-        cuisine: "Arabic & International",
-        timing: "5:30 AM – 11:30 PM",
-        specialty: "Breakfast buffet; Iftar and Sahour during Ramadan"
-      }
-    ],
-
-    nearbyAttractions: [
-      { name: "Masjid an-Nabawi", distance: "400m", time: "6 min walk" },
-      { name: "Jannat al-Baqi", distance: "700m", time: "9 min walk" },
-      { name: "Quba Mosque", distance: "4 km", time: "10 min drive" },
-      { name: "Mount Uhud", distance: "5 km", time: "12 min drive" }
-    ],
-
-    policies: {
-      checkIn: "2:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "48 hours notice required",
-      children: "Children under 12 stay free",
-      pets: "Not allowed"
-    },
-
-    gallery: [
-      "/assets/images/alaqeeqhotel.webp",
-      "/assets/images/alaqeeqhotel1.webp",
-      "/assets/images/alaqeeqhotel2.webp",
-      "/assets/images/alaqeeqhotel3.webp",
-    ],
-
-    priceRange: "575 - 1,800 SAR per night",
-    featured: false
-  },
-
-  {
-    id: "odest-al-madina",
-    name: "Odest Al Madina Hotel",
-    slug: "odest-al-madina",
-    image: "/assets/images/odest-al-madina.jpg",
-    rating: 4,
-    location: "Madinah",
-    distance: "300m from Masjid an-Nabawi",
-    amenities: ["Free WiFi", "Restaurant", "Near Nabawi", "24/7 Service"],
-
-    description: "Odest Al Madina Hotel is a modern 4-star property in the heart of Madinah offering well-furnished rooms with contemporary design. Conveniently positioned close to Masjid an-Nabawi, the hotel provides pilgrims with easy access to the Prophet's Mosque while enjoying quality amenities and attentive service. The property is a popular choice during both the Umrah season and Ramadan.",
+    description: "That Hotel is a 3-star economy hotel located in the Misfalah Kubri area of Makkah, a district well-known among pilgrims for its proximity to Masjid al-Haram. The hotel offers clean, no-frills rooms and is a reliable budget option for those seeking comfortable accommodation at an affordable rate during their Umrah visit.",
 
     fullAmenities: [
-      { icon: "🕌", name: "Near Nabawi", detail: "Approx. 300m from Masjid an-Nabawi" },
-      { icon: "📶", name: "Free WiFi", detail: "High-speed internet throughout" },
-      { icon: "🍽️", name: "Restaurant", detail: "On-site halal restaurant" },
-      { icon: "🛎️", name: "24/7 Service", detail: "Round-the-clock reception and concierge" },
-      { icon: "🏋️", name: "Fitness Centre", detail: "Gym facilities available" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily cleaning service" },
-      { icon: "🅿️", name: "Parking", detail: "Secure parking available" },
-      { icon: "🔒", name: "Security", detail: "24-hour on-site security" }
+      { icon: "🕌", name: "Misfalah Kubri", detail: "Located in the Misfalah area — accessible to Masjid al-Haram" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms air-conditioned" },
+      { icon: "🛎️", name: "Reception", detail: "Front desk available for assistance" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily room cleaning service" },
+      { icon: "🔒", name: "Security", detail: "In-house security team" },
+      { icon: "🍽️", name: "Dining Nearby", detail: "Halal restaurants in the Misfalah area" },
+      { icon: "🅿️", name: "Parking", detail: "Nearby parking options" },
+      { icon: "💰", name: "Budget-Friendly", detail: "Affordable economy rates" }
     ],
 
     roomTypes: [
       {
         type: "Standard Room",
-        description: "Modern standard room with contemporary furnishings",
-        size: "28 sqm",
-        occupancy: "2 adults",
-        features: ["King or Twin Beds", "Private Bathroom", "AC", "Smart TV", "WiFi"]
+        description: "Clean and reliable economy room near Misfalah.",
+        size: "22 sqm",
+        occupancy: "2–3 adults",
+        features: ["Twin Beds", "Bathroom", "AC", "Basic Amenities"]
       },
       {
-        type: "Deluxe Room",
-        description: "Upgraded deluxe room with enhanced city views",
-        size: "32 sqm",
-        occupancy: "2 adults",
-        features: ["King Bed", "City View", "Minibar", "Work Desk", "WiFi"]
-      },
-      {
-        type: "Family Room",
-        description: "Spacious family room for larger groups",
-        size: "42 sqm",
+        type: "Quad Room",
+        description: "Larger room suitable for families or groups.",
+        size: "30 sqm",
         occupancy: "4 adults",
-        features: ["Multiple Beds", "Living Area", "Private Bathroom", "AC", "WiFi"]
+        features: ["Multiple Beds", "Bathroom", "AC", "Storage"]
       }
     ],
 
     umrahFacilities: {
       title: "Pilgrim Services",
       features: [
-        "Prayer mats and Qibla direction in all rooms",
-        "Holy Quran available",
-        "Prayer times displayed",
-        "Zamzam water stations on each floor",
-        "Ziyarat tour arrangement desk",
-        "Fajr wake-up service",
-        "Halal dining available all day",
-        "Multilingual staff"
+        "Prayer mats available",
+        "Qibla direction marked",
+        "Prayer times displayed at reception",
+        "Halal food options nearby",
+        "Luggage storage available",
+        "Transport information to Haram"
       ]
     },
 
     diningOptions: [
       {
-        name: "Odest Restaurant",
-        cuisine: "Arabic & International",
-        timing: "6:00 AM – 11:00 PM",
-        specialty: "Breakfast buffet; à la carte halal dining"
+        name: "Nearby Misfalah Restaurants",
+        cuisine: "Arabic & South Asian",
+        timing: "Various",
+        specialty: "Wide range of halal dining in the Misfalah area"
       }
     ],
 
     nearbyAttractions: [
-      { name: "Masjid an-Nabawi", distance: "300m", time: "4 min walk" },
-      { name: "Jannat al-Baqi", distance: "600m", time: "8 min walk" },
-      { name: "Quba Mosque", distance: "4 km", time: "10 min drive" },
-      { name: "Mount Uhud", distance: "5 km", time: "12 min drive" }
+      { name: "Masjid al-Haram", distance: "Misfalah area", time: "Short walk or taxi" },
+      { name: "Safa and Marwa", distance: "Approx. 1.5 km", time: "5 min drive" }
     ],
 
     policies: {
-      checkIn: "3:00 PM",
+      checkIn: "2:00 PM",
       checkOut: "12:00 PM",
-      cancellation: "Free cancellation up to 48 hours before arrival",
-      children: "Children under 12 stay free",
+      cancellation: "Contact hotel directly",
+      children: "Contact us for details",
       pets: "Not allowed"
     },
 
     gallery: [
-      "/assets/images/odestalmadina.webp",
-      "/assets/images/odestalmadina1.webp",
-      "/assets/images/odestalmadina2.webp",
-      "/assets/images/odestalmadina3.webp",
+      "/assets/images/thathotel.webp",
+      "/assets/images/thathotel1.webp",
+      "/assets/images/thathotel2.webp",
+      "/assets/images/thathotel3.webp"
+    ],
+
+    priceRange: "Price On Request",
+    featured: false
+  },
+
+  // ---- NEW HOTELS ----
+
+  {
+    id: "areej-al-zahbi-new",
+    name: "Areej Al Zahbi",
+    slug: "areej-al-zahbi",
+    image: "/assets/images/areejalzahbi.webp",
+    rating: 2,
+    location: "Makkah",
+    distance: "Ibrahim Khalil Road, Makkah",
+    amenities: ["Basic Rooms", "AC", "Flat-Screen TV", "Halal Dining Nearby"],
+
+    description: "Areej Al Zahbi is a budget economy hotel conveniently located on Ibrahim Khalil Road in Makkah, approximately 600 metres from Masjid al-Haram. The hotel offers air-conditioned rooms with comfortable bedding and flat-screen TVs. Some rooms include a seating area for added comfort. The surrounding neighbourhood is vibrant with grocery stores, souvenir shops, international banks, ATMs, currency exchange, and a wide range of restaurants serving local and continental cuisines — making it an ideal base for pilgrims performing Umrah.",
+
+    fullAmenities: [
+      { icon: "🕌", name: "Haram Access", detail: "Ibrahim Khalil Road — approx. 600m from Masjid al-Haram" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms fully air-conditioned" },
+      { icon: "📺", name: "Flat-Screen TV", detail: "Modern flat-screen TV in all rooms" },
+      { icon: "🛎️", name: "Reception", detail: "Front desk available for guest assistance" },
+      { icon: "🧹", name: "Housekeeping", detail: "Daily room cleaning service" },
+      { icon: "🔒", name: "Security", detail: "Basic security measures in place" },
+      { icon: "🍽️", name: "Dining Nearby", detail: "Wide variety of halal restaurants nearby" },
+      { icon: "🏧", name: "ATM Nearby", detail: "Banks and ATMs within walking distance" }
+    ],
+
+    roomTypes: [
+      {
+        type: "Standard Room",
+        description: "Comfortable room with modern amenities and a cosy feel.",
+        size: "20 sqm",
+        occupancy: "2 adults",
+        features: ["Double or Twin Beds", "Private Bathroom", "AC", "Flat-Screen TV"]
+      },
+      {
+        type: "Standard Room with Seating Area",
+        description: "Slightly larger room with an additional seating area for comfort.",
+        size: "24 sqm",
+        occupancy: "2–3 adults",
+        features: ["Double Bed", "Seating Area", "Bathroom", "AC", "Flat-Screen TV"]
+      }
+    ],
+
+    umrahFacilities: {
+      title: "Pilgrim Services",
+      features: [
+        "Prayer mats available on request",
+        "Qibla direction marked in rooms",
+        "Prayer times displayed at reception",
+        "Halal restaurants within easy reach",
+        "Currency exchange nearby",
+        "Luggage storage available",
+        "Transport guidance to Masjid al-Haram"
+      ]
+    },
+
+    diningOptions: [
+      {
+        name: "Nearby Restaurants",
+        cuisine: "Local & Continental",
+        timing: "Open throughout the day",
+        specialty: "Wide variety of halal dining options in the surrounding area"
+      }
+    ],
+
+    nearbyAttractions: [
+      { name: "Masjid al-Haram", distance: "Approx. 600m", time: "10 min walk or short taxi" },
+      { name: "Abraj Al Bait Towers", distance: "Approx. 700m", time: "10 min walk" },
+      { name: "Jabal al-Nour", distance: "Approx. 4 km", time: "10–15 min drive" }
+    ],
+
+    policies: {
+      checkIn: "2:00 PM",
+      checkOut: "12:00 PM",
+      cancellation: "Contact hotel directly for cancellation policy",
+      children: "Contact us for details",
+      pets: "Not allowed"
+    },
+
+    gallery: [
+      "/assets/images/areejalzahbi.webp",
+      "/assets/images/areejalzahbi1.webp",
+      "/assets/images/areejalzahbi2.webp",
+      "/assets/images/areejalzahbi3.webp"
     ],
 
     priceRange: "Price On Request",
@@ -6169,103 +5108,111 @@ export const hotelsData = [
   },
 
   {
-    id: "triple-one-al-madina",
-    name: "Triple One Al Madina",
-    slug: "triple-one-al-madina",
-    image: "/assets/images/triple-one-al-madina.jpg",
-    rating: 4,
-    location: "Madinah",
-    distance: "500m from Masjid an-Nabawi",
-    amenities: ["Free WiFi", "Restaurant", "Modern Rooms", "Near Haram"],
+    id: "maather-al-jawar",
+    name: "Maather Al Jawar",
+    slug: "maather-al-jawar",
+    image: "/assets/images/matheer.webp",
+    rating: 3,
+    location: "Makkah",
+    distance: "Al Hijrah Road, Makkah",
+    amenities: ["Free WiFi", "AC", "Restaurant", "24hr Front Desk"],
 
-    description: "Triple One Al Madina is a contemporary 4-star hotel located in the central district of Madinah, offering stylishly designed rooms and suites within easy reach of Masjid an-Nabawi. The hotel combines modern comfort with warm Arabian hospitality, making it a sought-after choice for pilgrims who want a pleasant and well-connected stay during Umrah and Ramadan.",
+    description: "Maatjer Al Jawar is a 3-star hotel situated in Makkah, within approximately 15–20 minutes' walk from Masjid al-Haram. The hotel features 497 rooms, a restaurant serving breakfast daily, a bureau de change, and a lift. Known among Umrah travellers for its comfortable beds, clean rooms, and friendly staff, it is a reliable mid-economy option for pilgrims seeking a balance of comfort and value. The hotel also offers free on-site parking, making it convenient for guests travelling by car.",
 
     fullAmenities: [
-      { icon: "🕌", name: "Near Nabawi", detail: "Approx. 500m from the Prophet's Mosque" },
-      { icon: "📶", name: "Free WiFi", detail: "High-speed internet throughout" },
-      { icon: "🍽️", name: "Restaurant", detail: "On-site halal dining" },
-      { icon: "🌆", name: "Modern Rooms", detail: "Contemporary interior design" },
-      { icon: "🛎️", name: "24/7 Reception", detail: "Full-time front desk and concierge" },
-      { icon: "🏋️", name: "Fitness Centre", detail: "Gym facilities available" },
-      { icon: "🧹", name: "Housekeeping", detail: "Daily room service" },
-      { icon: "🔒", name: "Security", detail: "24-hour security system" }
+      { icon: "🕌", name: "Haram Access", detail: "Approx. 500m–1.5km from Masjid al-Haram — walkable or short taxi" },
+      { icon: "📶", name: "Free WiFi", detail: "Complimentary internet access" },
+      { icon: "❄️", name: "Air Conditioning", detail: "All rooms fully air-conditioned" },
+      { icon: "🍽️", name: "Restaurant", detail: "On-site restaurant with breakfast service" },
+      { icon: "💱", name: "Bureau de Change", detail: "Currency exchange available on-site" },
+      { icon: "🛗", name: "Lift", detail: "Elevator access to all floors" },
+      { icon: "🅿️", name: "Free Parking", detail: "Complimentary self-parking available" },
+      { icon: "🔐", name: "Safe Deposit Box", detail: "Secure storage at front desk" },
+      { icon: "🧳", name: "Luggage Storage", detail: "Stored securely at reception" },
+      { icon: "🛎️", name: "24hr Front Desk", detail: "Round-the-clock guest assistance" }
     ],
 
     roomTypes: [
       {
-        type: "Standard Double Room",
-        description: "Stylish double room with modern amenities",
-        size: "30 sqm",
+        type: "Standard Room",
+        description: "Well-kept room praised for comfortable beds and cleanliness.",
+        size: "24 sqm",
         occupancy: "2 adults",
-        features: ["King or Twin Beds", "Private Bathroom", "AC", "Smart TV", "WiFi"]
+        features: ["Double or Twin Beds", "Private Bathroom", "AC", "Flat-Screen TV", "Work Desk"]
       },
       {
-        type: "Deluxe Room",
-        description: "Spacious deluxe room with upgraded furnishings",
-        size: "36 sqm",
-        occupancy: "2-3 adults",
-        features: ["King Bed", "City View", "Work Desk", "Minibar", "WiFi"]
+        type: "Triple Room",
+        description: "Comfortable room for three pilgrims sharing.",
+        size: "30 sqm",
+        occupancy: "3 adults",
+        features: ["Three Beds", "Bathroom", "AC", "TV", "Storage"]
       },
       {
-        type: "Family Suite",
-        description: "Generous suite for families with separate living area",
-        size: "50 sqm",
+        type: "Family Room",
+        description: "Spacious room for families or groups of four.",
+        size: "38 sqm",
         occupancy: "4 adults",
-        features: ["Multiple Beds", "Separate Lounge", "Premium Bathroom", "AC", "WiFi"]
+        features: ["Multiple Beds", "Bathroom", "AC", "TV", "Wardrobe"]
       }
     ],
 
     umrahFacilities: {
       title: "Pilgrim Services",
       features: [
-        "Prayer mats and Qibla direction in all rooms",
-        "Holy Quran in multiple languages",
-        "Prayer times displayed in rooms and corridors",
-        "Zamzam water on every floor",
-        "Ziyarat tour desk and coordination",
-        "Fajr wake-up call service",
-        "Halal meals and Ramadan specials",
-        "Multilingual staff assistance"
+        "Prayer mats in all rooms",
+        "Qibla direction marked",
+        "Prayer times posted at reception",
+        "On-site halal restaurant",
+        "Luggage storage available",
+        "Currency exchange on-site",
+        "Free parking for guests",
+        "Close walking distance to Masjid al-Haram"
       ]
     },
 
     diningOptions: [
       {
-        name: "Triple One Restaurant",
+        name: "Maatjer Al Jawar Restaurant",
         cuisine: "Arabic & International",
-        timing: "6:00 AM – 11:30 PM",
-        specialty: "Breakfast buffet; Ramadan Iftar and Sahour specials"
+        timing: "Breakfast daily; other meals available",
+        specialty: "Breakfast buffet with a variety of halal options"
       }
     ],
 
     nearbyAttractions: [
-      { name: "Masjid an-Nabawi", distance: "500m", time: "7 min walk" },
-      { name: "Jannat al-Baqi", distance: "800m", time: "10 min walk" },
-      { name: "Quba Mosque", distance: "4 km", time: "10 min drive" },
-      { name: "Mount Uhud", distance: "5 km", time: "12 min drive" }
+      { name: "Masjid al-Haram", distance: "Approx. 500m–1.5km", time: "15–20 min walk or short taxi" },
+      { name: "Kaaba", distance: "Approx. 1 km", time: "15–20 min walk" },
+      { name: "Safa and Marwa Hills", distance: "Approx. 2.1 km", time: "5 min drive" },
+      { name: "Jabal Thawr", distance: "Approx. 4.8 km", time: "12 min drive" }
     ],
 
     policies: {
-      checkIn: "3:00 PM",
-      checkOut: "12:00 PM",
-      cancellation: "Free cancellation up to 48 hours before arrival",
-      children: "Children under 12 stay free",
+      checkIn: "4:00 PM",
+      checkOut: "2:00 PM",
+      cancellation: "Contact hotel directly for cancellation terms",
+      children: "Contact us for details",
       pets: "Not allowed"
     },
 
     gallery: [
-      "/assets/images/tripleonehotel.webp",
-      "/assets/images/tripleonehotel1.webp",
-      "/assets/images/tripleonehotel2.webp",
-      "/assets/images/tripleonehotel3.jpg",
+      "/assets/images/matheer.webp",
+      "/assets/images/matheer1.webp",
+      "/assets/images/matheer2.webp",
+      "/assets/images/matheer3.webp",
     ],
 
     priceRange: "Price On Request",
     featured: false
   },
-];
 
-// Helper function to get hotel by slug
+// ============================================================
+// END OF NEW ENTRIES
+// ============================================================
+
+
+  
+
+];
 export const getHotelBySlug = (slug) => {
   return hotelsData.find(hotel => hotel.slug === slug);
 };

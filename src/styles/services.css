@@ -2,7 +2,7 @@
   min-height: 100vh;
   background:
     linear-gradient(rgba(2, 11, 28, 0.7), rgba(2, 11, 28, 0.8)),
-    url("/assets/images/servicessection-bg2.jpg");
+    url("/assets/images/servicessection-bg2.webp");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -799,7 +799,7 @@ section {
 .custom-cta {
   background:
     linear-gradient(rgba(8, 24, 52, 0.88), rgba(8, 24, 52, 0.88)),
-    url("/assets/images/servicesCTAbg.jpg");
+    url("/assets/images/servicesCTAbg.webp");
   background-size: cover;
   background-position: center;
   padding: clamp(3rem, 6vw, 6rem) 1.5rem;

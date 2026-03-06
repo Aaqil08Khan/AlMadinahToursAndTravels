@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(rgb(19 43 82 / 84%), rgb(19 43 82 / 25%)), url(/assets/images/aboutus_landingpagebg.jpg);
+  background-image: linear-gradient(rgb(19 43 82 / 84%), rgb(19 43 82 / 25%)), url(/assets/images/aboutus_landingpagebg.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

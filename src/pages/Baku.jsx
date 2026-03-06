@@ -167,7 +167,7 @@ export default function BakuTour() {
           {/* IMAGE */}
           <div className="phs-imageBox">
             <img
-              src="../../public/assets/images/bakuskyline.jpeg"
+              src="../../public/assets/images/bakuskyline.webp"
               alt="Baku skyline"
               className="phs-image"
             />
