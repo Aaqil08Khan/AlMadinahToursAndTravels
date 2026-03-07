@@ -190,7 +190,7 @@ const Services = () => {
               className={`toggle-btn ${hotelCategory === "luxury" ? "active" : ""}`}
               onClick={() => setHotelCategory("luxury")}
             >
-              <img src="../../public/assets/icons/luxury-icon.svg" alt="" />Luxury Hotels
+              <img src="../../public/assets/icons/luxury-icon.svg" alt="" loading="lazy" />Luxury Hotels
             </button>
 
             <button
@@ -198,7 +198,7 @@ const Services = () => {
                 === "economy" ? "active" : ""}`}
               onClick={() => setHotelCategory("economy")}
             >
-              <img src="../../public/assets/icons/economy-icon.svg" alt="" /> Economy Hotels
+              <img src="../../public/assets/icons/economy-icon.svg" alt="" loading="lazy" /> Economy Hotels
             </button>
           </div>
         </div>
@@ -254,6 +254,7 @@ const Services = () => {
               onMouseLeave={() => setHoveredCard(null)}
             >
               <div className="hotel-image-wrapper" style={{ height: "210px", position: "relative" }}>
+
                 {hotel.highlight && (
                   <div style={{
                     position: "absolute",
@@ -270,10 +271,19 @@ const Services = () => {
                     🚐 Shuttle Available
                   </div>
                 )}
-                <img src={hotel.image} alt={hotel.name} className="hotel-image" />
+
+                <img
+                  src={hotel.image}
+                  alt={hotel.name}
+                  className="hotel-image"
+                  loading="lazy"
+                  decoding="async"
+                />
+
                 <div className="hotel-rating">
                   ⭐ {hotel.rating} Star
                 </div>
+
               </div>
 
               <div className="hotel-content" style={{ padding: "20px" }}>

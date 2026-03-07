@@ -42,7 +42,12 @@ function Footer() {
         <div className="footer-brand">
           <NavLink to="/" className="logo-footer">
             <span className="logo-footer-wrap">
-              <img src="/assets/logos/logo-en.png" alt="Al-Madina Travels" />
+              <img
+                src="/assets/logos/logo-en.png"
+                alt="Al-Madina Travels"
+                loading="lazy"
+                decoding="async"
+              />
             </span>
           </NavLink>
           <span>TRAVELS & TOURS</span>
@@ -63,6 +68,7 @@ function Footer() {
               <img
                 src="/assets/icons/facebook-02-stroke-rounded.svg"
                 alt="Facebook"
+                loading="lazy"
               />
             </a>
             <a
@@ -73,12 +79,14 @@ function Footer() {
               <img
                 src="/assets/icons/instagram-stroke-rounded.svg"
                 alt="Instagram"
+                loading="lazy"
               />
             </a>
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
               <img
                 src="/assets/icons/whatsapp-stroke-rounded.svg"
                 alt="WhatsApp"
+                loading="lazy"
               />
             </a>
             <a
@@ -89,6 +97,7 @@ function Footer() {
               <img
                 src="/assets/icons/youtube-stroke-rounded.svg"
                 alt="Youtube"
+                loading="lazy"
               />
             </a>
           </div>
@@ -163,17 +172,17 @@ function Footer() {
             </div>
           )}
         </div>
-        </div>
+      </div>
 
-        {/* BOTTOM */}
-        <div className="footer-bottom">
-          <p>© 2026 The Al-Madina Travels & Tours. All rights reserved.</p>
-          <div className="bottom-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
-          </div>
+      {/* BOTTOM */}
+      <div className="footer-bottom">
+        <p>© 2026 The Al-Madina Travels & Tours. All rights reserved.</p>
+        <div className="bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
         </div>
-      
+      </div>
+
     </footer >
   );
 }
