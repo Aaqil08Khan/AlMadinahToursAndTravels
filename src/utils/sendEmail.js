@@ -1,21 +1,16 @@
-import emailjs from "@emailjs/browser";
-
-const SERVICE_ID = "service_49m26q2";
-const TEMPLATE_ID = "template_6jidlns";
-const PUBLIC_KEY = "yXDOSjCy_JLoOwZOF";
+import emailjs from '@emailjs/browser';
 
 export const sendEmailForm = async (formRef) => {
   try {
-    const result = await emailjs.sendForm(
-      SERVICE_ID,
-      TEMPLATE_ID,
+    await emailjs.sendForm(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
       formRef.current,
-      PUBLIC_KEY
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
     );
-
-    return { success: true, result };
+    return { success: true };
   } catch (error) {
-    console.log("EmailJS Error:", error);
-    return { success: false, error };
+    console.error('EmailJS Error:', error);
+    return { success: false };
   }
 };
