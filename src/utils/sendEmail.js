@@ -2,7 +2,7 @@ import emailjs from "@emailjs/browser";
 
 const SERVICE_ID = "service_49m26q2";
 const TEMPLATE_ID = "template_6jidlns";
-const PUBLIC_KEY = "0GdsVuzVOSeK_10VN";
+const PUBLIC_KEY = "yXDOSjCy_JLoOwZOF";
 
 export const sendEmailForm = async (formRef) => {
   try {
