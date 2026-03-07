@@ -221,7 +221,7 @@ function Home() {
                 )}
 
                 <p className="trust-text">
-                  <img src="../../public/assets/icons/call-icon.svg" alt="" />
+                  <img src="/assets/icons/call-icon.svg" alt="" />
                    Our team will contact you within 24 hours
                 </p>
               </form>
