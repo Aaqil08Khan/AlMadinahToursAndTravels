@@ -6,7 +6,7 @@ export const hotelsData = [
     id: "fairmont-makkah",
     name: "Fairmont Makkah Clock Royal Tower",
     slug: "fairmont-makkah",
-    image: "/assets/images/fairmount-hotel.jpg",
+    image: "/assets/images/fairmount-hotel.webp",
     rating: 5,
     location: "Makkah",
     distance: "50m from Masjid al-Haram",
@@ -94,10 +94,10 @@ export const hotelsData = [
     },
     
     gallery: [
-      "/assets/images/fairmount-hotel.jpg",
-      "/assets/images/fairmount-hotel1.jpg",
-      "/assets/images/fairmount-hotel2.jpg",
-      "/assets/images/fairmount-hotel3.jpg"
+      "/assets/images/fairmount-hotel.webp",
+      "/assets/images/fairmount-hotel1.webp",
+      "/assets/images/fairmount-hotel2.webp",
+      "/assets/images/fairmount-hotel3.webp"
     ],
     
     priceRange: "550 - 650 SAR per night",
@@ -196,7 +196,7 @@ export const hotelsData = [
     id: "hyatt-makkah",
     name: "Hyatt Regency Makkah",
     slug: "hyatt-makkah",
-    image: "/assets/images/hyatt-hotel.jpg",
+    image: "/assets/images/hyatt-hotel.webp",
     rating: 5,
     location: "Makkah",
     distance: "150m from Masjid al-Haram",
@@ -269,10 +269,10 @@ export const hotelsData = [
     },
     
     gallery: [
-      "/assets/images/hyatt-hotel.jpg", 
-      "/assets/images/hyatt-hotel1.jpg", 
-      "/assets/images/hyatt-hotel2.jpg", 
-      "/assets/images/hyatt-hotel3.jpg"
+      "/assets/images/hyatt-hotel.webp", 
+      "/assets/images/hyatt-hotel1.webp", 
+      "/assets/images/hyatt-hotel2.webp", 
+      "/assets/images/hyatt-hotel3.webp"
     ],
     
     priceRange: "480 - 550 SAR per night",
@@ -283,7 +283,7 @@ export const hotelsData = [
     id: "hilton-convention",
     name: "Hilton Convention Makkah",
     slug: "hilton-convention",
-    image: "/assets/images/hilton-makkah.jpg",
+    image: "/assets/images/hilton-makkah.webp",
     rating: 5,
     location: "Makkah",
     distance: "300m from Masjid al-Haram",
@@ -347,10 +347,10 @@ export const hotelsData = [
     },
     
     gallery: [
-      "/assets/images/hilton-makkah.jpg",
-      "/assets/images/hilton-makkah1.jpg",
-      "/assets/images/hilton-makkah2.jpg",
-      "/assets/images/hilton-makkah3.jpg"
+      "/assets/images/hilton-makkah.webp",
+      "/assets/images/hilton-makkah1.webp",
+      "/assets/images/hilton-makkah2.webp",
+      "/assets/images/hilton-makkah3.webp"
     ],
     
     priceRange: "420 - 500 SAR per night",
@@ -361,7 +361,7 @@ export const hotelsData = [
     id: "raffles-makkah",
     name: "Raffles Makkah Palace",
     slug: "raffles-makkah",
-    image: "/assets/images/raffles-hotel.jpg",
+    image: "/assets/images/raffles-hotel.webp",
     rating: 5,
     location: "Makkah",
     distance: "50m from Masjid al-Haram",
@@ -433,10 +433,10 @@ export const hotelsData = [
     },
     
     gallery: [
-      "/assets/images/raffles-hotel.jpg",
-      "/assets/images/raffles-hotel1.jpg",
-      "/assets/images/raffles-hotel2.jpg",
-      "/assets/images/raffles-hotel3.jpg"
+      "/assets/images/raffles-hotel.webp",
+      "/assets/images/raffles-hotel1.webp",
+      "/assets/images/raffles-hotel2.webp",
+      "/assets/images/raffles-hotel3.webp"
     ],
     
     priceRange: "700 - 850 SAR per night",
@@ -1019,7 +1019,7 @@ export const hotelsData = [
     id: "movenpick-madinah",
     name: "Anwar Al Madinah Movenpick",
     slug: "movenpick-madinah",
-    image: "/assets/images/anwar-hotel.jpg",
+    image: "/assets/images/anwar-hotel.webp",
     rating: 5,
     location: "Madinah",
     distance: "50m from Masjid an-Nabawi",
@@ -1093,10 +1093,10 @@ export const hotelsData = [
     },
     
     gallery: [
-      "/assets/images/anwar-hotel.jpg",
-      "/assets/images/anwar-hotel1.jpg",
-      "/assets/images/anwar-hotel2.jpg",
-      "/assets/images/anwar-hotel3.jpg"
+      "/assets/images/anwar-hotel.webp",
+      "/assets/images/anwar-hotel1.webp",
+      "/assets/images/anwar-hotel2.webp",
+      "/assets/images/anwar-hotel3.webp"
     ],
     
     priceRange: "450 - 520 SAR per night",
@@ -1107,7 +1107,7 @@ export const hotelsData = [
     id: "pullman-madinah",
     name: "Pullman Zamzam Madina",
     slug: "pullman-madinah",
-    image: "/assets/images/pullman-hotel.jpg",
+    image: "/assets/images/pullman-hotel.webp",
     rating: 5,
     location: "Madinah",
     distance: "150m from Masjid an-Nabawi",
@@ -1172,10 +1172,10 @@ export const hotelsData = [
     },
     
     gallery: [
-      "/assets/images/pullman-hotel.jpg",
-      "/assets/images/pullman-hotel1.jpg",
-      "/assets/images/pullman-hotel2.jpg",
-      "/assets/images/pullman-hotel3.jpg"
+      "/assets/images/pullman-hotel.webp",
+      "/assets/images/pullman-hotel1.webp",
+      "/assets/images/pullman-hotel2.webp",
+      "/assets/images/pullman-hotel3.webp"
     ],
     
     priceRange: "400 - 480 SAR per night",
@@ -1186,7 +1186,7 @@ export const hotelsData = [
     id: "hilton-madinah",
     name: "Madinah Hilton Hotel",
     slug: "hilton-madinah",
-    image: "/assets/images/madinah-hilton-hotel.avif",
+    image: "/assets/images/madinah-hilton-hotel.webp",
     rating: 5,
     location: "Madinah",
     distance: "100m from Masjid an-Nabawi",
@@ -1258,10 +1258,10 @@ export const hotelsData = [
     },
     
     gallery: [
-      "/assets/images/madinah-hilton-hotel.avif",
-      "/assets/images/madinah-hilton-hotel1.avif",
-      "/assets/images/madinah-hilton-hotel2.avif",
-      "/assets/images/madinah-hilton-hotel3.avif"
+      "/assets/images/madinah-hilton-hotel.webp",
+      "/assets/images/madinah-hilton-hotel1.webp",
+      "/assets/images/madinah-hilton-hotel2.webp",
+      "/assets/images/madinah-hilton-hotel3.webp"
     ],
     
     priceRange: "430 - 510 SAR per night",
@@ -1272,7 +1272,7 @@ export const hotelsData = [
     id: "shaza-madinah",
     name: "Shaza Al Madina",
     slug: "shaza-madinah",
-    image: "/assets/images/sheza-hotel.jpg",
+    image: "/assets/images/sheza-hotel.webp",
     rating: 5,
     location: "Madinah",
     distance: "150m from Masjid an-Nabawi",
@@ -1337,10 +1337,10 @@ export const hotelsData = [
     },
     
     gallery: [
-      "/assets/images/sheza-hotel.jpg",
-      "/assets/images/sheza-hotel1.jpg",
-      "/assets/images/sheza-hotel2.jpg",
-      "/assets/images/sheza-hotel3.jpg"
+      "/assets/images/sheza-hotel.webp",
+      "/assets/images/sheza-hotel1.webp",
+      "/assets/images/sheza-hotel2.webp",
+      "/assets/images/sheza-hotel3.webp"
     ],
     
     priceRange: "410 - 490 SAR per night",
@@ -1351,7 +1351,7 @@ export const hotelsData = [
     id: "dar-al-taqwa",
     name: "Dar Al Taqwa Hotel",
     slug: "dar-al-taqwa",
-    image: "/assets/images/dar-al-taqwa-hotel.jpg",
+    image: "/assets/images/dar-al-taqwa-hotel.webp",
     rating: 5,
     location: "Madinah",
     distance: "20m from Masjid an-Nabawi",
@@ -1426,10 +1426,10 @@ export const hotelsData = [
     },
     
     gallery: [
-      "/assets/images/dar-al-taqwa-hotel.jpg",
-      "/assets/images/dar-al-taqwa-hotel1.jpg",
-      "/assets/images/dar-al-taqwa-hotel2.jpg",
-      "/assets/images/dar-al-taqwa-hotel3.jpg"
+      "/assets/images/dar-al-taqwa-hotel.webp",
+      "/assets/images/dar-al-taqwa-hotel1.webp",
+      "/assets/images/dar-al-taqwa-hotel2.webp",
+      "/assets/images/dar-al-taqwa-hotel3.webp"
     ],
     
     priceRange: "520 - 620 SAR per night",
@@ -1928,7 +1928,7 @@ export const hotelsData = [
     id: "al-manakha-rotana-madinah",
     name: "Al Manakha Rotana Madinah",
     slug: "al-manakha-rotana-madinah",
-    image: "/assets/images/almanakhahotel.jpg",
+    image: "/assets/images/almanakhahotel.webp",
     rating: 4,
     location: "Madinah",
     distance: "350m from Masjid an-Nabawi",
@@ -1991,7 +1991,7 @@ export const hotelsData = [
     },
     
     gallery: [
-      "/assets/images/almanakhahotel.jpg",
+      "/assets/images/almanakhahotel.webp",
       "/assets/images/almanakhahotel1.webp",
       "/assets/images/almanakhahotel2.webp",
       "/assets/images/almanakhahotel3.webp"
@@ -2312,7 +2312,7 @@ export const hotelsData = [
     id: "view-al-madinah-hotel",
     name: "View Al Madinah Hotel",
     slug: "view-al-madinah-hotel",
-    image: "/assets/images/viewalmadinahhotel.jpg",
+    image: "/assets/images/viewalmadinahhotel.webp",
     rating: 4,
     location: "Madinah",
     distance: "250m from Masjid an-Nabawi",
@@ -2374,10 +2374,10 @@ export const hotelsData = [
     },
     
     gallery: [
-      "/assets/images/viewalmadinahhotel.jpg",
-      "/assets/images/viewalmadinahhotel1.jpg",
-      "/assets/images/viewalmadinahhotel2.jpg",
-      "/assets/images/viewalmadinahhotel3.jpg"
+      "/assets/images/viewalmadinahhotel.webp",
+      "/assets/images/viewalmadinahhotel1.webp",
+      "/assets/images/viewalmadinahhotel2.webp",
+      "/assets/images/viewalmadinahhotel3.webp"
     ],
     
     priceRange: "270 - 350 SAR per night",
@@ -2388,7 +2388,7 @@ export const hotelsData = [
     id: "makarem-haram-view-suites",
     name: "Makarem Haram View Suites",
     slug: "makarem-haram-view-suites",
-    image: "/assets/images/makaremharamsuites.png",
+    image: "/assets/images/makaremharamsuites.webp",
     rating: 5,
     location: "Madinah",
     distance: "80m from Masjid an-Nabawi",
@@ -2459,7 +2459,7 @@ export const hotelsData = [
     },
     
     gallery: [
-      "/assets/images/makaremharamsuites.png",
+      "/assets/images/makaremharamsuites.webp",
       "/assets/images/makaremharamsuites1.webp",
       "/assets/images/makaremharamsuites2.webp",
       "/assets/images/makaremharamsuites3.webp"
@@ -2554,7 +2554,7 @@ export const hotelsData = [
     id: "miaad-al-majd",
     name: "Miaad Al Majd",
     slug: "miaad-al-majd",
-    image: "/assets/images/placeholder-hotel.jpg",
+    image: "/assets/images/milaadalmajd.webp",
     rating: 2,
     location: "Makkah",
     distance: "Al Hijrah Road, Makkah",
@@ -2625,7 +2625,7 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/milaadalmajd.jpg",
+      "/assets/images/milaadalmajd.webp",
       "/assets/images/milaadalmajd1.webp",
     ],
 
@@ -2637,7 +2637,7 @@ export const hotelsData = [
     id: "saif-al-majd",
     name: "Saif Al Majd",
     slug: "saif-al-majd",
-    image: "/assets/images/placeholder-hotel.jpg",
+    image: "/assets/images/saifalmajd.webp",
     rating: 2,
     location: "Makkah",
     distance: "Al Hijrah Road, Makkah",
@@ -2720,7 +2720,7 @@ export const hotelsData = [
     id: "diwan-al-bait",
     name: "Diwan Al Bait",
     slug: "diwan-al-bait",
-    image: "/assets/images/placeholder-hotel.jpg",
+    image: "/assets/images/diwanalbait.webp",
     rating: 3,
     location: "Makkah",
     distance: "Ibrahim Khalil Road, Makkah",
@@ -2811,7 +2811,7 @@ export const hotelsData = [
     id: "tara-al-yasmin",
     name: "Tara Al Yasmin",
     slug: "tara-al-yasmin",
-    image: "/assets/images/placeholder-hotel.jpg",
+    image: "/assets/images/taraalyasmin.webp",
     rating: 3,
     location: "Makkah",
     distance: "Ibrahim Khalil Road, Makkah",
@@ -2902,7 +2902,7 @@ export const hotelsData = [
     id: "sanood-ajyad",
     name: "Sanood Ajyad",
     slug: "sanood-ajyad",
-    image: "/assets/images/placeholder-hotel.jpg",
+    image: "/assets/images/sanoodajyad.webp",
     rating: 3,
     location: "Makkah",
     distance: "Ajyad Street, Makkah",
@@ -2995,7 +2995,7 @@ export const hotelsData = [
     id: "bir-al-eiman-warda-safa",
     name: "Bir Al Eiman / Warda Safa",
     slug: "bir-al-eiman-warda-safa",
-    image: "/assets/images/placeholder-hotel.jpg",
+    image: "/assets/images/biraleiman.webp",
     rating: 2,
     location: "Madinah",
     distance: "South Markazia, Madinah",
@@ -3066,7 +3066,7 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/biraleiman.jpg",
+      "/assets/images/biraleiman.webp",
       "/assets/images/biraleiman1.webp",
     ],
 
@@ -3078,7 +3078,7 @@ export const hotelsData = [
     id: "rama-al-madinah",
     name: "Rama Al Madinah",
     slug: "rama-al-madinah",
-    image: "/assets/images/placeholder-hotel.jpg",
+    image: "/assets/images/ramaalmadinah.webp",
     rating: 2,
     location: "Madinah",
     distance: "South Markazia, Madinah",
@@ -3161,7 +3161,7 @@ export const hotelsData = [
     id: "triple-one-hotel",
     name: "Triple One Hotel",
     slug: "triple-one-hotel",
-    image: "/assets/images/placeholder-hotel.jpg",
+    image: "      /assets/images/tripleonehotel.webp",
     rating: 3,
     location: "Madinah",
     distance: "Central Markazia, Madinah",
@@ -3253,7 +3253,7 @@ export const hotelsData = [
     id: "artal-international",
     name: "Artal International",
     slug: "artal-international",
-    image: "/assets/images/placeholder-hotel.jpg",
+    image: "/assets/images/artalhotel.webp",
     rating: 3,
     location: "Madinah",
     distance: "Central Markazia, Madinah",
@@ -3345,7 +3345,7 @@ export const hotelsData = [
     id: "zowar-international-hotel",
     name: "Zowar International Hotel",
     slug: "zowar-international-hotel",
-    image: "/assets/images/placeholder-hotel.jpg",
+    image: "/assets/images/international.webp",
     rating: 3,
     location: "Madinah",
     distance: "Central Madinah (Shuttle Available)",
@@ -3426,8 +3426,8 @@ export const hotelsData = [
     },
 
     gallery: [
-      "/assets/images/zowarhotel.webp",
-      "/assets/images/zowarhotel1.webp",
+      "/assets/images/international.webp",
+      "/assets/images/international1.webp",
     ],
 
     priceRange: "Price On Request",

@@ -258,7 +258,7 @@ function Home() {
 
           <div
             className="service-card"
-            style={{ backgroundImage: 'url("/assets/images/hotel.jpg")' }}
+            style={{ backgroundImage: 'url("/assets/images/hotel.webp")' }}
           >
             <div className="service-overlay"></div>
             <h3>Hotel Booking</h3>
